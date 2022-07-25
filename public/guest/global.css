@@ -1,0 +1,73 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    width: 100%;
+    height: 95px;
+    background-color: #B22727;
+    font-family: 'glory';
+}
+
+.logo-header {
+    margin-left: 20px;
+}
+
+.text-header p {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 5px;
+}
+
+.menu ul {
+    float: right;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+.menu ul li {
+    margin: 22px 25px;
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+ul li a:hover {
+    color: #FFF008;
+}
+
+
+/* main */
+
+.owl-prev,
+.owl-next {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 48%;
+    display: block !important;
+}
+
+.owl-prev {
+    left: 20px;
+}
+
+.owl-next {
+    right: 28px;
+}
+
+.owl-prev i,
+.owl-next i {
+    color: white;
+    font-size: 20px;
+}
+
+.owl-theme .owl-nav {
+    margin-top: -50px;
+}
