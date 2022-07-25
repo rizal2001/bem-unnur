@@ -16,8 +16,8 @@ return new class extends Migration
         Schema::create('t_ormawa', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('kategori_ormawa_id');
-            $table->string('nama');
-            $table->string('gambar_logo');
+            $table->string('nama')->nullable();
+            $table->string('gambar_logo')->nullable();
             $table->timestamps();
 
             $table->foreign('kategori_ormawa_id')->references('id')->on('m_kategori_ormawa');
