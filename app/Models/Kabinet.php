@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Kabinet extends Model
 {
-    use HasFactory;
+    protected $table = 'm_kabinet';
+    protected $primaryKey = 'id';
+    protected $guarded = [];
 }

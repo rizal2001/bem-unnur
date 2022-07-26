@@ -46,12 +46,11 @@
                                     <th>Tahun Periode</th>
                                     <th>Logo</th>
                                     <th class="text-center">Aksi</th>
-                                    <!-- <th>Delete</th> -->
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php $i=1; ?>
-
+                                @foreach($data as $row)
                                 <tr>
                                     <td><?php echo $i++; ?></td>
                                     <td> </td>
@@ -66,7 +65,7 @@
                                             <i class="ti-trash btn-icon-append"></i></a>-->
                                     </td>
                                 </tr>
-
+                                @endforeach
                             </tbody>
                         </table>
                     </div>

@@ -9,7 +9,8 @@ class KabinetController extends Controller
 {
     public function index()
     {
-        return view('admin.kabinet.index');
+        $data = Kabinet::all();
+        return view('admin.kabinet.index', compact('data'));
     }
     public function create(){
         return view('admin.kabinet.create');

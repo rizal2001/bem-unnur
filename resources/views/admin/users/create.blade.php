@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'BMTI - Create Data Pengguna')
+@section('title', 'BEM UNNUR - Create Data User')
 @section('content')
 
 <style>
@@ -36,14 +36,6 @@
                             <label for="inputemail" class="form-label">Email</label>
                             <input type="text" name="email" class="form-control" id="inputemail"
                                 aria-describedby="emailHelp" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="inputrole_id" class="form-label">Role Id</label>
-                            <select type="text" name="role_id" class="form-control">
-                                @foreach($roles as $role)
-                                <option value="{{$role->id}}">{{$role->role_name}}</option>
-                                @endforeach
-                            </select>
                         </div>
                         <div class="mb-3">
                             <label for="inputpassword" class="form-label">Password</label>

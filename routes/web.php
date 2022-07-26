@@ -52,11 +52,21 @@ Route::group(['middleware' => 'auth'], function () {
                 ->name('logout');
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::group(['prefix' => 'admin'], function () {
+        //users
         Route::get('/users', [UserController::class, 'index'])->name('users');
+        Route::get('/user/create', [UserController::class, 'create'])->name('user.create');
+        Route::post('/user/store', [UserController::class, 'store'])->name('user.store');
+        Route::get('/user/edit/{id}', [UserController::class, 'edit'])->name('user.edit');
+        Route::put('/user/update/{id}', [UserController::class, 'update'])->name('user.update');
+        Route::get('/user/delete/{id}', [UserController::class, 'delete'])->name('user.delete');
 
         Route::get('/kabinet', [KabinetController::class, 'index'])->name('kabinet');
         Route::get('/kabinet/create', [KabinetController::class, 'create'])->name('kabinet.create');
-
+        Route::post('/kabinet/store', [KabinetController::class, 'store'])->name('kabinet.store');
+        Route::get('/kabinet/edit/{id}', [KabinetController::class, 'edit'])->name('kabinet.edit');
+        Route::put('/kabinet/update/{id}', [KabinetController::class, 'update'])->name('kabinet.update');
+        Route::get('/kabinet/delete/{id}', [KabinetController::class, 'delete'])->name('kabinet.delete');
+        
         //Aspirasi
         Route::get('/aspirasi', [AspirasiController::class, 'index'])->name('aspirasi');
 

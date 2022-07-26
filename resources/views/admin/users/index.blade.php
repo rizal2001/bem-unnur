@@ -34,7 +34,7 @@
                         <table id="dataTable" class="table">
                             <thead>
                                 <tr>
-                                    <a href=""
+                                    <a href="{{route('user.create')}}"
                                         class="btn btn-primary btn-sm btn-rounded btn-icon-text marginCard">
                                         <i class="ti-upload btn-icon-prepend"></i>
                                         Create
@@ -46,7 +46,6 @@
                                     <th>Email</th>
                                     <th>Created At</th>
                                     <th class="text-center">Aksi</th>
-                                    <!-- <th>Delete</th> -->
                                 </tr>
                             </thead>
                             <tbody>
@@ -58,13 +57,13 @@
                                     <td>{{$row->email}}</td>
                                     <td>{{$row->created_at}}</td>
                                     <td class="text-center">
-                                        <a href=""
+                                        <a href="{{route('user.edit', ['id'=>$row->id] )}}"
                                             class="btn btn-dark btn-sm btn-rounded btn-icon-prepend">Edit
                                             <i class="ti-reload btn-icon-append"></i></a>
-                                        <!--<a href=""
+                                        <a href="{{route('user.delete', ['id'=>$row->id] )}}"
                                             class="btn btn-danger btn-rounded btn-icon-text"
                                             onclick="return confirm('Apakah anda yakin ?')">Delete
-                                            <i class="ti-trash btn-icon-append"></i></a>-->
+                                            <i class="ti-trash btn-icon-append"></i></a>
                                     </td>
                                 </tr>
                                 @endforeach

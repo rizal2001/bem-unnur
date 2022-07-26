@@ -325,9 +325,6 @@
                                 <li class="nav-item"><a class="nav-link" href="{{route('kabinet')}}">
                                         Kabinet
                                     </a></li>
-                                <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">
-                                        Misi
-                                    </a></li>
                             </ul>
                         </div>
                     </li>
