@@ -1,11 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MisiController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\BeritaController;
+use App\Http\Controllers\OrmawaController;
 use App\Http\Controllers\KabinetController;
 use App\Http\Controllers\AspirasiController;
-use App\Http\Controllers\OrmawaController;
-use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\CustomAuthController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
@@ -80,6 +81,13 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('/kabinet/edit/{id}', [KabinetController::class, 'edit'])->name('kabinet.edit');
         Route::put('/kabinet/update/{id}', [KabinetController::class, 'update'])->name('kabinet.update');
         Route::get('/kabinet/delete/{id}', [KabinetController::class, 'delete'])->name('kabinet.delete');
+
+        Route::get('/kabinet/{kabinetId}/misi', [MisiController::class, 'index'])->name('misi');
+        Route::get('/kabinet/{kabinetId}/misi/create', [MisiController::class, 'create'])->name('misi.create');
+        Route::post('/kabinet/{kabinetId}/misi/store', [MisiController::class, 'store'])->name('misi.store');
+        Route::get('/kabinet/{kabinetId}/misi/edit/{id}', [MisiController::class, 'edit'])->name('misi.edit');
+        Route::put('/kabinet/{kabinetId}/misi/update/{id}', [MisiController::class, 'update'])->name('misi.update');
+        Route::get('/kabinet/{kabinetId}/misi/delete/{id}', [MisiController::class, 'delete'])->name('misi.delete');
         
         //Aspirasi
         Route::get('/aspirasi', [AspirasiController::class, 'index'])->name('aspirasi');

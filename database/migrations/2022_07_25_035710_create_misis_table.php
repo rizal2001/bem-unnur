@@ -16,7 +16,8 @@ return new class extends Migration
         Schema::create('t_misi', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('kabinet_id');
-            $table->string('nama')->nullable();
+            $table->string('judul')->nullable();
+            $table->text('deskripsi')->nullable();
             $table->timestamps();
 
             $table->foreign('kabinet_id')->references('id')->on('m_kabinet');

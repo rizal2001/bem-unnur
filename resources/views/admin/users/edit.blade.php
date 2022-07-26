@@ -3,7 +3,7 @@
 @section('content')
 
 <style>
-    @media only screen and (min-width: 400px) and (max-width: 767px) {
+@media only screen and (min-width: 400px) and (max-width: 767px) {
     .marginResponsive {
         margin-top: 25px;
     }
@@ -31,13 +31,13 @@
                         @csrf
                         <div class="mb-3">
                             <label for="inputname" class="form-label">Name</label>
-                            <input type="text" name="name" class="form-control" id="inputname"
-                                aria-describedby="emailHelp" value="{{ $data->name }}" required>
+                            <input type="text" name="name" class="form-control" id="inputname" value="{{ $data->name }}"
+                                required>
                         </div>
                         <div class="mb-3">
                             <label for="inputemail" class="form-label">Email</label>
                             <input type="text" name="email" class="form-control" id="inputemail"
-                                aria-describedby="emailHelp" value="{{ $data->email }}" required>
+                                value="{{ $data->email }}" required>
                         </div>
                         <button type="submit" class="btn btn-primary btn-sm btn-rounded">Submit</button>
                     </form>

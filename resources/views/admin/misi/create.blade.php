@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'BEM UNNUR - Create Data User')
+@section('title', 'BEM UNNUR - Create Data Misi')
 @section('content')
 
 <style>
@@ -15,7 +15,8 @@
         <div class="col-lg-12 grid-margin marginResponsive">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">{{ __('Data User') }}</h4>
+                    <h4 class="card-title">{{ __('Create Data Misi Kabinet ') }}<span>{{$kabinet->nama}}</span></h4>
+                    <p>*Input misi satu per satu</p>
                     @if (count($errors) > 0)
                     <div class="alert alert-danger">
                         <ul>
@@ -25,19 +26,16 @@
                         </ul>
                     </div>
                     @endif
-                    <form action="{{route('user.store')}}" method="POST" enctype="multipart/form-data">
+                    <form action="{{route('misi.store', ['kabinetId'=>$kabinet->id])}}" method="POST"
+                        enctype="multipart/form-data">
                         @csrf
                         <div class="mb-3">
-                            <label for="inputname" class="form-label">Name</label>
-                            <input type="text" name="name" class="form-control" id="inputname" required>
+                            <label for="inputJudulMisi" class="form-label">Judul Misi</label>
+                            <input type="text" name="judul" class="form-control" id="inputJudulMisi" required>
                         </div>
                         <div class="mb-3">
-                            <label for="inputemail" class="form-label">Email</label>
-                            <input type="text" name="email" class="form-control" id="inputemail" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="inputpassword" class="form-label">Password</label>
-                            <input type="password" name="password" class="form-control" id="inputpassword" required>
+                            <label for="inputDeskripsiMisi" class="form-label">Deskripsi Misi</label>
+                            <textarea class="form-control" style="height:200px;" name="deskripsi"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-sm btn-rounded">Submit</button>
                     </form>
@@ -46,6 +44,7 @@
         </div>
     </div>
 </div>
+<script src="//cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
 <script>
 $(document).ready(function() {
     $('#dataTable').DataTable();

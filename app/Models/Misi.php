@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Misi extends Model
 {
-    use HasFactory;
+    protected $table = 't_misi';
+    protected $primaryKey = 'id';
+    protected $guarded = [];
 }
