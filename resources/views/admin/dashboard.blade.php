@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'BEM UNNUR - Dashboard')
+@section('title', 'BEM REMA UNNUR - DASHBOARD')
 
 
 @section('content')

@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <title>Login V16</title>
+    <title>BEM REMA UNNUR - LOGIN</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" href="{{asset('login/images/icons/favicon.ico')}}" />
+    <link rel="shortcut icon" href="{{asset('logo.png')}}" />
     <link rel="stylesheet" href="{{asset('login/vendor/bootstrap/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('login/fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}">
     <link rel="stylesheet" href="{{asset('login/fonts/Linearicons-Free-v1.0.0/icon-font.min.css')}}">

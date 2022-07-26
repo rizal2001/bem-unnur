@@ -17,17 +17,17 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
-                
 </head>
 
 <body>
-    <header>
-        <div class="position-absolute">
-            <iframe width="1" height="1" src="https://www.youtube.com/embed/oAcHizN0tqQ?autoplay=1&&playlist=oAcHizN0tqQ&loop=1"
-                frameborder="0"
-                allowfullscreen style="opacity:0;"></iframe>
-        </div>
+    <!-- backsound -->
+    <div class="position-absolute">
+        <iframe width="1" height="1"
+            src="https://www.youtube.com/embed/oAcHizN0tqQ?autoplay=1&&playlist=oAcHizN0tqQ&loop=1" frameborder="0"
+            allowfullscreen style="opacity:0;"></iframe>
+    </div>
 
+    <header>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-1 mt-2">
@@ -48,19 +48,19 @@
                     <div class="menu">
                         <ul class="nav">
                             <li>
-                                <a href="{{url('/')}}">BERANDA</a>
+                                <a href="{{url('/beranda')}}">BERANDA</a>
                             </li>
                             <li>
-                                <a href="profil.html">PROFIL</a>
+                                <a href="{{url('/profil')}}">PROFIL</a>
                             </li>
                             <li>
-                                <a href="kementerian.html">KEMENTERIAN</a>
+                                <a href="{{url('/kementerian')}}">KEMENTERIAN</a>
                             </li>
                             <li>
-                                <a href="ormawa.html">ORMAWA</a>
+                                <a href="{{url('/ormawa')}}">ORMAWA</a>
                             </li>
                             <li>
-                                <a href="aspirasi.html">ASPIRASI</a>
+                                <a href="{{url('/aspirasi')}}">ASPIRASI</a>
                             </li>
                         </ul>
                     </div>
@@ -79,6 +79,25 @@
 
     @yield('script')
     <script>
+    $(function($) {
+        let url = window.location.href;
+        $('.nav li a').each(function() {
+            if (this.href === url) {
+                $(this).closest('a').addClass('active');
+            }
+        });
+    });
+
+    // var myVar;
+
+    // function myFunction() {
+    //     myVar = setTimeout(showPage, 1000);
+    // }
+
+    // function showPage() {
+    //     document.getElementById("loader").style.display = "none";
+    //     document.getElementById("myDiv").style.display = "block";
+    // }
     </script>
 </body>
 

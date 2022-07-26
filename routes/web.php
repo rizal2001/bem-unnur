@@ -16,9 +16,36 @@ use App\Http\Controllers\CustomAuthController;
 |
 */
 
+// beranda
 Route::get('/', function () {
+    return view('layouts.loading');
+});
+
+Route::get('/beranda', function () {
     return view('guest.beranda');
 });
+
+// profil
+Route::get('/profil', function () {
+    return view('guest.profil');
+});
+
+// kementerian
+Route::get('/kementerian', function () {
+    return view('guest.kementerian');
+});
+
+// ormawa
+Route::get('/ormawa', function () {
+    return view('guest.ormawa');
+});
+
+// aspirasi
+Route::get('/aspirasi', function () {
+    return view('guest.aspirasi');
+});
+
+// login
 Route::get('/login-admin', [CustomAuthController::class, 'index'])->name('login');
 Route::post('/login-proccess', [CustomAuthController::class, 'login'])->name('login.proccess');
 Route::group(['prefix' => 'admin'], function () {
