@@ -29,7 +29,7 @@
     <!-- inject:css -->
     <link rel="stylesheet" href="{{asset('admin/css/vertical-layout-light/style.css')}}">
     <!-- endinject -->
-    <link rel="shortcut icon" href="{{asset('admin/images/logo.png')}}" />
+    <link rel="shortcut icon" href="{{asset('admin/images/losgo.png')}}" />
     <style>
     .mdi-file-import {
         font-size: 20px;
@@ -54,18 +54,19 @@
                 </div>
                 <div>
                     <!-- {{asset('')}} -->
-                    <a class="navbar-brand brand-logo" href="index.html">
-                        <img src="{{asset('admin/images/logo.svg')}}" alt="logo" />
+                    <a class="navbar-brand brand-logo" href="">
+                        <img src="{{asset('admin/images/logo.png')}}" alt="logo" />
                     </a>
-                    <a class="navbar-brand brand-logo-mini" href="index.html">
-                        <img src="{{asset('admin/images/logo-mini.svg')}}" alt="logo" />
+                    <a class="navbar-brand brand-logo-mini" href="">
+                        <img src="{{asset('admin/images/logo.png')}}" alt="logo" />
                     </a>
                 </div>
             </div>
             <div class="navbar-menu-wrapper d-flex align-items-top">
                 <ul class="navbar-nav">
                     <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
-                        <h1 class="welcome-text">Hallo <span class="text-black fw-bold">John Doe</span></h1>
+                        <h1 class="welcome-text">Selamat Datang, <span
+                                class="text-black fw-bold">{{auth()->user()->name}}</span></h1>
                     </li>
                 </ul>
                 <ul class="navbar-nav ms-auto">
@@ -83,11 +84,15 @@
                             <div class="dropdown-header text-center">
                                 <img class="img-md rounded-circle" src="{{asset('admin/images/faces/face8.jpg')}}"
                                     alt="Profile image">
-                                <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
-                                <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
+                                <p class="mb-1 mt-3 font-weight-semibold">{{auth()->user()->name}}</p>
+                                <p class="fw-light text-muted mb-0">{{auth()->user()->email}}</p>
                             </div>
-                            <a class="dropdown-item"><i
+                            <a class="dropdown-item" href="{{route('logout')}}"
+                                onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i
                                     class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                {{ csrf_field() }}
+                            </form>
                         </div>
                     </li>
                 </ul>

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\CustomAuthController;
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,10 +47,14 @@ Route::get('/aspirasi', function () {
 });
 
 // login
-Route::get('/login-admin', [CustomAuthController::class, 'index'])->name('login');
-Route::post('/login-proccess', [CustomAuthController::class, 'login'])->name('login.proccess');
-Route::group(['prefix' => 'admin'], function () {
-    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('/login-admin', [AuthenticatedSessionController::class, 'create'])->name('login');
+Route::post('/login-proccess', [AuthenticatedSessionController::class, 'store'])->name('login.proccess');
 
-    Route::get('/users', [UserController::class, 'index'])->name('users');
+Route::group(['middleware' => 'auth'], function () {
+    Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])
+                ->name('logout');
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::group(['prefix' => 'admin'], function () {
+        Route::get('/users', [UserController::class, 'index'])->name('users');
+    });
 });
