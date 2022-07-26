@@ -16,13 +16,19 @@ use App\Http\Controllers\CustomAuthController;
 |
 */
 
-// beranda
+// loading
 Route::get('/', function () {
     return view('layouts.loading');
 });
 
+// beranda
 Route::get('/beranda', function () {
     return view('guest.beranda');
+});
+
+// news
+Route::get('/news', function () {
+    return view('guest.news');
 });
 
 // profil
