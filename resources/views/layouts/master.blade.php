@@ -317,7 +317,7 @@
                         </a>
                         <div class="collapse" id="form-elements">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">
+                                <li class="nav-item"><a class="nav-link" href="{{route('kabinet')}}">
                                         Kabinet
                                     </a></li>
                                 <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">
@@ -374,7 +374,7 @@
                         </a>
                         <div class="collapse" id="icons">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Aspirasi</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="{{route('aspirasi')}}">Aspirasi</a></li>
                             </ul>
                         </div>
                     </li>
@@ -387,7 +387,7 @@
                         </a>
                         <div class="collapse" id="auth">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Berita </a>
+                                <li class="nav-item"> <a class="nav-link" href="{{route('berita')}}"> Berita </a>
                                 </li>
                             </ul>
                         </div>
