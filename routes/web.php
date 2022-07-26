@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\KabinetController;
 use App\Http\Controllers\AspirasiController;
+use App\Http\Controllers\OrmawaController;
 use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\CustomAuthController;
@@ -20,9 +21,22 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 |
 */
 
+// loading
 Route::get('/', function () {
+    return view('layouts.loading');
+});
+
+// beranda
+Route::get('/beranda', function () {
     return view('guest.beranda');
 });
+
+// news
+Route::get('/news', function () {
+    return view('guest.news');
+});
+
+
 // profil
 Route::get('/profil', function () {
     return view('guest.profil');
@@ -73,5 +87,9 @@ Route::group(['middleware' => 'auth'], function () {
          //Berita
         Route::get('/berita', [BeritaController::class, 'index'])->name('berita');
         Route::get('/berita/create', [BeritaController::class, 'create'])->name('berita.create');
+        
+         //Ormawa
+         Route::get('/ormawa', [OrmawaController::class, 'index'])->name('ormawa');
+         Route::get('/ormawa/create', [OrmawaController::class, 'create'])->name('ormawa.create');
     });
 });

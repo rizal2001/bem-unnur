@@ -53,8 +53,8 @@
                                 @foreach($data as $row)
                                 <tr>
                                     <td><?php echo $i++; ?></td>
-                                    <td></td>
-                                    <td></td>
+                                    <td>{{$row->judul}}</td>
+                                    <td>{{$row->deskripsi}}</td>
                                     <td class="text-center">
                                         <a href="" class="btn btn-dark btn-sm btn-rounded btn-icon-prepend">Detail
                                             <i class="ti-eye btn-icon-append"></i></a>

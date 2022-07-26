@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Ormawa extends Model
 {
-    use HasFactory;
+    protected $table = 't_ormawa';
+    protected $primaryKey = 'id';
+    protected $guarded = [];
 }
