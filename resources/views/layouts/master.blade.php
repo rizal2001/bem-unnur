@@ -364,7 +364,7 @@
                                 <li class="nav-item"> <a class="nav-link" href="pages/tables/basic-table.html">
                                         Kategori Ormawa
                                     </a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/tables/basic-table.html">
+                                <li class="nav-item"> <a class="nav-link" href="{{route('ormawa')}}">
                                         List Ormawa
                                     </a></li>
                             </ul>
