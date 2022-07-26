@@ -21,9 +21,22 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 |
 */
 
+// loading
 Route::get('/', function () {
+    return view('layouts.loading');
+});
+
+// beranda
+Route::get('/beranda', function () {
     return view('guest.beranda');
 });
+
+// news
+Route::get('/news', function () {
+    return view('guest.news');
+});
+
+
 // profil
 Route::get('/profil', function () {
     return view('guest.profil');
