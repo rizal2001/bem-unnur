@@ -7,6 +7,7 @@ use App\Http\Controllers\AspirasiController;
 use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\CustomAuthController;
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,20 +23,45 @@ use App\Http\Controllers\CustomAuthController;
 Route::get('/', function () {
     return view('guest.beranda');
 });
-Route::get('/login-admin', [CustomAuthController::class, 'index'])->name('login');
-Route::post('/login-proccess', [CustomAuthController::class, 'login'])->name('login.proccess');
-Route::group(['prefix' => 'admin'], function () {
+// profil
+Route::get('/profil', function () {
+    return view('guest.profil');
+});
+
+// kementerian
+Route::get('/kementerian', function () {
+    return view('guest.kementerian');
+});
+
+// ormawa
+Route::get('/ormawa', function () {
+    return view('guest.ormawa');
+});
+
+// aspirasi
+Route::get('/aspirasi', function () {
+    return view('guest.aspirasi');
+});
+
+// login
+Route::get('/login-admin', [AuthenticatedSessionController::class, 'create'])->name('login');
+Route::post('/login-proccess', [AuthenticatedSessionController::class, 'store'])->name('login.proccess');
+
+Route::group(['middleware' => 'auth'], function () {
+    Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])
+                ->name('logout');
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::group(['prefix' => 'admin'], function () {
+        Route::get('/users', [UserController::class, 'index'])->name('users');
 
-    Route::get('/users', [UserController::class, 'index'])->name('users');
-    //kabinet
-    Route::get('/kabinet', [KabinetController::class, 'index'])->name('kabinet');
-    Route::get('/kabinet/create', [KabinetController::class, 'create'])->name('kabinet.create');
+        Route::get('/kabinet', [KabinetController::class, 'index'])->name('kabinet');
+        Route::get('/kabinet/create', [KabinetController::class, 'create'])->name('kabinet.create');
 
-    //Aspirasi
-    Route::get('/aspirasi', [AspirasiController::class, 'index'])->name('aspirasi');
+        //Aspirasi
+        Route::get('/aspirasi', [AspirasiController::class, 'index'])->name('aspirasi');
 
-     //Berita
-     Route::get('/berita', [BeritaController::class, 'index'])->name('berita');
-     Route::get('/berita/create', [BeritaController::class, 'create'])->name('berita.create');
+         //Berita
+        Route::get('/berita', [BeritaController::class, 'index'])->name('berita');
+        Route::get('/berita/create', [BeritaController::class, 'create'])->name('berita.create');
+    });
 });
