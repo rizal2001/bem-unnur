@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use App\models\Kementerian;
+use App\Models\KategoriKementerian;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -12,10 +14,10 @@ class Jabatan extends Model
     protected $guarded = [];
 
     public function kementerian(){
-        return $this->hasMany('App\Models\Kementerian');
+        return $this->hasMany(Kementerian::class);
     }
 
     public function kategoriKementerian(){
-        return $this->belongsTo('App\Models\KategoriKementerian');
+        return $this->belongsTo(KategoriKementerian::class);
     }
 }

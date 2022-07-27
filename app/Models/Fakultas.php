@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Kementerian;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -12,6 +13,6 @@ class Fakultas extends Model
     protected $guarded = [];
 
     public function ormawa(){
-        return $this->hasMany('App\Models\Kementerian');
+        return $this->hasMany(Kementerian::class);
     }
 }
