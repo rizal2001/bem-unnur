@@ -337,9 +337,10 @@
                         </a>
                         <div class="collapse" id="charts">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">Fakultas</a>
+                                <li class="nav-item"> <a class="nav-link" href="{{route('fakultas')}}">Fakultas</a>
                                 </li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">Kategori
+                                <li class="nav-item"> <a class="nav-link"
+                                        href="{{route('kategori.kementerian')}}">Kategori
                                         Kementerian</a>
                                 </li>
                                 <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">Jabatan</a>
