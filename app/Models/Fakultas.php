@@ -7,5 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Fakultas extends Model
 {
-    use HasFactory;
+    protected $table = 'm_fakultas';
+    protected $primaryKey = 'id';
+    protected $guarded = [];
+
+    public function ormawa(){
+        return $this->hasMany('App\Models\Kementerian');
+    }
 }

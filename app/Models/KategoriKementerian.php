@@ -7,5 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class KategoriKementerian extends Model
 {
-    use HasFactory;
+    protected $table = 'm_kategori_kementerian';
+    protected $primaryKey = 'id';
+    protected $guarded = [];
+
+    public function jabatan(){
+        return $this->hasMany('App\Models\Jabatan');
+    }
 }

@@ -7,5 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class KategoriOrmawa extends Model
 {
-    use HasFactory;
+    protected $table = 'm_kategori_ormawa';
+    protected $primaryKey = 'id';
+    protected $guarded = [];
+
+    public function ormawa(){
+        return $this->hasMany('App\Models\Ormawa');
+    }
 }

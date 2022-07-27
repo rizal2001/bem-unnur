@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Aspirasi extends Model
 {
-    use HasFactory;
+    protected $table = 'm_aspirasi';
+    protected $primaryKey = 'id';
+    protected $guarded = [];
 }
