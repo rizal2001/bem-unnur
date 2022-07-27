@@ -1,3 +1,25 @@
+/* scroll */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #666;
+    border: 2px solid #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8d8d8d;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
 /* body */
 
 body {
@@ -243,7 +265,7 @@ main {
     right: 0;
     bottom: 0;
     margin: auto;
-    opacity: 0.2;
+    opacity: 0.1;
     z-index: -9;
 }
 
@@ -329,6 +351,23 @@ main {
 
 /* Kementerian */
 
+.kementerian {
+    width: 100%;
+    height: 580px;
+}
+
+.kementerian .caption {
+    position: relative;
+    bottom: 440px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
 .title-kementerian {
     margin-top: 60px;
     text-align: center;
@@ -388,8 +427,39 @@ main {
     margin-right: auto;
 }
 
+.box-misi {
+    width: 280px;
+    text-align: center;
+    background-color: #FF8D29;
+    font-size: 25px;
+    margin-top: -30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-struktur {
+    border-radius: 18px;
+}
+
 
 /* ormawa */
+
+.ormawa {
+    width: 100%;
+    height: 580px;
+}
+
+.ormawa .caption {
+    position: relative;
+    bottom: 440px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
 
 .text-ormawa {
     margin-top: 80px;
@@ -575,6 +645,8 @@ main {
 /* footer */
 
 footer {
+    position: relative;
+    z-index: 9999;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: #B22727;
     width: 100%;

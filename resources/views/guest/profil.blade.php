@@ -14,7 +14,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-15">
+        <div class="col-12">
             <a style="text-decoration:none; color:white;">
                 <div class="text-center mt-3">
                     <h3>
@@ -41,27 +41,22 @@
 </div>
 
 <div class="bg-content">
-    <img src="{{asset('guest/assets/images/bg.png')}}" />
+    <img src="{{asset('guest/assets/images/beranda-1.jpg')}}" />
 </div>
 
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-12 text-beranda"></div>
-            <a style="text-decoration:none; color:white;">
-                <div class="box-profil-page rounded shadow">
-                    <span>Visi</span>
-                </div>
-            </a>
+        <a style="text-decoration:none; color:white;">
+            <div class="box-profil-page rounded shadow">
+                <span>Visi</span>
+            </div>
+        </a>
         <div class="col-15">
             <a style="text-decoration:none; color:white;">
                 <div class="text-center mt-4">
-                    <h3>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                        Voluptatum laborum accusamus, tempora quae maiores totam
-                        obcaecati rem maxime nam, rerum nihil expedita,
-                        officia ad debitis porro omnis error! Obcaecati, ab?
-                    </h3>
-            </div>
+                    <h3>" Mewujudkan Badan Ekseskutif Mahasiswa Universitas Nurtanio Bandung yang Aktif dalam membangun sinergitas untuk Universitas Nurtanio Bandung dengan dedikasi tinggi berdasarkan Tri Dharma Perguruan Tinggi "</h3>
+                </div>
             </a>
         </div>
         <a style="text-decoration:none; color:white;">
@@ -70,80 +65,55 @@
             </div>
         </a>
         <div class="row justify-content-center">
-            <div class="col-4">
+            <div class="col-12 col-xl-4">
                 <a style="text-decoration:none; color:white;">
-                    <div class="box-profil-page rounded shadow mt-4">
-                        <span>1</span>
+                    <div class="box-misi rounded shadow mt-4">
+                        <span>Pembentukan Karakter</span>
                     </div>
                     <div class="text-center mt-3">
-                        <h5>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Deserunt sequi nam quas maxime ea odio, et commodi consequuntur
-                            blanditiis illo obcaecati ut sapiente. Dolores, officia facilis
-                            eius impedit numquam repellendus!
-                        </h5>
+                        <h5>Merangkul Mahasiswa/i Universitas Nurtanio untuk meningkatkan Iman & Takwa kepada Tuhan YME</h5>
                     </div>
                 </a>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-xl-4">
                 <a style="text-decoration:none; color:white;">
-                <div class="box-profil-page rounded shadow mt-4">
-                        <span>2</span>
+                <div class="box-misi rounded shadow mt-4">
+                        <span>Koordinasi</span>
                     </div>
                     <div class="text-center mt-3">
-                        <h5>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Deserunt sequi nam quas maxime ea odio, et commodi consequuntur
-                            blanditiis illo obcaecati ut sapiente. Dolores, officia facilis
-                            eius impedit numquam repellendus!
-                        </h5>
+                        <h5>Menjalin komunikasi intensif dengan pimpinan Universitas untuk Nurtanio yg lebih berkembang lagi kedepannya</h5>
                     </div>
                 </a>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-xl-4">
                 <a style="text-decoration:none; color:white;">
-                <div class="box-profil-page rounded shadow mt-4">
-                        <span>3</span>
+                <div class="box-misi rounded shadow mt-4">
+                        <span>Pendidikan dan Pengajaran</span>
                     </div>
                     <div class="text-center mt-3">
-                        <h5>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Deserunt sequi nam quas maxime ea odio, et commodi consequuntur
-                            blanditiis illo obcaecati ut sapiente. Dolores, officia facilis
-                            eius impedit numquam repellendus!
-                        </h5>
+                        <h5>Mewujudkan keorganisasian yang berintergritas dan profesional dengan etos kerja tinggii<h5>
                     </div>
                 </a>
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-4">
+            <div class="col-12 col-xl-4">
                 <a style="text-decoration:none; color:white;">
-                <div class="box-profil-page rounded shadow mt-4">
-                        <span>4</span>
+                <div class="box-misi rounded shadow mt-4">
+                        <span>Pengabdian Kepada Masyarakat</span>
                     </div>
                     <div class="text-center mt-3">
-                        <h5>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Deserunt sequi nam quas maxime ea odio, et commodi consequuntur
-                            blanditiis illo obcaecati ut sapiente. Dolores, officia facilis
-                            eius impedit numquam repellendus!
-                        </h5>
+                        <h5>Membangun kontribusi dan peran aktif mahasiswa Universitas Nurtanio baik didalam maupun diluar kampus</h5>
                     </div>
                 </a>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-xl-4"> 
                 <a style="text-decoration:none; color:white;">
-                <div class="box-profil-page rounded shadow mt-4">
-                        <span>5</span>
+                <div class="box-misi rounded shadow mt-4">
+                        <span>Penelitian dan Pengembangan</span>
                     </div>
                     <div class="text-center mt-3">
-                        <h5>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Deserunt sequi nam quas maxime ea odio, et commodi consequuntur
-                            blanditiis illo obcaecati ut sapiente. Dolores, officia facilis
-                            eius impedit numquam repellendus!
-                        </h5>
+                        <h5>Mengedepankan sigergitas dalam pengembangan potensi minat dan bakat Universitas Nurtanio</h5>
                     </div>
                 </a>
             </div>
@@ -155,15 +125,15 @@
     <div class="row justify-content-center">
         <div class="col-12 text-beranda">
             <a style="text-decoration:none; color:white;">
-            <div class="box-struktur rounded shadow">
+                <div class="box-struktur rounded shadow">
                     <span>Struktur Kabinet</span>
                 </div>
             </a>
         </div>
-        <div class="col-15">
-            <div class="center mt-4">
+        <div class="col-12">
+            <div class=" img-struktur text-center shadow mt-4">
                 <img src="{{asset('guest/assets/images/beranda-1.jpg')}}" width="100%" height="620px"
-                style="border-radius: 20px" />
+                    style="border-radius: 20px" />
             </div>
         </div>
     </div>

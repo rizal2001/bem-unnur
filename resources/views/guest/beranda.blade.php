@@ -27,7 +27,7 @@
 </div>
 
 <div class="bg-content">
-    <img src="{{asset('guest/assets/images/bg.png')}}" />
+    <img src="{{asset('guest/assets/images/beranda-1.jpg')}}" />
 </div>
 
 <div class="container">
