@@ -9,18 +9,18 @@
 @section('content')
 <div class="icon-slider owl-theme owl-carousel slider-1 mt-5">
     <div class="carousel-inner">
-        <img src="{{asset('guest/assets/images/beranda-1.jpg')}}" width="100%" height="620px"
+        <img src="{{asset('guest/assets/images/beranda-1.jpg')}}" width="100%" height="580px"
             style="filter:brightness(25%);" />
         <div class="caption">Selamat Datang di Website BEM REMA UNNUR 2022 KABINET HUGO ELECTRA</div>
 
     </div>
     <div class="carousel-inner">
-        <img src="{{asset('guest/assets/images/beranda-2.jpeg')}}" width="100%" height="620px"
+        <img src="{{asset('guest/assets/images/beranda-2.jpeg')}}" width="100%" height="580px"
             style="filter:brightness(25%);" />
         <div class="caption">Selamat Datang di Website BEM REMA UNNUR 2022 KABINET HUGO ELECTRA</div>
     </div>
     <div class="carousel-inner">
-        <img src="{{asset('guest/assets/images/beranda-3.jfif')}}" width="100%" height="620px"
+        <img src="{{asset('guest/assets/images/beranda-3.jfif')}}" width="100%" height="580px"
             style="filter:brightness(25%);" />
         <div class="caption">Selamat Datang di Website BEM REMA UNNUR 2022 KABINET HUGO ELECTRA</div>
     </div>
@@ -35,21 +35,21 @@
         <div class="col-12 text-beranda">
             <h1>PROFIL</h1>
         </div>
-        <div class="col-4">
+        <div class="col-6 col-xl-4">
             <a href="{{url('/profil')}}" style="text-decoration:none; color:white;">
                 <div class="box-profil rounded shadow mt-3">
                     <span>Profil Kami</span>
                 </div>
             </a>
         </div>
-        <div class="col-4">
+        <div class="col-6 col-xl-4">
             <a href="{{url('/profil')}}" style="text-decoration:none; color:white;">
                 <div class="box-profil rounded shadow mt-3">
                     <span>Visi & Misi</span>
                 </div>
             </a>
         </div>
-        <div class="col-4">
+        <div class="col-6 col-xl-4">
             <a href="{{url('/profil')}}" style="text-decoration:none; color:white;">
                 <div class="box-profil rounded shadow mt-3">
                     <span>Struktur Kabinet</span>
@@ -75,72 +75,72 @@
             <div class="icon-slider owl-theme owl-carousel slider-2 mt-5">
                 <div class="carousel-inner-2">
                     <div class="row justify-content-center">
-                        <div class="col-3">
+                        <div class="col-12 col-xl-3 margin-card">
                             <div class="box-mentri shadow text-center">
                                 <img src="{{asset('guest/assets/images/kabinet.png')}}"
                                     style="width:70px; height:60px; margin:auto;" />
                                 <h4>Kementrian Pengembangan Minat Bakat Mahasiswa</h4>
-                                <p>Kabinet Ruang Temu BEM REMA UNNUR 2022</p>
+                                <p>KABINET HUGO ELECTRA BEM REMA UNNUR 2022</p>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-12 col-xl-3 margin-card">
                             <div class="box-mentri shadow text-center">
                                 <img src="{{asset('guest/assets/images/kabinet.png')}}"
                                     style="width:70px; height:60px; margin:auto;" />
                                 <h4>Kementrian Pengembangan Minat Bakat Mahasiswa</h4>
-                                <p>Kabinet Ruang Temu BEM REMA UNNUR 2022</p>
+                                <p>KABINET HUGO ELECTRA BEM REMA UNNUR 2022</p>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-12 col-xl-3 margin-card">
                             <div class="box-mentri shadow text-center">
                                 <img src="{{asset('guest/assets/images/kabinet.png')}}"
                                     style="width:70px; height:60px; margin:auto;" />
                                 <h4>Kementrian Pengembangan Minat Bakat Mahasiswa</h4>
-                                <p>Kabinet Ruang Temu BEM REMA UNNUR 2022</p>
+                                <p>KABINET HUGO ELECTRA BEM REMA UNNUR 2022</p>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-12 col-xl-3 margin-card">
                             <div class="box-mentri shadow text-center">
                                 <img src="{{asset('guest/assets/images/kabinet.png')}}"
                                     style="width:70px; height:60px; margin:auto;" />
                                 <h4>Kementrian Pengembangan Minat Bakat Mahasiswa</h4>
-                                <p>Kabinet Ruang Temu BEM REMA UNNUR 2022</p>
+                                <p>KABINET HUGO ELECTRA BEM REMA UNNUR 2022</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-inner-2">
                     <div class="row justify-content-center">
-                        <div class="col-3">
+                        <div class="col-12 col-xl-3 margin-card">
                             <div class="box-mentri shadow text-center">
                                 <img src="{{asset('guest/assets/images/kabinet.png')}}"
                                     style="width:70px; height:60px; margin:auto;" />
                                 <h4>Kementrian Pengembangan Minat Bakat Mahasiswa</h4>
-                                <p>Kabinet Ruang Temu BEM REMA UNNUR 2022</p>
+                                <p>KABINET HUGO ELECTRA BEM REMA UNNUR 2022</p>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-12 col-xl-3 margin-card">
                             <div class="box-mentri shadow text-center">
                                 <img src="{{asset('guest/assets/images/kabinet.png')}}"
                                     style="width:70px; height:60px; margin:auto;" />
                                 <h4>Kementrian Pengembangan Minat Bakat Mahasiswa</h4>
-                                <p>Kabinet Ruang Temu BEM REMA UNNUR 2022</p>
+                                <p>KABINET HUGO ELECTRA BEM REMA UNNUR 2022</p>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-12 col-xl-3 margin-card">
                             <div class="box-mentri shadow text-center">
                                 <img src="{{asset('guest/assets/images/kabinet.png')}}"
                                     style="width:70px; height:60px; margin:auto;" />
                                 <h4>Kementrian Pengembangan Minat Bakat Mahasiswa</h4>
-                                <p>Kabinet Ruang Temu BEM REMA UNNUR 2022</p>
+                                <p>KABINET HUGO ELECTRA BEM REMA UNNUR 2022</p>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-12 col-xl-3 margin-card">
                             <div class="box-mentri shadow text-center">
                                 <img src="{{asset('guest/assets/images/kabinet.png')}}"
                                     style="width:70px; height:60px; margin:auto;" />
                                 <h4>Kementrian Pengembangan Minat Bakat Mahasiswa</h4>
-                                <p>Kabinet Ruang Temu BEM REMA UNNUR 2022</p>
+                                <p>KABINET HUGO ELECTRA BEM REMA UNNUR 2022</p>
                             </div>
                         </div>
                     </div>
@@ -194,8 +194,8 @@
     </div>
 
     <div class="container">
-        <div class="d-flex justify-content-center mt-4">
-            <div class="col-4 img-news">
+        <div class="row justify-content-center mt-4">
+            <div class="col-12 col-xl-4 img-news margin-card">
                 <a href="{{url('/news')}}" style="text-decoration:none;">
                     <div class="image shadow">
                         <img src="{{asset('guest/assets/images/news-1.jpeg')}}" alt="Bricks" width="300px"
@@ -205,7 +205,7 @@
                 </a>
                 <p>Universitas Nurtanio Bandung Peduli - KKN dan Bakti Sosial</p>
             </div>
-            <div class="col-4 img-news">
+            <div class="col-12 col-xl-4 img-news margin-card">
                 <a href="{{url('/news')}}" style="text-decoration:none;">
                     <div class="image shadow">
                         <img src="{{asset('guest/assets/images/news-2.jpeg')}}" alt="Bricks" width="300px"
@@ -215,11 +215,11 @@
                 </a>
                 <p>Lomba IT Days 2022 BEM Fakultas Ilmu Komputer dan Informatika</p>
             </div>
-            <div class="col-4 img-news">
+            <div class="col-12 col-xl-4 img-news margin-card">
                 <a href="{{url('/news')}}" style="text-decoration:none;">
                     <div class="image shadow">
                         <img src="{{asset('guest/assets/images/news-3.jpeg')}}" alt="Bricks" width="300px"
-                            height="380px" />
+                            height="400px" />
                         <div class="image-text"></div>
                     </div>
                 </a>
@@ -227,8 +227,8 @@
             </div>
         </div>
 
-        <div class="d-flex justify-content-center mt-4">
-            <div class="col-4 img-news">
+        <div class="row justify-content-center mt-4">
+            <div class="col-12 col-xl-4 img-news margin-card">
                 <a href="{{url('/news')}}" style="text-decoration:none;">
                     <div class="image shadow">
                         <img src="{{asset('guest/assets/images/news-4.jpeg')}}" alt="Bricks" width="300px"
@@ -238,7 +238,7 @@
                 </a>
                 <p>Accounting Competition - Himpunan Mahasiswa Fakultas Akuntasi</p>
             </div>
-            <div class="col-4 img-news">
+            <div class="col-12 col-xl-4 img-news margin-card">
                 <a href="{{url('/news')}}" style="text-decoration:none;">
                     <div class="image shadow">
                         <img src="{{asset('guest/assets/images/news-5.jpeg')}}" alt="Bricks" width="300px"

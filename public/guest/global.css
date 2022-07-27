@@ -51,6 +51,73 @@ body {
 }
 
 
+/* menu */
+
+.icon-menu {
+    display: none;
+}
+
+.icon-menu-2 {
+    margin-left: 10px;
+    margin-top: 12px;
+    background-image: url("../guest/assets/images/icon-menu.png");
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+
+.icon-menu-2:hover {
+    background-image: url("../guest/assets/images/icon-menu-hover.png");
+}
+
+.icon-menu-hover {
+    margin-left: 10px;
+    margin-top: 40px;
+    background-image: url("../guest/assets/images/icon-close.png");
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+
+.icon-menu-hover:hover {
+    background-image: url("../guest/assets/images/icon-close-hover.png");
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #B22727;
+    z-index: 99999;
+    animation-name: menu;
+    animation-duration: 0.5s;
+}
+
+@keyframes menu {
+    0% {
+        left: 0px;
+        top: -400px;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+.menu-2 ul li {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.line-header {
+    margin-top: 10px;
+    border: 1px solid #fbd34473;
+}
+
+
 /* header */
 
 .active {
@@ -113,10 +180,11 @@ main {
     height: 100%;
     padding-bottom: 100px;
     z-index: 9999;
+    margin-top: 90px;
 }
 
 .slider-1 .carousel-inner {
-    height: 620px;
+    height: 580px;
 }
 
 .slider-1 .owl-prev,
@@ -148,17 +216,6 @@ main {
     z-index: 9999;
 }
 
-.textoverlay {
-    position: inherit;
-    margin-top: 300px;
-    color: #FFF;
-    font-size: 12px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    z-index: 99999;
-}
-
 .slider-1 .owl-stage {
     display: flex;
     align-items: center;
@@ -180,7 +237,7 @@ main {
 /* bg-content */
 
 .bg-content {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -199,10 +256,9 @@ main {
 /* profil */
 
 .text-beranda {
-    margin-top: 80px;
+    margin-top: 100px;
     text-align: center;
     color: white;
-    font-weight: 600;
 }
 
 .box-profil {
@@ -212,6 +268,10 @@ main {
     font-size: 25px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.box-profil:hover {
+    background-color: #ce7223;
 }
 
 .box-kementerian {
@@ -267,6 +327,68 @@ main {
 }
 
 
+/* Kementerian */
+
+.title-kementerian {
+    margin-top: 60px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.title-unit {
+    margin-top: 60px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.img-menteri {
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.img-menteri h4 {
+    position: relative;
+    bottom: 30px;
+}
+
+.img-menteri h5 {
+    position: relative;
+    bottom: 10px;
+}
+
+
+/* page profil */
+
+.box-profil-page {
+    width: 160px;
+    text-align: center;
+    background-color: #FF8D29;
+    font-size: 25px;
+    margin-top: -30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box-struktur {
+    width: 200px;
+    text-align: center;
+    background-color: #FF8D29;
+    font-size: 25px;
+    margin-top: -30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 /* ormawa */
 
 .text-ormawa {
@@ -313,6 +435,7 @@ main {
     width: 300px;
     height: 400px;
     margin: auto;
+    border-radius: 15px;
 }
 
 .image-text {
@@ -341,15 +464,118 @@ main {
 
 .img-news p {
     margin: auto;
-    width: 280px;
+    width: 285px;
     color: white;
     font-size: 20px;
+}
+
+
+/* ormawa */
+
+.ormawa {
+    height: 580px;
+}
+
+.ormawa .caption {
+    position: relative;
+    bottom: 440px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.title-ormawa {
+    margin-top: 60px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.img-ormawa {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.img-ormawa h5 {
+    color: white;
+    margin-top: 10px;
+}
+
+
+/* aspirasi */
+
+.title-aspirasi {
+    margin-top: 80px;
+    text-align: center;
+    color: white;
+}
+
+.bg-form {
+    background-color: white;
+    width: 70%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    border: 3px solid #FBD442;
+}
+
+.bg-form label {
+    color: #B22727;
+}
+
+.bg-form input {
+    border-color: #B22727;
+}
+
+.bg-form textarea {
+    border-color: #B22727;
+}
+
+.text-aspirasi {
+    color: #B22727;
+}
+
+.btn-aspirasi {
+    width: 100px;
+    color: white;
+    background-color: #B22727;
+}
+
+.btn-aspirasi:hover {
+    color: #FAD861;
+}
+
+
+/* news */
+
+.news h1 {
+    color: white;
+}
+
+.news h5 {
+    text-align: justify;
+    color: white;
+    margin-top: 20px;
+}
+
+.news img {
+    margin-top: 20px;
+    border-radius: 15px;
 }
 
 
 /* footer */
 
 footer {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: #B22727;
     width: 100%;
     height: 100%;
@@ -360,7 +586,11 @@ footer {
     border-radius: 20px;
 }
 
-.line-bottom {
+.line-bottom-1 {
+    display: none;
+}
+
+.line-bottom-2 {
     margin-top: 20px;
     border-bottom: 3px solid white;
 }

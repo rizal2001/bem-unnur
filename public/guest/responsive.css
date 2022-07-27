@@ -1,0 +1,53 @@
+@media only screen and (min-width: 400px) and (max-width: 575px) {
+    .icon-menu {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .slider-1 .caption {
+        bottom: 380px;
+        width: 350px;
+        font-size: 30px;
+    }
+    .margin-card {
+        margin-bottom: 30px;
+    }
+    .bg-ormawa img {
+        width: 60px;
+        height: 60px;
+    }
+    .text-footer {
+        text-align: center;
+        border: none;
+    }
+    .line-bottom-1 {
+        display: block;
+        margin-top: 20px;
+        border-bottom: 3px solid white;
+    }
+    .text-maps {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .text-maps iframe {
+        width: 350px;
+    }
+    .bg-form {
+        width: 90%;
+    }
+    .news img {
+        width: 300px;
+        height: 400px;
+    }
+    .news h1 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+    }
+    .news h5 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+    }
+}

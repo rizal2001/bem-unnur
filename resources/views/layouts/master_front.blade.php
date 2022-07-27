@@ -30,21 +30,24 @@
     <header>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-1 mt-2">
+                <div class="col-3 col-xl-1 mt-2">
                     <div class="logo-header">
                         <a href="{{url('/beranda')}}">
                             <img src="{{asset('guest/assets/images/logo.png')}}" width="80px" height="80px" />
                         </a>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-7 col-xl-3">
                     <div class="text-header mt-4">
                         <p>BEM Republik Mahasiswa</p>
                         <p>Universitas Nurtanio Bandung</p>
                         <p>KABINET HUGO ELECTRA</p>
                     </div>
                 </div>
-                <div class="col-8">
+                <div class="col-2 icon-menu mt-4">
+                    <div class="icon-menu-2" onclick="onClickMenu()"></div>
+                </div>
+                <div class="col-12 col-xl-8">
                     <div class="menu">
                         <ul class="nav">
                             <li>
@@ -76,12 +79,12 @@
     <footer>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-6 text-footer">
+                <div class="col-12 col-xl-6 text-footer">
                     <a href="{{url('https://www.unnur.ac.id/')}}" target="_blank" style="color: transparent;">
-                        <img src="{{asset('guest/assets/images/logo-unnur.png')}}" width="100px" height="100px" />
+                        <img src="{{asset('guest/assets/images/logo-unnur.png')}}" width="80px" height="80px" />
                     </a>
                     <a href="{{url('/beranda')}}">
-                        <img src="{{asset('guest/assets/images/kabinet.png')}}" width="120px" height="100px" />
+                        <img src="{{asset('guest/assets/images/kabinet.png')}}" width="100px" height="80px" />
                     </a>
                     <h4 class="mt-4">KABINET HUGO ELECTRA</h4>
                     <h4>Badan Eksekutif Mahasiswa Republik Mahasiswa</h4>
@@ -91,7 +94,8 @@
                         <img src="{{asset('guest/assets/images/ig.png')}}" width="40px" height="40px" />
                     </a>
                     <a href="{{url('https://www.youtube.com/channel/UCq1bg7t4hYfwEfqhoc8RHaQ')}}" target="_blank">
-                        <img src="{{asset('guest/assets/images/yt.png')}}" width="40px" height="40px" style="margin-left:5px;"/>
+                        <img src="{{asset('guest/assets/images/yt.png')}}" width="40px" height="40px"
+                            style="margin-left:5px;" />
                     </a>
                     <h4 class="mt-3">KONTAK</h4>
                     <p>E-mail : <a href="mailto:bemnurtaniobandung@gmail.com"
@@ -101,7 +105,8 @@
                             style="text-decoration:none; color:white;">085642394106</a></p>
                 </div>
                 </hr>
-                <div class="col-6 text-center text-maps">
+                <div class="line-bottom-1"></div>
+                <div class="col-12 col-xl-6 text-center text-maps">
                     <h3>SEKRETARIAT BEM REMA UNNUR</h3>
                     <iframe class="maps-footer shadow mt-3"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8678865234015!2d107.57701022695312!3d-6.906397399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x375989f7f7b103de!2zNsKwNTQnMjIuMiJTIDEwN8KwMzQnNTIuMiJF!5e0!3m2!1sid!2sid!4v1658831173446!5m2!1sid!2sid"
@@ -109,7 +114,7 @@
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-            <div class="line-bottom"></div>
+            <div class="line-bottom-2"></div>
 
             <div class="row justify-content-center mt-4">
                 <div class="col-12 copyright text-center text-light">
@@ -121,8 +126,88 @@
         </div>
     </footer>
 
+    <!-- menu -->
+    <div id="menu" class="d-none">
+        <div class="menu-container">
+            <div class="menu-2">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-3 mt-2">
+                            <div class="logo-header">
+                                <a href="{{url('/beranda')}}">
+                                    <img src="{{asset('guest/assets/images/logo.png')}}" width="80px" height="80px" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <div class="text-header mt-4">
+                                <p>BEM Republik Mahasiswa</p>
+                                <p>Universitas Nurtanio Bandung</p>
+                                <p>KABINET HUGO ELECTRA</p>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="icon-menu-hover" onclick="onClickCloseMenu()"></div>
+                        </div>
+                        <div class="col-12 line-header shadow"></div>
+                        <div class="col-12">
+                            <div class="menu-2">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <ul class="nav">
+                                            <li>
+                                                <a href="{{url('/beranda')}}">BERANDA</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <ul class="nav">
+                                            <li>
+                                                <a href="{{url('/profil')}}">PROFIL</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <ul class="nav">
+                                            <li>
+                                                <a href="{{url('/kementerian')}}">KEMENTERIAN</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <ul class="nav">
+                                            <li>
+                                                <a href="{{url('/ormawa')}}">ORMAWA</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <ul class="nav">
+                                            <li>
+                                                <a href="{{url('/aspirasi')}}">ASPIRASI</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     @yield('script')
     <script>
+    // menu href
     $(function($) {
         let url = window.location.href;
         $('.nav li a').each(function() {
@@ -132,16 +217,15 @@
         });
     });
 
-    // var myVar;
+    // menu
+    function onClickMenu() {
+        $('#menu').attr('class', '');
+    }
 
-    // function myFunction() {
-    //     myVar = setTimeout(showPage, 1000);
-    // }
-
-    // function showPage() {
-    //     document.getElementById("loader").style.display = "none";
-    //     document.getElementById("myDiv").style.display = "block";
-    // }
+    function onClickCloseMenu() {
+        $('#menu').attr('class', '');
+        $('#menu').addClass('d-none');
+    }
     </script>
 </body>
 
