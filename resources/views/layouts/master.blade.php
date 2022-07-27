@@ -343,9 +343,9 @@
                                         href="{{route('kategori.kementerian')}}">Kategori
                                         Kementerian</a>
                                 </li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">Jabatan</a>
+                                <li class="nav-item"> <a class="nav-link" href="{{route('jabatan')}}">Jabatan</a>
                                 </li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">Anggota</a>
+                                <li class="nav-item"> <a class="nav-link" href="{{route('kementerian')}}">Kementerian</a>
                                 </li>
                             </ul>
                         </div>
