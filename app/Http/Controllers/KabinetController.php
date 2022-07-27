@@ -101,6 +101,7 @@ class KabinetController extends Controller
         $data = Kabinet::find($id);
         File::delete('database/images/kabinet/logo/'.$data->gambar_logo);
         File::delete('database/images/kabinet/struktur/'.$data->gambar_struktur);
+        $data->misi()->delete();
         $data->delete();
 
         return redirect('/admin/kabinet')->with('message', 'Data Berhasil Dihapus');
