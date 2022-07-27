@@ -110,10 +110,17 @@ Route::group(['middleware' => 'auth'], function () {
 
         //Aspirasi
         Route::get('/aspirasi', [AspirasiController::class, 'index'])->name('aspirasi');
+        Route::get('/aspirasi/delete/{id}', [AspirasiController::class, 'delete'])->name('aspirasi.delete');
+        
 
          //Berita
         Route::get('/berita', [BeritaController::class, 'index'])->name('berita');
         Route::get('/berita/create', [BeritaController::class, 'create'])->name('berita.create');
+        Route::post('/berita/store', [BeritaController::class, 'store'])->name('berita.store');
+        Route::get('/berita/edit/{id}', [BeritaController::class, 'edit'])->name('berita.edit');
+        Route::put('/berita/update/{id}', [BeritaController::class, 'update'])->name('berita.update');
+        Route::get('/berita/delete/{id}', [BeritaController::class, 'delete'])->name('berita.delete');
+
         
          //Ormawa
          Route::get('/ormawa', [OrmawaController::class, 'index'])->name('ormawa');

@@ -53,15 +53,16 @@
                                 @foreach($data as $row)
                                 <tr>
                                     <td><?php echo $i++; ?></td>
-                                    <td></td>
-                                    <td></td>
+                                    <td>{{$row->judul}}</td>
+                                    <td>{!! $row->deskripsi !!}</td>
                                     <td class="text-center">
-                                        <a href="" class="btn btn-dark btn-sm btn-rounded btn-icon-prepend">Detail
-                                            <i class="ti-eye btn-icon-append"></i></a>
-                                        <!--<a href=""
+                                        <a href="{{route('berita.edit', ['id'=>$row->id] )}}"
+                                            class="btn btn-dark btn-sm btn-rounded btn-icon-prepend">Edit
+                                            <i class="ti-reload btn-icon-append"></i></a>
+                                        <a href="{{route('berita.delete', ['id'=>$row->id] )}}"
                                             class="btn btn-danger btn-rounded btn-icon-text"
                                             onclick="return confirm('Apakah anda yakin ?')">Delete
-                                            <i class="ti-trash btn-icon-append"></i></a>-->
+                                            <i class="ti-trash btn-icon-append"></i></a>
                                     </td>
                                 </tr>
                                 @endforeach
