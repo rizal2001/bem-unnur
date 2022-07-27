@@ -12,4 +12,8 @@ class Kabinet extends Model
     protected $primaryKey = 'id';
     protected $guarded = [];
     use HasFactory;
+    
+    public function misi(){
+        return $this->hasMany(Misi::class);
+    }
 }
