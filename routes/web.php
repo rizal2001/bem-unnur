@@ -5,11 +5,13 @@ use App\Http\Controllers\MisiController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\OrmawaController;
+use App\Http\Controllers\JabatanController;
 use App\Http\Controllers\KabinetController;
 use App\Http\Controllers\AspirasiController;
 use App\Http\Controllers\FakultasController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\CustomAuthController;
+use App\Http\Controllers\KementerianController;
 use App\Http\Controllers\KategoriKementerianController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 
@@ -108,12 +110,36 @@ Route::group(['middleware' => 'auth'], function () {
         Route::put('/kategori-kementerian/update/{id}', [KategoriKementerianController::class, 'update'])->name('kategori.kementerian.update');
         Route::get('/kategori-kementerian/delete/{id}', [KategoriKementerianController::class, 'delete'])->name('kategori.kementerian.delete');
 
+        //Jabatan
+        Route::get('/jabatan', [JabatanController::class, 'index'])->name('jabatan');
+        Route::get('/jabatan/create', [JabatanController::class, 'create'])->name('jabatan.create');
+        Route::post('/jabatan/store', [JabatanController::class, 'store'])->name('jabatan.store');
+        Route::get('/jabatan/edit/{id}', [JabatanController::class, 'edit'])->name('jabatan.edit');
+        Route::put('/jabatan/update/{id}', [JabatanController::class, 'update'])->name('jabatan.update');
+        Route::get('/jabatan/delete/{id}', [JabatanController::class, 'delete'])->name('jabatan.delete');
+
+        //Kementerian
+        Route::get('/kementerian', [KementerianController::class, 'index'])->name('kementerian');
+        Route::get('/kementerian/create', [KementerianController::class, 'create'])->name('kementerian.create');
+        Route::post('/kementerian/store', [KementerianController::class, 'store'])->name('kementerian.store');
+        Route::get('/kementerian/edit/{id}', [KementerianController::class, 'edit'])->name('kementerian.edit');
+        Route::put('/kementerian/update/{id}', [KementerianController::class, 'update'])->name('kementerian.update');
+        Route::get('/kementerian/delete/{id}', [KementerianController::class, 'delete'])->name('kementerian.delete');
+
+
         //Aspirasi
         Route::get('/aspirasi', [AspirasiController::class, 'index'])->name('aspirasi');
+        Route::get('/aspirasi/delete/{id}', [AspirasiController::class, 'delete'])->name('aspirasi.delete');
+        
 
          //Berita
         Route::get('/berita', [BeritaController::class, 'index'])->name('berita');
         Route::get('/berita/create', [BeritaController::class, 'create'])->name('berita.create');
+        Route::post('/berita/store', [BeritaController::class, 'store'])->name('berita.store');
+        Route::get('/berita/edit/{id}', [BeritaController::class, 'edit'])->name('berita.edit');
+        Route::put('/berita/update/{id}', [BeritaController::class, 'update'])->name('berita.update');
+        Route::get('/berita/delete/{id}', [BeritaController::class, 'delete'])->name('berita.delete');
+
         
          //Ormawa
          Route::get('/ormawa', [OrmawaController::class, 'index'])->name('ormawa');

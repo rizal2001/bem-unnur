@@ -25,23 +25,21 @@
                         </ul>
                     </div>
                     @endif
-                    <form action="" method="POST" enctype="multipart/form-data">
+                    <form action="{{route('berita.store')}}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="mb-3">
-                            <label for="inputname" class="form-label">Judul</label>
-                            <input type="text" name="name" class="form-control" id="inputname"
-                                aria-describedby="emailHelp" required>
+                            <label for="inputjudul" class="form-label">Judul</label>
+                            <input type="text" name="judul" class="form-control" id="inputjudul"
+                                aria-describedby="judul" required>
                         </div>
                         <div class="mb-3">
-                            <label for="inputpassword" class="form-label">Deskripsi</label>
-                            <!-- <input type="password" name="visi" class="form-control" id="inputpassword"
-                                aria-describedby="emailHelp" required> -->
-                            <textarea class="ckeditor form-control" style="height:200px;" name="visi"></textarea>
+                            <label for="inputdeskripsi" class="form-label">Deskripsi</label>
+                            <textarea class="ckeditor form-control" style="height:200px;" name="deskripsi"></textarea>
                         </div>
                         <div class="mb-3">
-                            <label for="inputlogo" class="form-label">Upload Foto Berita</label>
-                            <input type="file" name="berita" class="form-control" id="inputlogo"
-                                aria-describedby="emailHelp">
+                            <label for="inputfoto" class="form-label">Upload Foto Berita</label>
+                            <input type="file" name="gambar_berita" class="form-control" id="inputfoto"
+                                aria-describedby="inputfoto">
                         </div>
                         <button type="submit" class="btn btn-primary btn-sm btn-rounded">Submit</button>
                     </form>
