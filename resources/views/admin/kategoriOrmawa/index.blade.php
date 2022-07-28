@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'BEM UNNUR - Data Ormawa')
+@section('title', 'BEM UNNUR - Data Kategori Ormawa')
 
 @section('custom-css')
 <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" />
@@ -23,7 +23,7 @@
         <div class="col-lg-12 grid-margin marginResponsive">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">{{ __('Data Ormawa') }}</h4>
+                    <h4 class="card-title">{{ __('Data Kategori Ormawa') }}</h4>
                     @if(session()->has('message'))
                     <div class="alert alert-success">
                         {{ session()->get('message') }}
@@ -34,7 +34,7 @@
                         <table id="dataTable" class="table">
                             <thead>
                                 <tr>
-                                    <a href="{{route('ormawa.create')}}"
+                                    <a href="{{route('kategori.ormawa.create')}}"
                                         class="btn btn-primary btn-sm btn-rounded btn-icon-text marginCard">
                                         <i class="ti-upload btn-icon-prepend"></i>
                                         Create
@@ -43,7 +43,6 @@
                                 <tr>
                                     <th>No</th>
                                     <th>Nama</th>
-                                    <th>Kategori Ormawa</th>
                                     <th class="text-center">Aksi</th>
                                     <!-- <th>Delete</th> -->
                                 </tr>
@@ -54,14 +53,14 @@
                                 <tr>
                                     <td><?php echo $i++; ?></td>
                                     <td>{{$row->nama}}</td>
-                                    <td>{{$row->kategori_ormawa_id}}</td>
                                     <td class="text-center">
-                                        <a href="" class="btn btn-dark btn-sm btn-rounded btn-icon-prepend">Detail
-                                            <i class="ti-eye btn-icon-append"></i></a>
-                                        <!--<a href=""
+                                        <a href="{{route('kategori.ormawa.edit', ['id'=>$row->id] )}}"
+                                            class="btn btn-dark btn-sm btn-rounded btn-icon-prepend">Edit
+                                            <i class="ti-reload btn-icon-append"></i></a>
+                                        <a href="{{route('kategori.ormawa.delete', ['id'=>$row->id] )}}"
                                             class="btn btn-danger btn-rounded btn-icon-text"
                                             onclick="return confirm('Apakah anda yakin ?')">Delete
-                                            <i class="ti-trash btn-icon-append"></i></a>-->
+                                            <i class="ti-trash btn-icon-append"></i></a>
                                     </td>
                                 </tr>
                                 @endforeach
