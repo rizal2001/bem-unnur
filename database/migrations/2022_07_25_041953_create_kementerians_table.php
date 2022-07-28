@@ -19,7 +19,7 @@ return new class extends Migration
             $table->unsignedBigInteger('fakultas_id');
             $table->string('nama')->nullable();
             $table->text('link_medsos')->nullable();
-            $table->string('gamnbar')->nullable();
+            $table->string('gambar')->nullable();
             $table->timestamps();
 
             $table->foreign('jabatan_id')->references('id')->on('t_jabatan');
