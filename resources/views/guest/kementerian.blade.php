@@ -1,6 +1,7 @@
 @extends('layouts.master_front')
 @section('title', 'KEMENTERIAN - BEM REMA UNNUR')
 @section('custom-css')
+
 @endsection
 
 @section('content')
@@ -40,7 +41,7 @@
         </div>
     </div>
     <div class="row justify-content-center">
-    <div class="col-12 col-xl-3 text-light text-center img-menteri">
+        <div class="col-12 col-xl-3 text-light text-center img-menteri">
             <a href="{{url('https://www.instagram.com/aditiagusti13/')}}" target="_blank">
                 <img src="{{asset('guest/assets/images/Foto Presma.png')}}" width="280px" height="280px" />
             </a>
@@ -80,7 +81,7 @@
         </div>
     </div>
     <div class="row justify-content-center">
-    <div class="col-12 col-xl-3 text-light text-center img-menteri">
+        <div class="col-12 col-xl-3 text-light text-center img-menteri">
             <a href="{{url('https://www.instagram.com/aditiagusti13/')}}" target="_blank">
                 <img src="{{asset('guest/assets/images/Foto Presma.png')}}" width="280px" height="280px" />
             </a>
@@ -113,6 +114,5 @@
             <h5>Wakil Presiden Mahasiswa</h5>
         </div>
     </div>
-
-
-    @endsection
+</div>
+@endsection

@@ -23,9 +23,9 @@
 <body>
     <!-- backsound -->
     <div class="position-absolute">
-        <iframe width="1" height="1"
-            src="https://www.youtube.com/embed/oAcHizN0tqQ?autoplay=1&&playlist=oAcHizN0tqQ&loop=1" frameborder="0"
-            allowfullscreen style="opacity:0;"></iframe>
+        <iframe width="1px" height="1px"
+            src="https://www.youtube.com/embed/oAcHizN0tqQ?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1"
+            frameborder="0" allow="autoplay; encrypted-media" style="opacity:0;"></iframe>
     </div>
 
     <header>
