@@ -32,6 +32,7 @@
                         <div class="mb-3">
                             <label for="inputkategoriKementerianId" class="form-label">Kategori Kementerian</label>
                             <select type="text" name="kategori_kementerian_id" class="form-control">
+                                <option value="{{$data->kategori_kementerian_id}}">{{$data->kategoriKementerian->nama}}</option>
                                 @foreach($kategori as $kategoris)
                                 <option value="{{$kategoris->id}}">{{$kategoris->nama}}</option>
                                 @endforeach
