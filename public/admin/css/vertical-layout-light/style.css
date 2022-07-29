@@ -31139,6 +31139,8 @@ div.tagsinput span.tag a {
 }
 
 .navbar .navbar-brand-wrapper .navbar-brand img {
+    position: relative;
+    left: 15px;
     max-width: 100%;
     height: 70px;
     margin: auto;
@@ -31542,8 +31544,12 @@ div.tagsinput span.tag a {
     margin-top: 0;
     right: 0;
     left: auto;
-    top: 70px;
     padding-top: 0;
+    background: #B22727;
+}
+
+.sidebar-dark .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .navbar-dropdown {
+    background: #232227;
 }
 
 .rtl .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .navbar-dropdown {
@@ -31555,8 +31561,21 @@ div.tagsinput span.tag a {
     margin-bottom: 0;
     padding: 5px 25px;
     cursor: pointer;
-    border-bottom: 1px solid #dee2e6;
     line-height: 1;
+    background: #B22727;
+}
+
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .navbar-dropdown .dropdown-item:hover {
+    background: #c92c2c;
+}
+
+.sidebar-dark .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .navbar-dropdown .dropdown-item {
+    background: #232227;
+}
+
+.sidebar-dark .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .navbar-dropdown .dropdown-item:hover {
+    background: #302e35;
+    ;
 }
 
 .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .navbar-dropdown .dropdown-item i {
@@ -33954,6 +33973,28 @@ div.tagsinput span.tag a {
     #settings-trigger {
         display: none;
     }
+}
+
+
+/* scroll */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #666;
+    border: 2px solid #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8d8d8d;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
 }
 
 

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="{{asset('admin/vendors/typicons/typicons.css')}}">
     <link rel="stylesheet" href="{{asset('admin/vendors/simple-line-icons/css/simple-line-icons.css')}}">
     <link rel="stylesheet" href="{{asset('admin/vendors/css/vendor.bundle.base.css')}}">
-
+    <link href="https://fonts.googleapis.com/css2?family=Glory&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -78,18 +78,18 @@
                     </li>
                     <li class="nav-item dropdown d-lg-block user-dropdown">
                         <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img class="img-xs rounded-circle" src="{{asset('admin/images/faces/face8.jpg')}}"
+                            <img class="img-xs rounded-circle" src="{{asset('admin/images/logo.png')}}"
                                 alt="Profile image"> </a>
                         <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
                             <div class="dropdown-header text-center">
-                                <img class="img-md rounded-circle" src="{{asset('admin/images/faces/face8.jpg')}}"
-                                    alt="Profile image">
-                                <p class="mb-1 mt-3 font-weight-semibold">{{auth()->user()->name}}</p>
-                                <p class="fw-light text-muted mb-0">{{auth()->user()->email}}</p>
+                                <img class="img-md rounded-circle" src="{{asset('admin/images/logo.png')}}"
+                                    alt="Profile image" width="40px" height="40px">
+                                <p class="mb-1 mt-3 font-weight-semibold text-capitalize fw-bold text-light">{{auth()->user()->name}}</p>
+                                <p class="text-light mb-0">{{auth()->user()->email}}</p>
                             </div>
-                            <a class="dropdown-item" href="{{route('logout')}}"
+                            <a class="dropdown-item text-light" href="{{route('logout')}}"
                                 onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i
-                                    class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
+                                    class="dropdown-item-icon mdi mdi-power text-light me-2" style="margin-left:10px;"></i>Sign Out</a>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                 {{ csrf_field() }}
                             </form>

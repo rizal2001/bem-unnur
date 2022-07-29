@@ -22,14 +22,22 @@
 <body>
 
     <div class="limiter">
-        <div class="container-login100" style="background-image: url({{ URL::asset('guest/assets/images/beranda-1.jpg')}});">
-            <div class="wrap-login100 p-t-30 p-b-50">
-                <span class="login100-form-title p-b-41">
-                    Account Login
-                </span>
-                <form class="login100-form validate-form p-b-33 p-t-5" method="POST"
+        <div class="container-login100"
+            style="background-image: url({{ URL::asset('guest/assets/images/beranda-1.jpg')}});">
+            <div class="wrap-login100 p-t-30 p-b-50 shadow">
+
+                <form class="login100-form validate-form p-b-33 p-t-5 w-100 shadow" method="POST"
                     action="{{route('login.proccess')}}">
                     @csrf
+                    <span class="login100-form-title text-dark p-b-41 mt-3">
+                        Account Login
+                    </span>
+                    <div class="text-center">
+                        <a href="{{url('/beranda')}}">
+                            <img src="{{asset('guest/assets/images/logo.png')}}" width="100px" height="100px" />
+                        </a>
+
+                    </div>
                     <div class="wrap-input100 validate-input" data-validate="Enter email">
                         <input class="input100" type="email" name="email" placeholder="Email">
                         <span class="focus-input100" data-placeholder="&#xe82a;"></span>
