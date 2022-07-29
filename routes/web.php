@@ -13,6 +13,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\CustomAuthController;
 use App\Http\Controllers\KementerianController;
 use App\Http\Controllers\KategoriKementerianController;
+use App\Http\Controllers\KategoriOrmawaController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 
 /*
@@ -110,6 +111,14 @@ Route::group(['middleware' => 'auth'], function () {
         Route::put('/kategori-kementerian/update/{id}', [KategoriKementerianController::class, 'update'])->name('kategori.kementerian.update');
         Route::get('/kategori-kementerian/delete/{id}', [KategoriKementerianController::class, 'delete'])->name('kategori.kementerian.delete');
 
+        //Kategori Ormawa
+        Route::get('/kategori-ormawa', [KategoriOrmawaController::class, 'index'])->name('kategori.ormawa');
+        Route::get('/kategori-ormawa/create', [KategoriOrmawaController::class, 'create'])->name('kategori.ormawa.create');
+        Route::post('/kategori-ormawa/store', [KategoriOrmawaController::class, 'store'])->name('kategori.ormawa.store');
+        Route::get('/kategori-ormawa/edit/{id}', [KategoriOrmawaController::class, 'edit'])->name('kategori.ormawa.edit');
+        Route::put('/kategori-ormawa/update/{id}', [KategoriOrmawaController::class, 'update'])->name('kategori.ormawa.update');
+        Route::get('/kategori-ormawa/delete/{id}', [KategoriOrmawaController::class, 'delete'])->name('kategori.ormawa.delete');
+
         //Jabatan
         Route::get('/jabatan', [JabatanController::class, 'index'])->name('jabatan');
         Route::get('/jabatan/create', [JabatanController::class, 'create'])->name('jabatan.create');
@@ -129,6 +138,7 @@ Route::group(['middleware' => 'auth'], function () {
 
         //Aspirasi
         Route::get('/aspirasi', [AspirasiController::class, 'index'])->name('aspirasi');
+        Route::post('/aspirasi/store', [AspirasiController::class, 'store'])->name('aspirasi.store');
         Route::get('/aspirasi/delete/{id}', [AspirasiController::class, 'delete'])->name('aspirasi.delete');
         
 
@@ -144,5 +154,10 @@ Route::group(['middleware' => 'auth'], function () {
          //Ormawa
          Route::get('/ormawa', [OrmawaController::class, 'index'])->name('ormawa');
          Route::get('/ormawa/create', [OrmawaController::class, 'create'])->name('ormawa.create');
+         Route::post('/ormawa/store', [OrmawaController::class, 'store'])->name('ormawa.store');
+         Route::get('/ormawa/edit/{id}', [OrmawaController::class, 'edit'])->name('ormawa.edit');
+         Route::put('/ormawa/update/{id}', [OrmawaController::class, 'update'])->name('ormawa.update');
+         Route::get('/ormawa/delete/{id}', [OrmawaController::class, 'delete'])->name('ormawa.delete');
+ 
     });
 });
