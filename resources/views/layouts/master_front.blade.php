@@ -31,14 +31,14 @@
     <header>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-3 col-xl-1 mt-2">
+                <div class="col-3 col-md-2 col-xl-1 mt-2">
                     <div class="logo-header">
                         <a href="{{url('/beranda')}}">
                             <img src="{{asset('guest/assets/images/logo.png')}}" width="80px" height="80px" />
                         </a>
                     </div>
                 </div>
-                <div class="col-7 col-xl-3">
+                <div class="col-7 col-md-2 col-xl-3">
                     <div class="text-header mt-4">
                         <p>BEM Republik Mahasiswa</p>
                         <p>Universitas Nurtanio Bandung</p>
@@ -48,7 +48,7 @@
                 <div class="col-2 icon-menu mt-4">
                     <div class="icon-menu-2" onclick="onClickMenu()"></div>
                 </div>
-                <div class="col-12 col-xl-8">
+                <div class="col-12 col-md-8 col-xl-8">
                     <div class="menu">
                         <ul class="nav">
                             <li>
@@ -91,7 +91,7 @@
                     <h4>Badan Eksekutif Mahasiswa Republik Mahasiswa</h4>
                     <h4>Univesitas Nurtanio Bandung 2022</h4>
                     <h4 class="mt-4">MEDIA SOSIAL</h4>
-                    <a href="{{url('https://www.instagram.com/bemnurtanio/')}}" target="_blank">
+                    <a href="{{url('https://www.instagram.com/bemnurtanio/')}}" target="_blank" style="color: transparent;">
                         <img src="{{asset('guest/assets/images/ig.png')}}" width="40px" height="40px" />
                     </a>
                     <a href="{{url('https://www.youtube.com/channel/UCq1bg7t4hYfwEfqhoc8RHaQ')}}" target="_blank">
@@ -102,7 +102,7 @@
                     <p>E-mail : <a href="mailto:bemnurtaniobandung@gmail.com"
                             style="text-decoration:none; color:white;">bemnurtaniobandung@gmail.com</a>
                     </p>
-                    <p>WhatsApp : <a href="{{url('https://wa.me/+6285642394106')}}" target="_blank"
+                    <p style="margin-top:-10px;">WhatsApp : <a href="{{url('https://wa.me/+6285642394106')}}" target="_blank"
                             style="text-decoration:none; color:white;">085642394106</a></p>
                 </div>
                 </hr>

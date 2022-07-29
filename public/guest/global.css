@@ -288,7 +288,7 @@ main {
 }
 
 .box-profil {
-    width: 200px;
+    width: 180px;
     text-align: center;
     background-color: #FF8D29;
     font-size: 25px;
@@ -311,7 +311,7 @@ main {
     padding: 10px;
 }
 
-.box-kementerian h3 {
+.box-kementerian h4 {
     font-weight: 600;
 }
 
@@ -326,6 +326,7 @@ main {
 }
 
 .box-mentri p {
+    margin-bottom: 0px;
     color: #8e1d1e;
     font-weight: 600;
 }
@@ -472,6 +473,7 @@ main {
     background-color: #B22727;
     border-radius: 20px;
     color: white;
+    font-weight: 600;
 }
 
 .btn-showall button:hover {
@@ -600,7 +602,7 @@ main {
     width: 280px;
     text-align: center;
     background-color: #FF8D29;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: -30px;
     margin-left: auto;
     margin-right: auto;
