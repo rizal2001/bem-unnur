@@ -62,6 +62,7 @@ Route::get('/ormawa', function () {
 Route::get('/aspirasi', function () {
     return view('guest.aspirasi');
 });
+Route::post('/aspirasi/store', [AspirasiController::class, 'store'])->name('aspirasi.store');
 
 // login
 Route::get('/login-admin', [AuthenticatedSessionController::class, 'create'])->name('login');
@@ -138,7 +139,6 @@ Route::group(['middleware' => 'auth'], function () {
 
         //Aspirasi
         Route::get('/aspirasi', [AspirasiController::class, 'index'])->name('aspirasi');
-        Route::post('/aspirasi/store', [AspirasiController::class, 'store'])->name('aspirasi.store');
         Route::get('/aspirasi/delete/{id}', [AspirasiController::class, 'delete'])->name('aspirasi.delete');
         
 

@@ -34,12 +34,13 @@
                         </div>
                         <div class="mb-3">
                             <label for="inputdeskripsi" class="form-label">Deskripsi</label>
-                            <textarea class="ckeditor form-control" style="height:200px;" name="deskripsi"></textarea>
+                            <textarea class="ckeditor form-control" style="height:200px;" name="deskripsi"
+                                required></textarea>
                         </div>
                         <div class="mb-3">
                             <label for="inputfoto" class="form-label">Upload Foto Berita</label>
                             <input type="file" name="gambar_berita" class="form-control" id="inputfoto"
-                                aria-describedby="inputfoto">
+                                aria-describedby="inputfoto" accept="image/*">
                         </div>
                         <button type="submit" class="btn btn-primary btn-sm btn-rounded">Submit</button>
                     </form>
