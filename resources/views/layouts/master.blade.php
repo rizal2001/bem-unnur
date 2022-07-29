@@ -66,7 +66,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
                         <h1 class="welcome-text">Selamat Datang, <span
-                                class="text-black fw-bold">{{auth()->user()->name}}</span></h1>
+                                class="text-black fw-bold text-capitalize">{{auth()->user()->name}}</span></h1>
                     </li>
                 </ul>
                 <ul class="navbar-nav ms-auto">
@@ -76,7 +76,7 @@
                             <input type="search" class="form-control" placeholder="Search Here" title="Search here">
                         </form>
                     </li>
-                    <li class="nav-item dropdown d-none d-lg-block user-dropdown">
+                    <li class="nav-item dropdown d-lg-block user-dropdown">
                         <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                             <img class="img-xs rounded-circle" src="{{asset('admin/images/faces/face8.jpg')}}"
                                 alt="Profile image"> </a>
@@ -111,7 +111,7 @@
                     <i class="settings-close ti-close"></i>
                     <p class="settings-heading">SIDEBAR SKINS</p>
                     <div class="sidebar-bg-options selected" id="sidebar-light-theme">
-                        <div class="img-ss rounded-circle bg-light border me-3"></div>Light
+                        <div class="img-ss rounded-circle bg-bem border me-3"></div>Default
                     </div>
                     <div class="sidebar-bg-options" id="sidebar-dark-theme">
                         <div class="img-ss rounded-circle bg-dark border me-3"></div>Dark
@@ -299,8 +299,8 @@
                             <span class="menu-title">Dashboard</span>
                         </a>
                     </li>
-                    <li class="nav-item nav-category">Master Data</li>
-                    <li class="nav-item">
+                    <li class="nav-item nav-category text-center">Master Data</li>
+                    <li class="nav-item mt-2">
                         <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false"
                             aria-controls="ui-basic">
                             <i class="menu-icon mdi mdi-floor-plan"></i>
