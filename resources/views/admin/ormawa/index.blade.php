@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'BEM UNNUR - Data Berita')
+@section('title', 'BEM UNNUR - Data Ormawa')
 
 @section('custom-css')
 <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" />
@@ -23,7 +23,7 @@
         <div class="col-lg-12 grid-margin marginResponsive">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">{{ __('Data Berita') }}</h4>
+                    <h4 class="card-title">{{ __('Data Ormawa') }}</h4>
                     @if(session()->has('message'))
                     <div class="alert alert-success">
                         {{ session()->get('message') }}
@@ -34,7 +34,7 @@
                         <table id="dataTable" class="table">
                             <thead>
                                 <tr>
-                                    <a href="{{route('berita.create')}}"
+                                    <a href="{{route('ormawa.create')}}"
                                         class="btn btn-primary btn-sm btn-rounded btn-icon-text marginCard">
                                         <i class="ti-upload btn-icon-prepend"></i>
                                         Create
@@ -42,8 +42,8 @@
                                 </tr>
                                 <tr>
                                     <th>No</th>
-                                    <th>Judul</th>
-                                    <th>Deskripsi</th>
+                                    <th>Nama</th>
+                                    <th>Kategori Ormawa</th>
                                     <th class="text-center">Aksi</th>
                                     <!-- <th>Delete</th> -->
                                 </tr>
@@ -53,8 +53,8 @@
                                 @foreach($data as $row)
                                 <tr>
                                     <td><?php echo $i++; ?></td>
-                                    <td>{{$row->judul}}</td>
-                                    <td>{{$row->deskripsi}}</td>
+                                    <td>{{$row->nama}}</td>
+                                    <td>{{$row->kategori_ormawa_id}}</td>
                                     <td class="text-center">
                                         <a href="" class="btn btn-dark btn-sm btn-rounded btn-icon-prepend">Detail
                                             <i class="ti-eye btn-icon-append"></i></a>

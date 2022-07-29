@@ -5,7 +5,7 @@
 
 @section('content')
 <div class="bg-content">
-    <img src="{{asset('guest/assets/images/bg.png')}}" />
+    <img src="{{asset('guest/assets/images/beranda-1.jpg')}}" />
 </div>
 
 <div class="container">
@@ -14,13 +14,14 @@
             <h1>ASPIRASI MAHASISWA</h1>
         </div>
         <div class="col-12 bg-form shadow mt-4">
-            <form>
+            <form action="{{route('aspirasi.store')}}" method="POST" enctype="multipart/form-data">
+                @csrf
                 <div class="text-aspirasi text-center">
                     <h3>FORM ASPIRASI</h3>
                 </div>
                 <div class="form-group mt-3">
                     <label for="exampleInputName">Nama</label>
-                    <input id="Name" class="form-control" placeholder="Masukan Nama" type="text" name="Name"
+                    <input id="Name" class="form-control" placeholder="Masukan Nama" type="text" name="nama"
                         :value="old('Name')" required autofocus />
                 </div>
                 <div class="form-group mt-3">
@@ -31,7 +32,7 @@
                 <div class="form-group mt-3">
                     <label for="exampleInputAspirasi1">Aspiarsi</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"
-                        placeholder="Masukan Aspirasimu"></textarea>
+                        placeholder="Masukan Aspirasimu" name="aspirasi"></textarea>
                 </div>
                 <div class="mt-4 text-center">
                     <button type="submit" class="btn btn-aspirasi rounded-pill">KIRIM</button>

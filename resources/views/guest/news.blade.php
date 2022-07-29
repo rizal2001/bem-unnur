@@ -4,6 +4,10 @@
 @endsection
 
 @section('content')
+<div class="bg-content">
+    <img src="{{asset('guest/assets/images/beranda-1.jpg')}}" />
+</div>
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-12 text-center news mt-5">

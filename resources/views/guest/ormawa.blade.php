@@ -16,6 +16,10 @@
         Bandung</div>
 </div>
 
+<div class="bg-content">
+    <img src="{{asset('guest/assets/images/beranda-1.jpg')}}" />
+</div>
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-12 title-ormawa">
@@ -28,10 +32,6 @@
             <h5>Badan Eksekutif Mahasiswa Republik Mahasiswa Universitas Nurtanio Bandung</h5>
         </div>
     </div>
-
-<div class="bg-content">
-    <img src="{{asset('guest/assets/images/bg.png')}}" />
-</div>
 
     <div class="row justify-content-center">
         <div class="col-12 title-ormawa">

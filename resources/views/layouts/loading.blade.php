@@ -13,6 +13,10 @@
 </head>
 
 <body style="background-color: #B22727;">
+    <div class="bg-content">
+        <img src="{{asset('guest/assets/images/beranda-1.jpg')}}" />
+    </div>
+
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-2 loading-page">

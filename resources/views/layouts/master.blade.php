@@ -345,7 +345,8 @@
                                 </li>
                                 <li class="nav-item"> <a class="nav-link" href="{{route('jabatan')}}">Jabatan</a>
                                 </li>
-                                <li class="nav-item"> <a class="nav-link" href="{{route('kementerian')}}">Kementerian</a>
+                                <li class="nav-item"> <a class="nav-link"
+                                        href="{{route('kementerian')}}">Kementerian</a>
                                 </li>
                             </ul>
                         </div>
@@ -359,7 +360,7 @@
                         </a>
                         <div class="collapse" id="tables">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="pages/tables/basic-table.html">
+                                <li class="nav-item"> <a class="nav-link" href="{{route('kategori.ormawa')}}">
                                         Kategori Ormawa
                                     </a></li>
                                 <li class="nav-item"> <a class="nav-link" href="{{route('ormawa')}}">
