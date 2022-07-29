@@ -27,7 +27,7 @@
         </div>
     </div>
     <div class="row justify-content-center">
-        <div class="col-6 col-xl-3 img-ormawa">
+        <div class="col-6 col-xl-3 img-ormawa img-circle">
             <img src="{{asset('guest/assets/images/logo.png')}}" width="150px" height="150px" />
             <h5>Badan Eksekutif Mahasiswa Republik Mahasiswa Universitas Nurtanio Bandung</h5>
         </div>
