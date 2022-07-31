@@ -16,6 +16,8 @@ use App\Http\Controllers\KategoriKementerianController;
 use App\Http\Controllers\KategoriOrmawaController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -62,6 +64,7 @@ Route::get('/ormawa', function () {
 Route::get('/aspirasi', function () {
     return view('guest.aspirasi');
 });
+
 Route::post('/aspirasi/store', [AspirasiController::class, 'store'])->name('aspirasi.store');
 
 // login
