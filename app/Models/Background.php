@@ -12,7 +12,7 @@ class Background extends Model
     protected $primaryKey = 'id';
     protected $guarded = [];
 
-    public function background(){
+    public function halaman(){
         return $this->belongsTo(Halaman::class);
     }
 }

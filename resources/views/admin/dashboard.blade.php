@@ -21,7 +21,7 @@
                         <h3>Jumlah Pengunjung Web</h3>
                         <img class="mt-3" src="{{asset('guest/assets/images/pengunjung.png')}}" width="280px"
                             height="200px" />
-                        <h3 class="mt-3">200 Pengunjung</h3>
+                        <h3 class="mt-3">{{$jumlahVisitor}} Pengunjung</h3>
                     </div>
                 </div>
             </div>
@@ -34,7 +34,7 @@
                             <h3>Jumlah Aspirasi</h3>
                             <img class="mt-3" src="{{asset('guest/assets/images/aspirasi.png')}}" width="200px"
                                 height="200px" />
-                            <h3 class="mt-3">200 Aspirasi</h3>
+                            <h3 class="mt-3">{{$jumlahAspirasi}} Aspirasi</h3>
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
                             <h3>Jumlah Ormawa</h3>
                             <img class="mt-3" src="{{asset('guest/assets/images/ormawa.png')}}" width="200px"
                                 height="200px" />
-                            <h3 class="mt-3">200 Ormawa</h3>
+                            <h3 class="mt-3">{{$jumlahOrmawa}} Ormawa</h3>
                         </div>
                     </div>
                 </div>

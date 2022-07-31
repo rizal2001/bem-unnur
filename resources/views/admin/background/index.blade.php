@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'BEM UNNUR - Data Kategori Ormawa')
+@section('title', 'BEM UNNUR - Data Background')
 
 @section('custom-css')
 <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" />
@@ -23,7 +23,7 @@
         <div class="col-lg-12 grid-margin marginResponsive">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">{{ __('Data Kategori Ormawa') }}</h4>
+                    <h4 class="card-title">{{ __('Data Background') }} {{$halaman->menu}}</h4>
                     @if(session()->has('message'))
                     <div class="alert alert-success">
                         {{ session()->get('message') }}
@@ -34,33 +34,37 @@
                         <table id="dataTable" class="table">
                             <thead>
                                 <tr>
-                                    <!-- <a href="{{route('kategori.ormawa.create')}}"
+                                    <a href="{{route('background.create', ['halamanId'=>$halaman->id])}}"
                                         class="btn btn-primary btn-sm btn-rounded btn-icon-text marginCard">
                                         <i class="ti-upload btn-icon-prepend"></i>
                                         Create
-                                    </a> -->
+                                    </a>
                                 </tr>
                                 <tr>
                                     <th>No</th>
-                                    <th>Nama</th>
-                                    <!-- <th class="text-center">Aksi</th> -->
-                                    <!-- <th>Delete</th> -->
+                                    <th>Gambar</th>
+                                    <th>Created At</th>
+                                    <th>Updated At</th>
+                                    <th class="text-center">Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php $i=1; ?>
-                                @foreach($data as $row)
+                                @foreach($background as $row)
                                 <tr>
                                     <td><?php echo $i++; ?></td>
-                                    <td>{{$row->nama}}</td>
+                                    <td><img src="{{asset('database/images/background/'.$row->gambar)}}" width="250"
+                                    height="250" /></td>
+                                    <td>{{$row->created_at}}</td>
+                                    <td>{{$row->updated_at}}</td>
                                     <td class="text-center">
-                                        <!-- <a href="{{route('kategori.ormawa.edit', ['id'=>$row->id] )}}"
+                                        <a href="{{route('background.edit', ['halamanId'=>$row->halaman_id, 'id'=>$row->id])}}"
                                             class="btn btn-dark btn-sm btn-rounded btn-icon-prepend">Edit
-                                            <i class="ti-reload btn-icon-append"></i></a> -->
-                                        <!-- <a href="{{route('kategori.ormawa.delete', ['id'=>$row->id] )}}"
+                                            <i class="ti-reload btn-icon-append"></i></a>
+                                        <a href="{{route('background.delete', ['halamanId'=>$row->halaman_id, 'id'=>$row->id])}}"
                                             class="btn btn-danger btn-rounded btn-icon-text"
                                             onclick="return confirm('Apakah anda yakin ?')">Delete
-                                            <i class="ti-trash btn-icon-append"></i></a> -->
+                                            <i class="ti-trash btn-icon-append"></i></a>
                                     </td>
                                 </tr>
                                 @endforeach
