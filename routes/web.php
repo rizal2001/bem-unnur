@@ -18,6 +18,8 @@ use App\Http\Controllers\KategoriOrmawaController;
 use App\Http\Controllers\KategoriKementerianController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
