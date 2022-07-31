@@ -26,7 +26,7 @@
             <h4>Presiden Mahasiswa</h4>
         </div>
         <div class="col-12 col-xl-6 text-light text-center img-menteri">
-            <a href="{{url('https://www.instagram.com/aditiagusti13/')}}" target="_blank">
+            <a href="{{url('https://www.instagram.com/enuibnu_/')}}" target="_blank">
                 <img src="{{asset('guest/assets/images/Foto Presma.png')}}" width="500px" height="500px">
             </a>
             <h4>Girang Nurul Huda</h4>
