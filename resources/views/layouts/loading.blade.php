@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BEM REMA UNNUR - KABINET HUGO ELECTRA</title>
     <link rel="shortcut icon" href="{{asset('logo.png')}}" />
+    <link href="https://fonts.googleapis.com/css2?family=Glory&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="{{asset('guest/assets/bootstrap/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('guest/global.css')}}">
     <link rel="stylesheet" href="{{asset('guest/responsive.css')}}">

@@ -39,7 +39,7 @@ class JabatanController extends Controller
     }
     public function edit($id)
     {
-        $data = Jabatan::find($id);
+        $data = Jabatan::with(['kategoriKementerian'])->find($id);
         $kategori = KategoriKementerian::all();
         return view('admin.jabatan.edit', compact(['data', 'kategori']));
     }

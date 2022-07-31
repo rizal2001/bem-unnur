@@ -9,18 +9,18 @@
 @section('content')
 <div class="icon-slider owl-theme owl-carousel slider-1 mt-5">
     <div class="carousel-inner">
-        <img src="{{asset('guest/assets/images/beranda-1.jpg')}}" width="100%" height="580px"
+        <img src="{{asset('guest/assets/images/beranda-1.jpg')}}" width="100%" height="600px"
             style="filter:brightness(25%);" />
         <div class="caption">Selamat Datang di Website BEM REMA UNNUR 2022 KABINET HUGO ELECTRA</div>
 
     </div>
     <div class="carousel-inner">
-        <img src="{{asset('guest/assets/images/beranda-2.jpeg')}}" width="100%" height="580px"
+        <img src="{{asset('guest/assets/images/beranda-2.jpeg')}}" width="100%" height="600px"
             style="filter:brightness(25%);" />
         <div class="caption">Selamat Datang di Website BEM REMA UNNUR 2022 KABINET HUGO ELECTRA</div>
     </div>
     <div class="carousel-inner">
-        <img src="{{asset('guest/assets/images/beranda-3.jfif')}}" width="100%" height="580px"
+        <img src="{{asset('guest/assets/images/beranda-3.jfif')}}" width="100%" height="600px"
             style="filter:brightness(25%);" />
         <div class="caption">Selamat Datang di Website BEM REMA UNNUR 2022 KABINET HUGO ELECTRA</div>
     </div>
@@ -35,21 +35,21 @@
         <div class="col-12 text-beranda">
             <h1>PROFIL</h1>
         </div>
-        <div class="col-6 col-xl-4">
+        <div class="col-6 col-md-4 col-xl-4">
             <a href="{{url('/profil')}}" style="text-decoration:none; color:white;">
                 <div class="box-profil rounded shadow mt-3">
                     <span>Profil Kami</span>
                 </div>
             </a>
         </div>
-        <div class="col-6 col-xl-4">
+        <div class="col-6 col-md-4 col-xl-4">
             <a href="{{url('/profil')}}" style="text-decoration:none; color:white;">
                 <div class="box-profil rounded shadow mt-3">
                     <span>Visi & Misi</span>
                 </div>
             </a>
         </div>
-        <div class="col-6 col-xl-4">
+        <div class="col-6 col-md-4 col-xl-4">
             <a href="{{url('/profil')}}" style="text-decoration:none; color:white;">
                 <div class="box-profil rounded shadow mt-3">
                     <span>Struktur Kabinet</span>
@@ -64,7 +64,7 @@
         </div>
         <div class="col-10">
             <div class="box-kementerian rounded shadow text-center mt-3">
-                <h3>Badan Eksekutif Mahasiswa Universitas Nurtanio Bandung Memiliki 10 Kementrian</h3>
+                <h4>Badan Eksekutif Mahasiswa Universitas Nurtanio Bandung Memiliki 10 Kementrian</h4>
             </div>
         </div>
     </div>
@@ -75,36 +75,44 @@
             <div class="icon-slider owl-theme owl-carousel slider-2 mt-5">
                 <div class="carousel-inner-2">
                     <div class="row justify-content-center">
-                        <div class="col-12 col-xl-3 margin-card">
+                        <div class="col-12 col-md-6 col-xl-3 margin-card">
                             <div class="box-mentri shadow text-center">
                                 <img src="{{asset('guest/assets/images/kabinet.png')}}"
                                     style="width:70px; height:60px; margin:auto;" />
                                 <h4>Kementrian Pengembangan Minat Bakat Mahasiswa</h4>
-                                <p>KABINET HUGO ELECTRA BEM REMA UNNUR 2022</p>
+                                <p>KABINET HUGO ELECTRA</p>
+                                <p>BEM REMA UNNUR</p>
+                                <p>2022</p>
                             </div>
                         </div>
-                        <div class="col-12 col-xl-3 margin-card">
+                        <div class="col-12 col-md-6 col-xl-3 margin-card">
                             <div class="box-mentri shadow text-center">
                                 <img src="{{asset('guest/assets/images/kabinet.png')}}"
                                     style="width:70px; height:60px; margin:auto;" />
                                 <h4>Kementrian Pengembangan Minat Bakat Mahasiswa</h4>
-                                <p>KABINET HUGO ELECTRA BEM REMA UNNUR 2022</p>
+                                <p>KABINET HUGO ELECTRA</p>
+                                <p>BEM REMA UNNUR</p>
+                                <p>2022</p>
                             </div>
                         </div>
-                        <div class="col-12 col-xl-3 margin-card">
+                        <div class="col-12 col-md-6 col-xl-3 margin-card">
                             <div class="box-mentri shadow text-center">
                                 <img src="{{asset('guest/assets/images/kabinet.png')}}"
                                     style="width:70px; height:60px; margin:auto;" />
                                 <h4>Kementrian Pengembangan Minat Bakat Mahasiswa</h4>
-                                <p>KABINET HUGO ELECTRA BEM REMA UNNUR 2022</p>
+                                <p>KABINET HUGO ELECTRA</p>
+                                <p>BEM REMA UNNUR</p>
+                                <p>2022</p>
                             </div>
                         </div>
-                        <div class="col-12 col-xl-3 margin-card">
+                        <div class="col-12 col-md-6 col-xl-3 margin-card">
                             <div class="box-mentri shadow text-center">
                                 <img src="{{asset('guest/assets/images/kabinet.png')}}"
                                     style="width:70px; height:60px; margin:auto;" />
                                 <h4>Kementrian Pengembangan Minat Bakat Mahasiswa</h4>
-                                <p>KABINET HUGO ELECTRA BEM REMA UNNUR 2022</p>
+                                <p>KABINET HUGO ELECTRA</p>
+                                <p>BEM REMA UNNUR</p>
+                                <p>2022</p>
                             </div>
                         </div>
                     </div>
@@ -116,7 +124,9 @@
                                 <img src="{{asset('guest/assets/images/kabinet.png')}}"
                                     style="width:70px; height:60px; margin:auto;" />
                                 <h4>Kementrian Pengembangan Minat Bakat Mahasiswa</h4>
-                                <p>KABINET HUGO ELECTRA BEM REMA UNNUR 2022</p>
+                                <p>KABINET HUGO ELECTRA</p>
+                                <p>BEM REMA UNNUR</p>
+                                <p>2022</p>
                             </div>
                         </div>
                         <div class="col-12 col-xl-3 margin-card">
@@ -124,7 +134,9 @@
                                 <img src="{{asset('guest/assets/images/kabinet.png')}}"
                                     style="width:70px; height:60px; margin:auto;" />
                                 <h4>Kementrian Pengembangan Minat Bakat Mahasiswa</h4>
-                                <p>KABINET HUGO ELECTRA BEM REMA UNNUR 2022</p>
+                                <p>KABINET HUGO ELECTRA</p>
+                                <p>BEM REMA UNNUR</p>
+                                <p>2022</p>
                             </div>
                         </div>
                         <div class="col-12 col-xl-3 margin-card">
@@ -132,7 +144,9 @@
                                 <img src="{{asset('guest/assets/images/kabinet.png')}}"
                                     style="width:70px; height:60px; margin:auto;" />
                                 <h4>Kementrian Pengembangan Minat Bakat Mahasiswa</h4>
-                                <p>KABINET HUGO ELECTRA BEM REMA UNNUR 2022</p>
+                                <p>KABINET HUGO ELECTRA</p>
+                                <p>BEM REMA UNNUR</p>
+                                <p>2022</p>
                             </div>
                         </div>
                         <div class="col-12 col-xl-3 margin-card">
@@ -140,7 +154,9 @@
                                 <img src="{{asset('guest/assets/images/kabinet.png')}}"
                                     style="width:70px; height:60px; margin:auto;" />
                                 <h4>Kementrian Pengembangan Minat Bakat Mahasiswa</h4>
-                                <p>KABINET HUGO ELECTRA BEM REMA UNNUR 2022</p>
+                                <p>KABINET HUGO ELECTRA</p>
+                                <p>BEM REMA UNNUR</p>
+                                <p>2022</p>
                             </div>
                         </div>
                     </div>

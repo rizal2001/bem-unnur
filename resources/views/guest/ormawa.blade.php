@@ -10,7 +10,7 @@
 
 @section('content')
 <div class="ormawa">
-    <img src="{{asset('guest/assets/images/beranda-1.jpg')}}" width="100%" height="580px"
+    <img src="{{asset('guest/assets/images/beranda-1.jpg')}}" width="100%" height="600px"
         style="filter:brightness(25%);" />
     <div class="caption"><span style="color:#FBD442;">ORMAWA</span><br />Organisasi Mahasiswa Universitas Nurtanio
         Bandung</div>
@@ -27,7 +27,7 @@
         </div>
     </div>
     <div class="row justify-content-center">
-        <div class="col-6 col-xl-3 img-ormawa">
+        <div class="col-6 col-xl-3 img-ormawa img-circle">
             <img src="{{asset('guest/assets/images/logo.png')}}" width="150px" height="150px" />
             <h5>Badan Eksekutif Mahasiswa Republik Mahasiswa Universitas Nurtanio Bandung</h5>
         </div>

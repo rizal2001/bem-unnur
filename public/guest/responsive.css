@@ -13,6 +13,10 @@
     .margin-card {
         margin-bottom: 30px;
     }
+    .slider-2 .owl-prev,
+    .slider-2 .owl-next {
+        top: 46%;
+    }
     .bg-ormawa img {
         width: 60px;
         height: 60px;
@@ -66,5 +70,44 @@
         bottom: 400px;
         width: 350px;
         font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+    .text-header p {
+        margin-left: -30px;
+        width: 200px;
+    }
+    .menu ul li {
+        margin: 22px 20px;
+    }
+    .menu ul {
+        margin-right: 15px;
+    }
+    .margin-card {
+        margin-bottom: 30px;
+    }
+    .slider-2 .owl-prev,
+    .slider-2 .owl-next {
+        top: 22%;
+    }
+    .slider-2 .carousel-inner-2 {
+        height: 570px;
+    }
+    .text-footer {
+        text-align: center;
+        border: none;
+    }
+    .line-bottom-1 {
+        display: block;
+        margin-top: 20px;
+        border-bottom: 3px solid white;
+    }
+    .text-maps {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .img-struktur img {
+        height: 400px;
     }
 }
