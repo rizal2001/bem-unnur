@@ -35,8 +35,9 @@ class FrontController extends Controller
     }
     public function kementerian()
     {
+        $background = Background::where('halaman_id', '=', '3')->first();
         $kabinet = Kabinet::with('misi')->orderBy('id','desc')->first();
-        return view('guest.kementerian', compact('kabinet'));
+        return view('guest.kementerian', compact(['kabinet', 'background']));
     }
     public function ormawa()
     {
