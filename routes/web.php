@@ -150,6 +150,7 @@ Route::group(['middleware' => 'auth'], function () {
         //Aspirasi
         Route::get('/aspirasi', [AspirasiController::class, 'index'])->name('aspirasi');
         Route::get('/aspirasi/delete/{id}', [AspirasiController::class, 'delete'])->name('aspirasi.delete');
+        Route::get('/aspirasi/detail/{id}', [AspirasiController::class, 'detail'])->name('aspirasi.detail');
 
 
          //Berita

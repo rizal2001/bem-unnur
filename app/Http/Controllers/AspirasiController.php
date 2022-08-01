@@ -41,4 +41,10 @@ class AspirasiController extends Controller
         return redirect('/admin/aspirasi')->with('message', 'Data Berhasil Dihapus');
     
     }
+    public function detail($id)
+    {
+        $data = Aspirasi::where('id', '=', $id)->first();
+        return view('admin.aspirasi.detail', compact('data'));
+    
+    }
 }

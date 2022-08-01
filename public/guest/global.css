@@ -365,16 +365,16 @@ main {
     width: 15px;
     height: 15px;
     position: absolute;
-    top: 45%;
+    top: 40%;
     display: block !important;
 }
 
 #owl-demo .owl-prev {
-    left: -30px;
+    left: -60px;
 }
 
 #owl-demo .owl-next {
-    right: -20px;
+    right: -50px;
 }
 
 #owl-demo .owl-prev i,

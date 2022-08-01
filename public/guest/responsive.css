@@ -20,10 +20,6 @@
     .margin-card {
         margin-bottom: 30px;
     }
-    .slider-2 .owl-prev,
-    .slider-2 .owl-next {
-        top: 46%;
-    }
     .bg-ormawa img {
         width: 60px;
         height: 60px;
@@ -149,6 +145,16 @@
     .text-aspirasi h3 {
         font-size: 18px;
     }
+    #owl-demo .owl-prev {
+        left: 30px;
+    }
+    #owl-demo .owl-next {
+        right: 30px;
+    }
+    #owl-demo .owl-prev,
+    #owl-demo .owl-next {
+        top: 35%;
+    }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 991px) {
@@ -172,10 +178,6 @@
     }
     .margin-card {
         margin-bottom: 30px;
-    }
-    .slider-2 .owl-prev,
-    .slider-2 .owl-next {
-        top: 46%;
     }
     .bg-ormawa img {
         width: 60px;
@@ -284,5 +286,11 @@
     }
     .text-aspirasi h3 {
         font-size: 18px;
+    }
+    #owl-demo .owl-prev {
+        left: -60px;
+    }
+    #owl-demo .owl-next {
+        right: -50px;
     }
 }
