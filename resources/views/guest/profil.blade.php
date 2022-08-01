@@ -8,7 +8,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-12 text-beranda">
-            <div class="box-profil-page rounded shadow">
+            <div class="box-profil-page shadow">
                 <span>Profil Kami</span>
             </div>
         </div>
@@ -35,7 +35,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-12">
-            <div class="box-visi rounded shadow">
+            <div class="box-visi shadow">
                 <span>Visi</span>
             </div>
         </div>
@@ -48,12 +48,12 @@
             </div>
         </div>
 
-        <div class="box-profil-page rounded shadow mt-5">
+        <div class="box-profil-page shadow mt-5">
             <span>Misi</span>
         </div>
         <div class="row justify-content-center">
             <div class="col-12 col-xl-4">
-                <div class="box-misi rounded shadow mt-4">
+                <div class="box-misi shadow mt-4">
                     <span>Pembentukan Karakter</span>
                 </div>
                 <div class="text-misi text-center mt-3">
@@ -63,7 +63,7 @@
                 </div>
             </div>
             <div class="col-12 col-xl-4">
-                <div class="box-misi rounded shadow mt-4">
+                <div class="box-misi shadow mt-4">
                     <span>Koordinasi</span>
                 </div>
                 <div class="text-misi text-center mt-3">
@@ -73,7 +73,7 @@
                 </div>
             </div>
             <div class="col-12 col-xl-4">
-                <div class="box-misi rounded shadow mt-4">
+                <div class="box-misi shadow mt-4">
                     <span>Pendidikan dan Pengajaran</span>
                 </div>
                 <div class="text-misi text-center mt-3">
@@ -84,7 +84,7 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-12 col-xl-4">
-                <div class="box-misi rounded shadow mt-4">
+                <div class="box-misi shadow mt-4">
                     <span>Pengabdian Kepada Masyarakat</span>
                 </div>
                 <div class="text-misi text-center mt-3">
@@ -93,7 +93,7 @@
                 </div>
             </div>
             <div class="col-12 col-xl-4">
-                <div class="box-misi rounded shadow mt-4">
+                <div class="box-misi shadow mt-4">
                     <span>Penelitian dan Pengembangan</span>
                 </div>
                 <div class="text-misi text-center mt-3">
@@ -108,7 +108,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-12 text-beranda">
-            <div class="box-struktur rounded shadow">
+            <div class="box-struktur shadow">
                 <span>Struktur Kabinet</span>
             </div>
         </div>

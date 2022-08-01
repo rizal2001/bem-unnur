@@ -35,23 +35,23 @@
         <div class="col-12 text-beranda">
             <h1>PROFIL</h1>
         </div>
-        <div class="col-6 col-md-4 col-xl-4">
+        <div class="col-6 col-md-6 col-xl-4">
             <a href="{{url('/profil')}}" style="text-decoration:none; color:white;">
-                <div class="box-profil rounded shadow mt-3">
+                <div class="box-profil shadow mt-3">
                     <span>Profil Kami</span>
                 </div>
             </a>
         </div>
-        <div class="col-6 col-md-4 col-xl-4">
+        <div class="col-6 col-md-6 col-xl-4">
             <a href="{{url('/profil')}}" style="text-decoration:none; color:white;">
-                <div class="box-profil rounded shadow mt-3">
+                <div class="box-profil shadow mt-3">
                     <span>Visi & Misi</span>
                 </div>
             </a>
         </div>
-        <div class="col-6 col-md-4 col-xl-4">
+        <div class="col-6 col-md-6 col-xl-4">
             <a href="{{url('/profil')}}" style="text-decoration:none; color:white;">
-                <div class="box-profil rounded shadow mt-3">
+                <div class="box-profil shadow mt-3">
                     <span>Struktur Kabinet</span>
                 </div>
             </a>
@@ -59,11 +59,11 @@
     </div>
 
     <div class="row justify-content-center">
-        <div class="col-12 text-beranda">
+        <div class="col-12 text-kementerian">
             <h1>KEMENTERIAN</h1>
         </div>
         <div class="col-10">
-            <div class="box-kementerian rounded shadow text-center mt-3">
+            <div class="box-kementerian shadow text-center mt-3">
                 <h4>Badan Eksekutif Mahasiswa Universitas Nurtanio Bandung Memiliki 10 Kementrian</h4>
             </div>
         </div>
@@ -119,7 +119,7 @@
                 </div>
                 <div class="carousel-inner-2">
                     <div class="row justify-content-center">
-                        <div class="col-12 col-xl-3 margin-card">
+                        <div class="col-12 col-md-6 col-xl-3 margin-card">
                             <div class="box-mentri shadow text-center">
                                 <img src="{{asset('guest/assets/images/kabinet.png')}}"
                                     style="width:70px; height:60px; margin:auto;" />
@@ -129,7 +129,7 @@
                                 <p>2022</p>
                             </div>
                         </div>
-                        <div class="col-12 col-xl-3 margin-card">
+                        <div class="col-12 col-md-6 col-xl-3 margin-card">
                             <div class="box-mentri shadow text-center">
                                 <img src="{{asset('guest/assets/images/kabinet.png')}}"
                                     style="width:70px; height:60px; margin:auto;" />
@@ -139,7 +139,7 @@
                                 <p>2022</p>
                             </div>
                         </div>
-                        <div class="col-12 col-xl-3 margin-card">
+                        <div class="col-12 col-md-6 col-xl-3 margin-card">
                             <div class="box-mentri shadow text-center">
                                 <img src="{{asset('guest/assets/images/kabinet.png')}}"
                                     style="width:70px; height:60px; margin:auto;" />
@@ -149,7 +149,7 @@
                                 <p>2022</p>
                             </div>
                         </div>
-                        <div class="col-12 col-xl-3 margin-card">
+                        <div class="col-12 col-md-6 col-xl-3 margin-card">
                             <div class="box-mentri shadow text-center">
                                 <img src="{{asset('guest/assets/images/kabinet.png')}}"
                                     style="width:70px; height:60px; margin:auto;" />
