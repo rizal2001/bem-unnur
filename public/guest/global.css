@@ -23,7 +23,7 @@
 /* body */
 
 body {
-    font-family: "glory";
+    font-family: "Glory";
 }
 
 
@@ -735,6 +735,47 @@ main {
 .img-ormawa h5 {
     color: white;
     margin-top: 10px;
+    font-weight: 600;
+}
+
+
+/* email aspirasi*/
+
+.img-email-bem {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+.text-email h1 {
+    font-family: "Akira Expanded";
+    color: white;
+}
+
+.box-aspirasi {
+    text-align: left;
+    background-color: #FF8D29;
+    font-size: 25px;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    font-family: "Glory";
+}
+
+.box-aspirasi h2 {
+    font-family: "Akira Expanded";
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: white;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.box-aspirasi h3 {
+    text-align: justify;
+    color: white;
     font-weight: 600;
 }
 

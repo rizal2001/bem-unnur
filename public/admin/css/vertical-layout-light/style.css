@@ -27099,9 +27099,8 @@ dl li {
 }
 
 .table td img {
-    width: 36px;
-    height: 36px;
-    border-radius: 100%;
+    width: 120px;
+    height: 80px;
 }
 
 .table td .badge {

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Ormawa;
 use App\Models\KategoriOrmawa;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class OrmawaController extends Controller
 {
@@ -43,8 +44,9 @@ class OrmawaController extends Controller
     }
     public function edit($id)
     {
+        $kategori = KategoriOrmawa::all();
         $data = Ormawa::find($id);
-        return view('admin.ormawa.edit', compact('data'));
+        return view('admin.ormawa.edit', compact('data','kategori'));
     }
     public function update(Request $request, $id)
     {
