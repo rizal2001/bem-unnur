@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Models\Ormawa;
+use App\Models\KategoriOrmawa;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -13,6 +14,6 @@ class Ormawa extends Model
     protected $guarded = [];
 
     public function kategoriOrmawa(){
-        return $this->belongsTo(Ormawa::class);
+        return $this->belongsTo(KategoriOrmawa::class);
     }
 }

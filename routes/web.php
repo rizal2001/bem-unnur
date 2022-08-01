@@ -5,16 +5,20 @@ use App\Http\Controllers\MisiController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\OrmawaController;
+use App\Http\Controllers\HalamanController;
 use App\Http\Controllers\JabatanController;
 use App\Http\Controllers\KabinetController;
 use App\Http\Controllers\AspirasiController;
 use App\Http\Controllers\FakultasController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\BackgroundController;
 use App\Http\Controllers\CustomAuthController;
 use App\Http\Controllers\KementerianController;
-use App\Http\Controllers\KategoriKementerianController;
 use App\Http\Controllers\KategoriOrmawaController;
+use App\Http\Controllers\KategoriKementerianController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -27,40 +31,43 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 |
 */
 
-// loading
-Route::get('/', function () {
-    return view('layouts.loading');
-});
+Route::name('front.')->middleware('visitor')->group(function() {
 
-// beranda
-Route::get('/beranda', function () {
-    return view('guest.beranda');
-});
+    // loading
+    Route::get('/', function () {
+        return view('layouts.loading');
+    });
+    // beranda
+    Route::get('/beranda', function () {
+        return view('guest.beranda');
+    });
 
-// news
-Route::get('/news', function () {
-    return view('guest.news');
-});
+    // news
+    Route::get('/news', function () {
+        return view('guest.news');
+    });
 
 
-// profil
-Route::get('/profil', function () {
-    return view('guest.profil');
-});
+    // profil
+    Route::get('/profil', function () {
+        return view('guest.profil');
+    });
 
-// kementerian
-Route::get('/kementerian', function () {
-    return view('guest.kementerian');
-});
+    // kementerian
+    Route::get('/kementerian', function () {
+        return view('guest.kementerian');
+    });
 
-// ormawa
-Route::get('/ormawa', function () {
-    return view('guest.ormawa');
-});
+    // ormawa
+    Route::get('/ormawa', function () {
+        return view('guest.ormawa');
+    });
 
-// aspirasi
-Route::get('/aspirasi', function () {
-    return view('guest.aspirasi');
+    // aspirasi
+    Route::get('/aspirasi', function () {
+        return view('guest.aspirasi');
+    });
+    Route::post('/aspirasi/store', [AspirasiController::class, 'store'])->name('aspirasi.store');
 });
 
 // notif email aspirasi
@@ -143,7 +150,6 @@ Route::group(['middleware' => 'auth'], function () {
 
         //Aspirasi
         Route::get('/aspirasi', [AspirasiController::class, 'index'])->name('aspirasi');
-        Route::post('/aspirasi/store', [AspirasiController::class, 'store'])->name('aspirasi.store');
         Route::get('/aspirasi/delete/{id}', [AspirasiController::class, 'delete'])->name('aspirasi.delete');
 
 
@@ -164,5 +170,15 @@ Route::group(['middleware' => 'auth'], function () {
          Route::put('/ormawa/update/{id}', [OrmawaController::class, 'update'])->name('ormawa.update');
          Route::get('/ormawa/delete/{id}', [OrmawaController::class, 'delete'])->name('ormawa.delete');
 
+
+         //Halaman
+         Route::get('/halaman', [HalamanController::class, 'index'])->name('halaman');
+
+         Route::get('/halaman/{halamanId}/background', [BackgroundController::class, 'index'])->name('background');
+         Route::get('/halaman/{halamanId}/background/create', [BackgroundController::class, 'create'])->name('background.create');
+         Route::post('/halaman/{halamanId}/background/store', [BackgroundController::class, 'store'])->name('background.store');
+         Route::get('/halaman/{halamanId}/background/edit/{id}', [BackgroundController::class, 'edit'])->name('background.edit');
+         Route::put('/halaman/{halamanId}/background/update/{id}', [BackgroundController::class, 'update'])->name('background.update');
+         Route::get('/halaman/{halamanId}/background/delete/{id}', [BackgroundController::class, 'delete'])->name('background.delete');
     });
 });

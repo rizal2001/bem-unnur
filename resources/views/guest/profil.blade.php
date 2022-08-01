@@ -114,7 +114,7 @@
         </div>
         <div class="col-12">
             <div class="img-struktur text-center shadow mt-4">
-                <img src="{{asset('guest/assets/images/beranda-1.jpg')}}" width="100%" height="620px"
+                <img src="{{asset('guest/assets/images/STRUKTUR-ORGA-UNNUR-2019-scaled.jpg')}}" width="100%" height="1000px"
                     style="border-radius: 20px" />
             </div>
         </div>

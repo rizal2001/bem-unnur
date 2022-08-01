@@ -9,18 +9,18 @@
 @section('content')
 <div class="icon-slider owl-theme owl-carousel slider-1 mt-5">
     <div class="carousel-inner">
-        <img src="{{asset('guest/assets/images/beranda-1.jpg')}}" width="100%" height="580px"
+        <img src="{{asset('guest/assets/images/beranda-1.jpg')}}" width="100%" height="600px"
             style="filter:brightness(25%);" />
         <div class="caption">Selamat Datang di Website BEM REMA UNNUR 2022 KABINET HUGO ELECTRA</div>
 
     </div>
     <div class="carousel-inner">
-        <img src="{{asset('guest/assets/images/beranda-2.jpeg')}}" width="100%" height="580px"
+        <img src="{{asset('guest/assets/images/beranda-2.jpeg')}}" width="100%" height="600px"
             style="filter:brightness(25%);" />
         <div class="caption">Selamat Datang di Website BEM REMA UNNUR 2022 KABINET HUGO ELECTRA</div>
     </div>
     <div class="carousel-inner">
-        <img src="{{asset('guest/assets/images/beranda-3.jfif')}}" width="100%" height="580px"
+        <img src="{{asset('guest/assets/images/beranda-3.jfif')}}" width="100%" height="600px"
             style="filter:brightness(25%);" />
         <div class="caption">Selamat Datang di Website BEM REMA UNNUR 2022 KABINET HUGO ELECTRA</div>
     </div>
