@@ -21,7 +21,7 @@ class AspirasiController extends Controller
     
         $validatedData = $request->validate([
             'nama' => 'required',
-            'email' => 'required',
+            'email' => 'required|email',
             'aspirasi' => 'required'
         ]);
         
@@ -31,16 +31,6 @@ class AspirasiController extends Controller
             'email' => $request->email,
             'aspirasi' => $request->aspirasi
         ]);
-        
-        $email = [
-            'nama' => $request->nama,
-            'email' => $request->email,
-            'aspirasi' => $request->aspirasi
-            ];
-           
-            \Mail::to('bemfiki@gmail.com')->send(new \App\Mail\Sendmail($email));
-
-
         return redirect('/aspirasi')->with('message', 'Data Berhasil Disimpan');
     }
 

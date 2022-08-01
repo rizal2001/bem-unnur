@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MisiController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\FrontController;
 use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\OrmawaController;
 use App\Http\Controllers\HalamanController;
@@ -38,10 +39,7 @@ Route::name('front.')->middleware('visitor')->group(function() {
         return view('layouts.loading');
     });
     // beranda
-    Route::get('/beranda', function () {
-        return view('guest.beranda');
-    });
-
+    Route::get('/beranda', [FrontController::class, 'beranda'])->name('beranda');
     // news
     Route::get('/news', function () {
         return view('guest.news');
@@ -67,8 +65,9 @@ Route::name('front.')->middleware('visitor')->group(function() {
     Route::get('/aspirasi', function () {
         return view('guest.aspirasi');
     });
-    Route::post('/aspirasi/store', [AspirasiController::class, 'store'])->name('aspirasi.store');
+    
 });
+Route::post('/aspirasi/store', [AspirasiController::class, 'store'])->name('aspirasi.store');
 
 // notif email aspirasi
 Route::get('/email', function () {

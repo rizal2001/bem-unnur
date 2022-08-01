@@ -8,22 +8,14 @@
 
 @section('content')
 <div class="icon-slider owl-theme owl-carousel slider-1 mt-5">
+    @foreach ($background as $row)
     <div class="carousel-inner">
-        <img src="{{asset('guest/assets/images/beranda-1.jpg')}}" width="100%" height="600px"
+        <img src="{{asset('database/images/background/'.$row->gambar)}}" width="100%" height="600px"
             style="filter:brightness(25%);" />
-        <div class="caption">Selamat Datang di Website BEM REMA UNNUR 2022 KABINET HUGO ELECTRA</div>
-
+        <div class="caption">Selamat Datang di Website BEM REMA UNNUR {{$kabinet->tahun_periode}} KABINET
+            {{$kabinet->nama}}</div>
     </div>
-    <div class="carousel-inner">
-        <img src="{{asset('guest/assets/images/beranda-2.jpeg')}}" width="100%" height="600px"
-            style="filter:brightness(25%);" />
-        <div class="caption">Selamat Datang di Website BEM REMA UNNUR 2022 KABINET HUGO ELECTRA</div>
-    </div>
-    <div class="carousel-inner">
-        <img src="{{asset('guest/assets/images/beranda-3.jfif')}}" width="100%" height="600px"
-            style="filter:brightness(25%);" />
-        <div class="caption">Selamat Datang di Website BEM REMA UNNUR 2022 KABINET HUGO ELECTRA</div>
-    </div>
+    @endforeach
 </div>
 
 <div class="bg-content">
@@ -64,104 +56,28 @@
         </div>
         <div class="col-10">
             <div class="box-kementerian rounded shadow text-center mt-3">
-                <h4>Badan Eksekutif Mahasiswa Universitas Nurtanio Bandung Memiliki 10 Kementrian</h4>
+                <h4>Badan Eksekutif Mahasiswa Universitas Nurtanio Bandung Memiliki {{$jumlahKementerian}} Kementrian
+                </h4>
             </div>
         </div>
     </div>
 </div>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-12">
-            <div class="icon-slider owl-theme owl-carousel slider-2 mt-5">
-                <div class="carousel-inner-2">
-                    <div class="row justify-content-center">
-                        <div class="col-12 col-md-6 col-xl-3 margin-card">
-                            <div class="box-mentri shadow text-center">
-                                <img src="{{asset('guest/assets/images/kabinet.png')}}"
-                                    style="width:70px; height:60px; margin:auto;" />
-                                <h4>Kementrian Pengembangan Minat Bakat Mahasiswa</h4>
-                                <p>KABINET HUGO ELECTRA</p>
-                                <p>BEM REMA UNNUR</p>
-                                <p>2022</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-3 margin-card">
-                            <div class="box-mentri shadow text-center">
-                                <img src="{{asset('guest/assets/images/kabinet.png')}}"
-                                    style="width:70px; height:60px; margin:auto;" />
-                                <h4>Kementrian Pengembangan Minat Bakat Mahasiswa</h4>
-                                <p>KABINET HUGO ELECTRA</p>
-                                <p>BEM REMA UNNUR</p>
-                                <p>2022</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-3 margin-card">
-                            <div class="box-mentri shadow text-center">
-                                <img src="{{asset('guest/assets/images/kabinet.png')}}"
-                                    style="width:70px; height:60px; margin:auto;" />
-                                <h4>Kementrian Pengembangan Minat Bakat Mahasiswa</h4>
-                                <p>KABINET HUGO ELECTRA</p>
-                                <p>BEM REMA UNNUR</p>
-                                <p>2022</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-3 margin-card">
-                            <div class="box-mentri shadow text-center">
-                                <img src="{{asset('guest/assets/images/kabinet.png')}}"
-                                    style="width:70px; height:60px; margin:auto;" />
-                                <h4>Kementrian Pengembangan Minat Bakat Mahasiswa</h4>
-                                <p>KABINET HUGO ELECTRA</p>
-                                <p>BEM REMA UNNUR</p>
-                                <p>2022</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-inner-2">
-                    <div class="row justify-content-center">
-                        <div class="col-12 col-xl-3 margin-card">
-                            <div class="box-mentri shadow text-center">
-                                <img src="{{asset('guest/assets/images/kabinet.png')}}"
-                                    style="width:70px; height:60px; margin:auto;" />
-                                <h4>Kementrian Pengembangan Minat Bakat Mahasiswa</h4>
-                                <p>KABINET HUGO ELECTRA</p>
-                                <p>BEM REMA UNNUR</p>
-                                <p>2022</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-xl-3 margin-card">
-                            <div class="box-mentri shadow text-center">
-                                <img src="{{asset('guest/assets/images/kabinet.png')}}"
-                                    style="width:70px; height:60px; margin:auto;" />
-                                <h4>Kementrian Pengembangan Minat Bakat Mahasiswa</h4>
-                                <p>KABINET HUGO ELECTRA</p>
-                                <p>BEM REMA UNNUR</p>
-                                <p>2022</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-xl-3 margin-card">
-                            <div class="box-mentri shadow text-center">
-                                <img src="{{asset('guest/assets/images/kabinet.png')}}"
-                                    style="width:70px; height:60px; margin:auto;" />
-                                <h4>Kementrian Pengembangan Minat Bakat Mahasiswa</h4>
-                                <p>KABINET HUGO ELECTRA</p>
-                                <p>BEM REMA UNNUR</p>
-                                <p>2022</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-xl-3 margin-card">
-                            <div class="box-mentri shadow text-center">
-                                <img src="{{asset('guest/assets/images/kabinet.png')}}"
-                                    style="width:70px; height:60px; margin:auto;" />
-                                <h4>Kementrian Pengembangan Minat Bakat Mahasiswa</h4>
-                                <p>KABINET HUGO ELECTRA</p>
-                                <p>BEM REMA UNNUR</p>
-                                <p>2022</p>
-                            </div>
-                        </div>
-                    </div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div id="owl-demo" class="owl-carousel owl-theme mt-5">
+            @foreach ($menteri as $row)
+            <div class="item col-12 col-md-6 col-xl-4">
+                <div class="box-mentri shadow text-center">
+                    <img src="{{asset('database/images/kabinet/logo/'.$kabinet->gambar_logo)}}"
+                        style="width:60px; height:80px; margin:auto;" />
+                    <h4>{{$row->nama}}</h4>
+                    <p>KABINET {{$kabinet->nama}}</p>
+                    <p>BEM REMA UNNUR</p>
+                    <p>{{$kabinet->tahun_periode}}</p>
                 </div>
             </div>
+            @endforeach
         </div>
     </div>
 </div>
@@ -176,22 +92,22 @@
         <h4>Mau tau ORMAWA dan UKM di Universitas Nurtanio Bandung?</h4>
         <div class="row mt-4">
             <div class="col-2">
-                <img src="{{asset('guest/assets/images/logo.png')}}" width="120px" height="120px" />
+                <img src="{{asset('database/images/ormawa/'.$bemfaOne->gambar_logo)}}" width="120px" height="120px" />
             </div>
             <div class="col-2">
-                <img src="{{asset('guest/assets/images/bem-fiki.png')}}" width="120px" height="120px" />
+                <img src="{{asset('database/images/ormawa/'.$bemfaTwo->gambar_logo)}}" width="120px" height="120px" />
             </div>
             <div class="col-2">
-                <img src="{{asset('guest/assets/images/LOGO BEM FT.png')}}" width="120px" height="120px" />
+                <img src="{{asset('database/images/ormawa/'.$himaOne->gambar_logo)}}" width="120px" height="120px" />
             </div>
             <div class="col-2">
-                <img src="{{asset('guest/assets/images/BEM-FAKULTAS-EKONOMI.png')}}" width="120px" height="120px" />
+                <img src="{{asset('database/images/ormawa/'.$himaTwo->gambar_logo)}}" width="120px" height="120px" />
             </div>
             <div class="col-2">
-                <img src="{{asset('guest/assets/images/LOGO BEM FISIP.png')}}" width="120px" height="120px" />
+                <img src="{{asset('database/images/ormawa/'.$ukmOne->gambar_logo)}}" width="120px" height="120px" />
             </div>
             <div class="col-2">
-                <img src="{{asset('guest/assets/images/LOGO FUTSAL UNNUR.png')}}" width="120px" height="120px" />
+                <img src="{{asset('database/images/ormawa/'.$ukmTwo->gambar_logo)}}" width="120px" height="120px" />
             </div>
         </div>
         <div class="btn-showall mt-4">
@@ -278,6 +194,27 @@ $(".icon-slider").owlCarousel({
     margin: 18,
     nav: true,
     navText: ["<i class='fa-solid fa-angles-left'></i>", "<i class='fa-solid fa-angles-right'></i>"]
+});
+$("#owl-demo").owlCarousel({
+    margin: 18,
+    nav: true,
+    navText: ["<i class='fa-solid fa-angles-left'></i>", "<i class='fa-solid fa-angles-right'></i>"],
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 1,
+            nav: true
+        },
+        576: {
+            items: 2,
+            nav: false
+        },
+        1200: {
+            items: 4,
+            nav: true,
+            loop: false
+        }
+    }
 });
 </script>
 @endsection

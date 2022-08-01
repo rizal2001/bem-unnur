@@ -336,31 +336,27 @@ main {
     font-weight: 600;
 }
 
-.slider-2 .owl-prev,
-.slider-2 .owl-next {
+#owl-demo .owl-prev,
+#owl-demo .owl-next {
     width: 15px;
     height: 15px;
     position: absolute;
-    top: 35%;
+    top: 45%;
     display: block !important;
 }
 
-.slider-2 .owl-prev i,
-.slider-2 .owl-next i {
-    color: #D4AE58;
+#owl-demo .owl-prev {
+    left: -30px;
+}
+
+#owl-demo .owl-next {
+    right: -20px;
+}
+
+#owl-demo .owl-prev i,
+#owl-demo .owl-next i {
+    color: #edc150;
     font-size: 20px;
-}
-
-.slider-2 .owl-dots {
-    margin-top: 0;
-}
-
-.slider-2 .owl-prev {
-    left: 0px;
-}
-
-.slider-2 .owl-next {
-    right: 0px;
 }
 
 
