@@ -43,7 +43,7 @@
                     <div class="text-header mt-4">
                         <p>BEM Republik Mahasiswa</p>
                         <p>Universitas Nurtanio Bandung</p>
-                        <p>KABINET HUGO ELECTRA</p>
+                        <p>KABINET {{$kabinet->nama}}</p>
                     </div>
                 </div>
                 <div class="col-2 icon-menu mt-4">
@@ -86,11 +86,11 @@
                         <img src="{{asset('guest/assets/images/logo-unnur.png')}}" width="80px" height="80px" />
                     </a>
                     <a href="{{url('/beranda')}}">
-                        <img src="{{asset('guest/assets/images/kabinet.png')}}" width="100px" height="80px" />
+                        <img src="{{asset('database/images/kabinet/logo/'.$kabinet->gambar_logo)}}" width="100px" height="130px" />
                     </a>
-                    <h4 class="mt-4">KABINET HUGO ELECTRA</h4>
+                    <h4>KABINET {{$kabinet->nama}}</h4>
                     <h4>Badan Eksekutif Mahasiswa Republik Mahasiswa</h4>
-                    <h4>Univesitas Nurtanio Bandung 2022</h4>
+                    <h4>Univesitas Nurtanio Bandung {{$kabinet->tahun_periode}}</h4>
                     <h4 class="mt-4">MEDIA SOSIAL</h4>
                     <a href="{{url('https://www.instagram.com/bemnurtanio/')}}" target="_blank"
                         style="color: transparent;">
@@ -109,8 +109,8 @@
                 </div>
                 </hr>
                 <div class="line-bottom-1"></div>
-                <div class="col-12 col-xl-6 text-center text-maps">
-                    <h3>SEKRETARIAT BEM REMA UNNUR</h3>
+                <div class="col-12 col-xl-6 text-center text-maps mt-5">
+                    <h3 class="mt-2">SEKRETARIAT BEM REMA UNNUR</h3>
                     <iframe class="maps-footer shadow mt-3"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8678865234015!2d107.57701022695312!3d-6.906397399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x375989f7f7b103de!2zNsKwNTQnMjIuMiJTIDEwN8KwMzQnNTIuMiJF!5e0!3m2!1sid!2sid!4v1658831173446!5m2!1sid!2sid"
                         width="550px" height="300px" style="border:0;" allowfullscreen="" loading="lazy"
@@ -146,7 +146,7 @@
                             <div class="text-header mt-4">
                                 <p>BEM Republik Mahasiswa</p>
                                 <p>Universitas Nurtanio Bandung</p>
-                                <p>KABINET HUGO ELECTRA</p>
+                                <p>KABINET {{$kabinet->nama}}</p>
                             </div>
                         </div>
                         <div class="col-2">

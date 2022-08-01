@@ -46,19 +46,13 @@ Route::name('front.')->middleware('visitor')->group(function() {
     Route::get('/profil', [FrontController::class, 'profil'])->name('profil');
 
     // kementerian
-    Route::get('/kementerian', function () {
-        return view('guest.kementerian');
-    });
+    Route::get('/kementerian', [FrontController::class, 'kementerian'])->name('kementerian');
 
     // ormawa
-    Route::get('/ormawa', function () {
-        return view('guest.ormawa');
-    });
-
+    Route::get('/ormawa', [FrontController::class, 'ormawa'])->name('ormawa');
+        
     // aspirasi
-    Route::get('/aspirasi', function () {
-        return view('guest.aspirasi');
-    });
+    Route::get('/aspirasi', [FrontController::class, 'aspirasi'])->name('aspirasi');
     
 });
 

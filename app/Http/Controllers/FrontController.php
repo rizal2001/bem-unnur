@@ -33,4 +33,19 @@ class FrontController extends Controller
         $kabinet = Kabinet::with('misi')->orderBy('id','desc')->first();
         return view('guest.profil', compact('kabinet'));
     }
+    public function kementerian()
+    {
+        $kabinet = Kabinet::with('misi')->orderBy('id','desc')->first();
+        return view('guest.kementerian', compact('kabinet'));
+    }
+    public function ormawa()
+    {
+        $kabinet = Kabinet::with('misi')->orderBy('id','desc')->first();
+        return view('guest.ormawa', compact('kabinet'));
+    }
+    public function aspirasi()
+    {
+        $kabinet = Kabinet::with('misi')->orderBy('id','desc')->first();
+        return view('guest.aspirasi', compact('kabinet'));
+    }
 }
