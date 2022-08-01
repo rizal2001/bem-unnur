@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'BEM UNNUR - Data Kategori Ormawa')
+@section('title', 'BEM UNNUR - Data Halaman')
 
 @section('custom-css')
 <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" />
@@ -23,7 +23,7 @@
         <div class="col-lg-12 grid-margin marginResponsive">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">{{ __('Data Kategori Ormawa') }}</h4>
+                    <h4 class="card-title">{{ __('Data Halaman') }}</h4>
                     @if(session()->has('message'))
                     <div class="alert alert-success">
                         {{ session()->get('message') }}
@@ -34,17 +34,9 @@
                         <table id="dataTable" class="table">
                             <thead>
                                 <tr>
-                                    <!-- <a href="{{route('kategori.ormawa.create')}}"
-                                        class="btn btn-primary btn-sm btn-rounded btn-icon-text marginCard">
-                                        <i class="ti-upload btn-icon-prepend"></i>
-                                        Create
-                                    </a> -->
-                                </tr>
-                                <tr>
                                     <th>No</th>
-                                    <th>Nama</th>
-                                    <!-- <th class="text-center">Aksi</th> -->
-                                    <!-- <th>Delete</th> -->
+                                    <th>Menu Halaman</th>
+                                    <th class="text-center">Detail</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -52,15 +44,11 @@
                                 @foreach($data as $row)
                                 <tr>
                                     <td><?php echo $i++; ?></td>
-                                    <td>{{$row->nama}}</td>
+                                    <td>{{$row->menu}}</td>
                                     <td class="text-center">
-                                        <!-- <a href="{{route('kategori.ormawa.edit', ['id'=>$row->id] )}}"
-                                            class="btn btn-dark btn-sm btn-rounded btn-icon-prepend">Edit
-                                            <i class="ti-reload btn-icon-append"></i></a> -->
-                                        <!-- <a href="{{route('kategori.ormawa.delete', ['id'=>$row->id] )}}"
-                                            class="btn btn-danger btn-rounded btn-icon-text"
-                                            onclick="return confirm('Apakah anda yakin ?')">Delete
-                                            <i class="ti-trash btn-icon-append"></i></a> -->
+                                        <a href="{{route('background', ['halamanId'=>$row->id] )}}"
+                                            class="btn btn-info btn-sm btn-rounded btn-icon-prepend">Lihat
+                                            <i class="ti-reload btn-icon-append"></i></a>
                                     </td>
                                 </tr>
                                 @endforeach

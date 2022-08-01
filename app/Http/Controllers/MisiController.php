@@ -38,7 +38,7 @@ class MisiController extends Controller
     {
         $data = Misi::find($misiId);
         $kabinet = Kabinet::where('id', $id)->first();
-        return view('admin.misi.edit', compact('data', 'kabinet'));
+        return view('admin.misi.edit', compact(['data', 'kabinet']));
     }
     public function update(Request $request, $id, $misiId)
     {

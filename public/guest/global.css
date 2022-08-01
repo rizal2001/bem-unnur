@@ -673,6 +673,56 @@ main {
     font-weight: 600;
 }
 
+/* email aspirasi*/
+
+.img-email-bem {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+.text-email h1 {
+    font-family: "Akira Expanded";
+    color: white;
+}
+
+.box-aspirasi {
+    width: 550px;
+    height: auto;
+    text-align: left;
+    background-color: #FF8D29;
+    font-size: 25px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+}
+
+.box-aspirasi span {
+    font-family: "Glory";
+    color: white;
+    font-weight: 600;
+    margin-left: 15px;
+    margin-right: auto;
+}
+
+.box-aspirasi h2 {
+    font-family: "Akira Expanded";
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.box-aspirasi h3 {
+    font-family: "Glory";
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    margin-top: 15px;
+}
 
 /* aspirasi */
 

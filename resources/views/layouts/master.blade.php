@@ -84,12 +84,14 @@
                             <div class="dropdown-header text-center">
                                 <img class="img-md rounded-circle" src="{{asset('admin/images/logo.png')}}"
                                     alt="Profile image" width="40px" height="40px">
-                                <p class="mb-1 mt-3 font-weight-semibold text-capitalize fw-bold text-light">{{auth()->user()->name}}</p>
+                                <p class="mb-1 mt-3 font-weight-semibold text-capitalize fw-bold text-light">
+                                    {{auth()->user()->name}}</p>
                                 <p class="text-light mb-0">{{auth()->user()->email}}</p>
                             </div>
                             <a class="dropdown-item text-light" href="{{route('logout')}}"
                                 onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i
-                                    class="dropdown-item-icon mdi mdi-power text-light me-2" style="margin-left:10px;"></i>Sign Out</a>
+                                    class="dropdown-item-icon mdi mdi-power text-light me-2"
+                                    style="margin-left:10px;"></i>Sign Out</a>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                 {{ csrf_field() }}
                             </form>
@@ -395,6 +397,13 @@
                                 </li>
                             </ul>
                         </div>
+                    </li>
+                    <li class="nav-item nav-category">Background Halaman</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('halaman')}}">
+                            <i class="menu-icon mdi mdi-file-document"></i>
+                            <span class="menu-title">Halaman</span>
+                        </a>
                     </li>
                 </ul>
             </nav>

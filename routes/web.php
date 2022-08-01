@@ -5,16 +5,20 @@ use App\Http\Controllers\MisiController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\OrmawaController;
+use App\Http\Controllers\HalamanController;
 use App\Http\Controllers\JabatanController;
 use App\Http\Controllers\KabinetController;
 use App\Http\Controllers\AspirasiController;
 use App\Http\Controllers\FakultasController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\BackgroundController;
 use App\Http\Controllers\CustomAuthController;
 use App\Http\Controllers\KementerianController;
-use App\Http\Controllers\KategoriKementerianController;
 use App\Http\Controllers\KategoriOrmawaController;
+use App\Http\Controllers\KategoriKementerianController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -27,42 +31,49 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 |
 */
 
-// loading
-Route::get('/', function () {
-    return view('layouts.loading');
+Route::name('front.')->middleware('visitor')->group(function() {
+
+    // loading
+    Route::get('/', function () {
+        return view('layouts.loading');
+    });
+    // beranda
+    Route::get('/beranda', function () {
+        return view('guest.beranda');
+    });
+
+    // news
+    Route::get('/news', function () {
+        return view('guest.news');
+    });
+
+
+    // profil
+    Route::get('/profil', function () {
+        return view('guest.profil');
+    });
+
+    // kementerian
+    Route::get('/kementerian', function () {
+        return view('guest.kementerian');
+    });
+
+    // ormawa
+    Route::get('/ormawa', function () {
+        return view('guest.ormawa');
+    });
+
+    // aspirasi
+    Route::get('/aspirasi', function () {
+        return view('guest.aspirasi');
+    });
+    Route::post('/aspirasi/store', [AspirasiController::class, 'store'])->name('aspirasi.store');
 });
 
-// beranda
-Route::get('/beranda', function () {
-    return view('guest.beranda');
+// notif email aspirasi
+Route::get('/email', function () {
+    return view('guest.email');
 });
-
-// news
-Route::get('/news', function () {
-    return view('guest.news');
-});
-
-
-// profil
-Route::get('/profil', function () {
-    return view('guest.profil');
-});
-
-// kementerian
-Route::get('/kementerian', function () {
-    return view('guest.kementerian');
-});
-
-// ormawa
-Route::get('/ormawa', function () {
-    return view('guest.ormawa');
-});
-
-// aspirasi
-Route::get('/aspirasi', function () {
-    return view('guest.aspirasi');
-});
-Route::post('/aspirasi/store', [AspirasiController::class, 'store'])->name('aspirasi.store');
 
 // login
 Route::get('/login-admin', [AuthenticatedSessionController::class, 'create'])->name('login');
@@ -95,7 +106,7 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('/kabinet/{kabinetId}/misi/edit/{id}', [MisiController::class, 'edit'])->name('misi.edit');
         Route::put('/kabinet/{kabinetId}/misi/update/{id}', [MisiController::class, 'update'])->name('misi.update');
         Route::get('/kabinet/{kabinetId}/misi/delete/{id}', [MisiController::class, 'delete'])->name('misi.delete');
-        
+
         //Fakultas
         Route::get('/fakultas', [FakultasController::class, 'index'])->name('fakultas');
         Route::get('/fakultas/create', [FakultasController::class, 'create'])->name('fakultas.create');
@@ -140,7 +151,7 @@ Route::group(['middleware' => 'auth'], function () {
         //Aspirasi
         Route::get('/aspirasi', [AspirasiController::class, 'index'])->name('aspirasi');
         Route::get('/aspirasi/delete/{id}', [AspirasiController::class, 'delete'])->name('aspirasi.delete');
-        
+
 
          //Berita
         Route::get('/berita', [BeritaController::class, 'index'])->name('berita');
@@ -150,7 +161,7 @@ Route::group(['middleware' => 'auth'], function () {
         Route::put('/berita/update/{id}', [BeritaController::class, 'update'])->name('berita.update');
         Route::get('/berita/delete/{id}', [BeritaController::class, 'delete'])->name('berita.delete');
 
-        
+
          //Ormawa
          Route::get('/ormawa', [OrmawaController::class, 'index'])->name('ormawa');
          Route::get('/ormawa/create', [OrmawaController::class, 'create'])->name('ormawa.create');
@@ -158,6 +169,16 @@ Route::group(['middleware' => 'auth'], function () {
          Route::get('/ormawa/edit/{id}', [OrmawaController::class, 'edit'])->name('ormawa.edit');
          Route::put('/ormawa/update/{id}', [OrmawaController::class, 'update'])->name('ormawa.update');
          Route::get('/ormawa/delete/{id}', [OrmawaController::class, 'delete'])->name('ormawa.delete');
- 
+
+
+         //Halaman
+         Route::get('/halaman', [HalamanController::class, 'index'])->name('halaman');
+
+         Route::get('/halaman/{halamanId}/background', [BackgroundController::class, 'index'])->name('background');
+         Route::get('/halaman/{halamanId}/background/create', [BackgroundController::class, 'create'])->name('background.create');
+         Route::post('/halaman/{halamanId}/background/store', [BackgroundController::class, 'store'])->name('background.store');
+         Route::get('/halaman/{halamanId}/background/edit/{id}', [BackgroundController::class, 'edit'])->name('background.edit');
+         Route::put('/halaman/{halamanId}/background/update/{id}', [BackgroundController::class, 'update'])->name('background.update');
+         Route::get('/halaman/{halamanId}/background/delete/{id}', [BackgroundController::class, 'delete'])->name('background.delete');
     });
 });
