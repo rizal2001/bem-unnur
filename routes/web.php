@@ -71,7 +71,7 @@ Route::post('/aspirasi/store', [AspirasiController::class, 'store'])->name('aspi
 
 // notif email aspirasi
 Route::get('/email', function () {
-    return view('guest.email');
+    return view('layouts.email');
 });
 
 // login

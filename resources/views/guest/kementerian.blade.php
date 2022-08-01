@@ -17,7 +17,7 @@
 </div>
 <div class="container">
     <div class="row mt-4">
-        <div class="col-12 col-xl-6 text-light text-center img-menteri">
+        <div class="col-12 col-md-6 col-xl-6 text-light text-center img-menteri">
             <a href="{{url('https://www.instagram.com/aditiagusti13/')}}" target="_blank">
                 <img src="{{asset('guest/assets/images/Foto Presma.png')}}" width="500px" height="500px">
             </a>
@@ -25,8 +25,8 @@
             <h4>Fakultas Teknik</h4>
             <h4>Presiden Mahasiswa</h4>
         </div>
-        <div class="col-12 col-xl-6 text-light text-center img-menteri">
-            <a href="{{url('https://www.instagram.com/enuibnu_/')}}" target="_blank">
+        <div class="col-12 col-md-6 col-xl-6 text-light text-center img-menteri">
+            <a href="{{url('https://www.instagram.com/aditiagusti13/')}}" target="_blank">
                 <img src="{{asset('guest/assets/images/Foto Presma.png')}}" width="500px" height="500px">
             </a>
             <h4>Girang Nurul Huda</h4>

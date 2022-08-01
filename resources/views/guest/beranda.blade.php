@@ -27,23 +27,23 @@
         <div class="col-12 text-beranda">
             <h1>PROFIL</h1>
         </div>
-        <div class="col-6 col-md-4 col-xl-4">
+        <div class="col-6 col-md-6 col-xl-4">
             <a href="{{url('/profil')}}" style="text-decoration:none; color:white;">
-                <div class="box-profil rounded shadow mt-3">
+                <div class="box-profil shadow mt-3">
                     <span>Profil Kami</span>
                 </div>
             </a>
         </div>
-        <div class="col-6 col-md-4 col-xl-4">
+        <div class="col-6 col-md-6 col-xl-4">
             <a href="{{url('/profil')}}" style="text-decoration:none; color:white;">
-                <div class="box-profil rounded shadow mt-3">
+                <div class="box-profil shadow mt-3">
                     <span>Visi & Misi</span>
                 </div>
             </a>
         </div>
-        <div class="col-6 col-md-4 col-xl-4">
+        <div class="col-6 col-md-6 col-xl-4">
             <a href="{{url('/profil')}}" style="text-decoration:none; color:white;">
-                <div class="box-profil rounded shadow mt-3">
+                <div class="box-profil shadow mt-3">
                     <span>Struktur Kabinet</span>
                 </div>
             </a>
@@ -51,7 +51,7 @@
     </div>
 
     <div class="row justify-content-center">
-        <div class="col-12 text-beranda">
+        <div class="col-12 text-kementerian">
             <h1>KEMENTERIAN</h1>
         </div>
         <div class="col-10">
