@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MisiController;
+use App\Http\Controllers\NewsController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\FrontController;
 use App\Http\Controllers\BeritaController;
@@ -40,33 +41,24 @@ Route::name('front.')->middleware('visitor')->group(function() {
     });
     // beranda
     Route::get('/beranda', [FrontController::class, 'beranda'])->name('beranda');
-    // news
-    Route::get('/news', function () {
-        return view('guest.news');
-    });
-
-
+    
     // profil
-    Route::get('/profil', function () {
-        return view('guest.profil');
-    });
+    Route::get('/profil', [FrontController::class, 'profil'])->name('profil');
 
     // kementerian
-    Route::get('/kementerian', function () {
-        return view('guest.kementerian');
-    });
+    Route::get('/kementerian', [FrontController::class, 'kementerian'])->name('kementerian');
 
     // ormawa
-    Route::get('/ormawa', function () {
-        return view('guest.ormawa');
-    });
-
+    Route::get('/ormawa', [FrontController::class, 'ormawa'])->name('ormawa');
+        
     // aspirasi
-    Route::get('/aspirasi', function () {
-        return view('guest.aspirasi');
-    });
+    Route::get('/aspirasi', [FrontController::class, 'aspirasi'])->name('aspirasi');
     
 });
+
+// news
+Route::get('/news/{id}', [NewsController::class, 'index'])->name('news');
+
 Route::post('/aspirasi/store', [AspirasiController::class, 'store'])->name('aspirasi.store');
 
 // notif email aspirasi

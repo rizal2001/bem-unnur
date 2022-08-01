@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Berita;
 use App\Models\Ormawa;
 use App\Models\Jabatan;
 use App\Models\Kabinet;
@@ -22,8 +23,30 @@ class FrontController extends Controller
         $himaTwo = Ormawa::where('kategori_ormawa_id', '=', '3')->orderBy('id', 'desc')->first();
         $ukmOne = Ormawa::where('kategori_ormawa_id', '=', '4')->first();
         $ukmTwo = Ormawa::where('kategori_ormawa_id', '=', '4')->orderBy('id', 'desc')->first();
+        $berita = Berita::all();
          
         // dd([$bemfaOne, $bemfaTwo]);
-        return view('guest.beranda', compact(['kabinet', 'jumlahKementerian', 'menteri', 'background', 'bemfaOne', 'bemfaTwo', 'himaOne', 'himaTwo', 'ukmOne', 'ukmTwo']));
+        return view('guest.beranda', compact(['kabinet', 'jumlahKementerian', 'menteri', 'background', 'bemfaOne', 'bemfaTwo', 'himaOne', 'himaTwo', 'ukmOne', 'ukmTwo', 'berita']));
+    }
+    public function profil()
+    {
+        $kabinet = Kabinet::with('misi')->orderBy('id','desc')->first();
+        return view('guest.profil', compact('kabinet'));
+    }
+    public function kementerian()
+    {
+        $background = Background::where('halaman_id', '=', '3')->first();
+        $kabinet = Kabinet::with('misi')->orderBy('id','desc')->first();
+        return view('guest.kementerian', compact(['kabinet', 'background']));
+    }
+    public function ormawa()
+    {
+        $kabinet = Kabinet::with('misi')->orderBy('id','desc')->first();
+        return view('guest.ormawa', compact('kabinet'));
+    }
+    public function aspirasi()
+    {
+        $kabinet = Kabinet::with('misi')->orderBy('id','desc')->first();
+        return view('guest.aspirasi', compact('kabinet'));
     }
 }

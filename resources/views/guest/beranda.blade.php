@@ -127,59 +127,18 @@
 
     <div class="container">
         <div class="row justify-content-center mt-4">
+            @foreach ($berita as $row)
             <div class="col-12 col-xl-4 img-news margin-card">
-                <a href="{{url('/news')}}" style="text-decoration:none;">
+                <a href="{{route('news', ['id'=>$row->id])}}" style="text-decoration:none;">
                     <div class="image shadow">
-                        <img src="{{asset('guest/assets/images/news-1.jpeg')}}" alt="Bricks" width="300px"
+                        <img src="{{asset('database/images/berita/'.$row->gambar_banner)}}" alt="Bricks" width="300px"
                             height="400px" />
                         <div class="image-text"></div>
                     </div>
                 </a>
-                <p>Universitas Nurtanio Bandung Peduli - KKN dan Bakti Sosial</p>
+                <p>{{$row->judul}}</p>
             </div>
-            <div class="col-12 col-xl-4 img-news margin-card">
-                <a href="{{url('/news')}}" style="text-decoration:none;">
-                    <div class="image shadow">
-                        <img src="{{asset('guest/assets/images/news-2.jpeg')}}" alt="Bricks" width="300px"
-                            height="400px" />
-                        <div class="image-text"></div>
-                    </div>
-                </a>
-                <p>Lomba IT Days 2022 BEM Fakultas Ilmu Komputer dan Informatika</p>
-            </div>
-            <div class="col-12 col-xl-4 img-news margin-card">
-                <a href="{{url('/news')}}" style="text-decoration:none;">
-                    <div class="image shadow">
-                        <img src="{{asset('guest/assets/images/news-3.jpeg')}}" alt="Bricks" width="300px"
-                            height="400px" />
-                        <div class="image-text"></div>
-                    </div>
-                </a>
-                <p>OPREC STAFF NURTANIO ESPORT - Universitas Nurtanio Bandung mengadakan OPREC</p>
-            </div>
-        </div>
-
-        <div class="row justify-content-center mt-4">
-            <div class="col-12 col-xl-4 img-news margin-card">
-                <a href="{{url('/news')}}" style="text-decoration:none;">
-                    <div class="image shadow">
-                        <img src="{{asset('guest/assets/images/news-4.jpeg')}}" alt="Bricks" width="300px"
-                            height="400px" />
-                        <div class="image-text"></div>
-                    </div>
-                </a>
-                <p>Accounting Competition - Himpunan Mahasiswa Fakultas Akuntasi</p>
-            </div>
-            <div class="col-12 col-xl-4 img-news margin-card">
-                <a href="{{url('/news')}}" style="text-decoration:none;">
-                    <div class="image shadow">
-                        <img src="{{asset('guest/assets/images/news-5.jpeg')}}" alt="Bricks" width="300px"
-                            height="400px" />
-                        <div class="image-text"></div>
-                    </div>
-                </a>
-                <p>Acara Gebyar LLDIKTI WILAYAH 4</p>
-            </div>
+            @endforeach
         </div>
     </div>
 </div>
