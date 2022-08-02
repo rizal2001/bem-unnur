@@ -30,6 +30,6 @@ class Sendmail extends Mailable
     public function build()
     {
         return $this->subject('ASPRASI MAHASISWA NURTANIO')
-        ->view('layouts.email');
+        ->markdown('layouts.email')->with('data',$this->data);
     }
 }
