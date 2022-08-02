@@ -31,6 +31,9 @@ class AspirasiController extends Controller
             'email' => $request->email,
             'aspirasi' => $request->aspirasi
         ]);
+
+        Mail::to('farhan.rachmat09@gmail.com')->send(new SendMail($data));
+
         return redirect('/aspirasi')->with('message', 'Data Berhasil Disimpan');
     }
 

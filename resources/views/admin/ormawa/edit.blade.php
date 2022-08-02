@@ -31,7 +31,7 @@
                         @csrf
                         <div class="mb-3">
                             <label for="inputJabatan" class="form-label">Jabatan</label>
-                            <select type="text" name="jabatan_id" class="form-control">
+                            <select type="text" name="kategori_ormawa_id" class="form-control">
                                 <option value="{{$data->kategori_ormawa_id}}">{{$data->nama}}</option>
                                 @foreach($kategori as $row)
                                 <option value="{{$row->id}}">{{$row->nama}}</option>

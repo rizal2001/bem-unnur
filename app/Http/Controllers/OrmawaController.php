@@ -11,7 +11,7 @@ class OrmawaController extends Controller
 {
     public function index()
     {
-        $data = Ormawa::all();
+        $data = Ormawa::with('kategoriOrmawa')->get();
         return view('admin.ormawa.index', compact('data'));
     }
     public function create(){
@@ -53,7 +53,7 @@ class OrmawaController extends Controller
         $validatedData = $request->validate([
             'kategori_ormawa_id' => 'required',
             'nama' => 'required',
-            'gambar_logo' => 'required|image'
+            
         ]);
 
         $imageLogo = $request->file('gambar_logo_new');
