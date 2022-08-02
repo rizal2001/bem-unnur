@@ -8,6 +8,8 @@ use App\Models\Jabatan;
 use App\Models\Kabinet;
 use App\Models\Background;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use App\Models\KategoriKementerian;
 
 class FrontController extends Controller
 {
@@ -37,7 +39,28 @@ class FrontController extends Controller
     {
         $background = Background::where('halaman_id', '=', '3')->first();
         $kabinet = Kabinet::with('misi')->orderBy('id','desc')->first();
-        return view('guest.kementerian', compact(['kabinet', 'background']));
+        $topMan = DB::table('m_kategori_kementerian')
+            ->join('t_jabatan', 'm_kategori_kementerian.id', '=', 't_jabatan.kategori_kementerian_id')
+            ->join('t_kementerian', 't_jabatan.id', '=', 't_kementerian.jabatan_id')
+            ->join('m_fakultas', 't_kementerian.fakultas_id', '=', 'm_fakultas.id')
+            ->select('t_kementerian.nama AS nama', 'm_fakultas.nama AS nama_fakultas', 't_jabatan.nama AS nama_jabatan', 't_kementerian.gambar AS gambar', 't_kementerian.link_medsos AS link_medsos')
+            ->where('m_kategori_kementerian.id', '=', '1')
+            ->get();
+        $unitKerja = DB::table('m_kategori_kementerian')
+            ->join('t_jabatan', 'm_kategori_kementerian.id', '=', 't_jabatan.kategori_kementerian_id')
+            ->join('t_kementerian', 't_jabatan.id', '=', 't_kementerian.jabatan_id')
+            ->join('m_fakultas', 't_kementerian.fakultas_id', '=', 'm_fakultas.id')
+            ->select('t_kementerian.nama AS nama', 'm_fakultas.nama AS nama_fakultas', 't_jabatan.nama AS nama_jabatan', 't_kementerian.gambar AS gambar', 't_kementerian.link_medsos AS link_medsos')
+            ->where('m_kategori_kementerian.id', '=', '2')
+            ->get();
+        $kementerian = DB::table('m_kategori_kementerian')
+            ->join('t_jabatan', 'm_kategori_kementerian.id', '=', 't_jabatan.kategori_kementerian_id')
+            ->join('t_kementerian', 't_jabatan.id', '=', 't_kementerian.jabatan_id')
+            ->join('m_fakultas', 't_kementerian.fakultas_id', '=', 'm_fakultas.id')
+            ->select('t_kementerian.nama AS nama', 'm_fakultas.nama AS nama_fakultas', 't_jabatan.nama AS nama_jabatan', 't_kementerian.gambar AS gambar', 't_kementerian.link_medsos AS link_medsos')
+            ->where('m_kategori_kementerian.id', '=', '3')
+            ->get();
+        return view('guest.kementerian', compact(['kabinet', 'background', 'topMan', 'unitKerja', 'kementerian']));
     }
     public function ormawa()
     {

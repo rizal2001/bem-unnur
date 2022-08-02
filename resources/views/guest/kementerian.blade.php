@@ -17,14 +17,16 @@
 </div>
 <div class="container">
     <div class="row mt-4">
+        @foreach ($topMan as $row)
         <div class="col-12 col-md-6 col-xl-6 text-light text-center img-menteri">
-            <a href="{{url('https://www.instagram.com/aditiagusti13/')}}" target="_blank">
-                <img src="{{asset('guest/assets/images/Foto Presma.png')}}" width="500px" height="500px">
+            <a href="{{url($row->link_medsos)}}" target="_blank">
+                <img src="{{asset('database/images/kementerian/'.$row->gambar)}}" width="500px" height="500px">
             </a>
-            <h4>M. Angga Fuadyanshah</h4>
-            <h4>Fakultas Teknik</h4>
-            <h4>Presiden Mahasiswa</h4>
+            <h4>{{$row->nama}}</h4>
+            <h4>{{$row->nama_fakultas}}</h4>
+            <h4>{{$row->nama_jabatan}}</h4>
         </div>
+        @endforeach
     </div>
 
     <div class="row justify-content-center">
@@ -33,38 +35,16 @@
         </div>
     </div>
     <div class="row justify-content-center">
+        @foreach ($unitKerja as $row)
         <div class="col-12 col-md-6 col-xl-3 text-light text-center img-menteri">
-            <a href="{{url('https://www.instagram.com/aditiagusti13/')}}" target="_blank">
-                <img src="{{asset('guest/assets/images/Foto Presma.png')}}" width="280px" height="280px" />
+            <a href="{{url($row->link_medsos)}}" target="_blank">
+                <img src="{{asset('database/images/kementerian/'.$row->gambar)}}" width="280px" height="280px" />
             </a>
-            <h5>Girang Nurul Huda</h5>
-            <h5>Fakultas Teknik</h5>
-            <h5>Wakil Presiden Mahasiswa</h5>
+            <h5>{{$row->nama}}</h5>
+            <h5>{{$row->nama_fakultas}}</h5>
+            <h5>{{$row->nama_jabatan}}</h5>
         </div>
-        <div class="col-12 col-md-6 col-xl-3 text-light text-center img-menteri">
-            <a href="{{url('https://www.instagram.com/aditiagusti13/')}}" target="_blank">
-                <img src="{{asset('guest/assets/images/Foto Presma.png')}}" width="280px" height="280px" />
-            </a>
-            <h5>Girang Nurul Huda</h5>
-            <h5>Fakultas Teknik</h5>
-            <h5>Wakil Presiden Mahasiswa</h5>
-        </div>
-        <div class="col-12 col-md-6 col-xl-3 text-light text-center img-menteri">
-            <a href="{{url('https://www.instagram.com/aditiagusti13/')}}" target="_blank">
-                <img src="{{asset('guest/assets/images/Foto Presma.png')}}" width="280px" height="280px" />
-            </a>
-            <h5>Girang Nurul Huda</h5>
-            <h5>Fakultas Teknik</h5>
-            <h5>Wakil Presiden Mahasiswa</h5>
-        </div>
-        <div class="col-12 col-md-6 col-xl-3 text-light text-center img-menteri">
-            <a href="{{url('https://www.instagram.com/aditiagusti13/')}}" target="_blank">
-                <img src="{{asset('guest/assets/images/Foto Presma.png')}}" width="280px" height="280px" />
-            </a>
-            <h5>Girang Nurul Huda</h5>
-            <h5>Fakultas Teknik</h5>
-            <h5>Wakil Presiden Mahasiswa</h5>
-        </div>
+        @endforeach
     </div>
 
     <div class="row justify-content-center">
@@ -73,38 +53,16 @@
         </div>
     </div>
     <div class="row justify-content-center">
+        @foreach ($kementerian as $row)
         <div class="col-12 col-md-6 col-xl-3 text-light text-center img-menteri">
-            <a href="{{url('https://www.instagram.com/aditiagusti13/')}}" target="_blank">
-                <img src="{{asset('guest/assets/images/Foto Presma.png')}}" width="280px" height="280px" />
+            <a href="{{url($row->link_medsos)}}" target="_blank">
+                <img src="{{asset('database/images/kementerian/'.$row->gambar)}}" width="280px" height="280px" />
             </a>
-            <h5>Girang Nurul Huda</h5>
-            <h5>Fakultas Teknik</h5>
-            <h5>Wakil Presiden Mahasiswa</h5>
+            <h5>{{$row->nama}}</h5>
+            <h5>{{$row->nama_fakultas}}</h5>
+            <h5>{{$row->nama_jabatan}}</h5>
         </div>
-        <div class="col-12 col-md-6 col-xl-3 text-light text-center img-menteri">
-            <a href="{{url('https://www.instagram.com/aditiagusti13/')}}" target="_blank">
-                <img src="{{asset('guest/assets/images/Foto Presma.png')}}" width="280px" height="280px" />
-            </a>
-            <h5>Girang Nurul Huda</h5>
-            <h5>Fakultas Teknik</h5>
-            <h5>Wakil Presiden Mahasiswa</h5>
-        </div>
-        <div class="col-12 col-md-6 col-xl-3 text-light text-center img-menteri">
-            <a href="{{url('https://www.instagram.com/aditiagusti13/')}}" target="_blank">
-                <img src="{{asset('guest/assets/images/Foto Presma.png')}}" width="280px" height="280px" />
-            </a>
-            <h5>Girang Nurul Huda</h5>
-            <h5>Fakultas Teknik</h5>
-            <h5>Wakil Presiden Mahasiswa</h5>
-        </div>
-        <div class="col-12 col-md-6 col-xl-3 text-light text-center img-menteri">
-            <a href="{{url('https://www.instagram.com/aditiagusti13/')}}" target="_blank">
-                <img src="{{asset('guest/assets/images/Foto Presma.png')}}" width="280px" height="280px" />
-            </a>
-            <h5>Girang Nurul Huda</h5>
-            <h5>Fakultas Teknik</h5>
-            <h5>Wakil Presiden Mahasiswa</h5>
-        </div>
+        @endforeach
     </div>
 </div>
 @endsection
