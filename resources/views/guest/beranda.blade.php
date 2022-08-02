@@ -147,14 +147,21 @@
 
 @section('script')
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
 <script>
 $(".icon-slider").owlCarousel({
+    loop: true,
+    autoplaySpeed: 1000,
+    autoplay: true,
     items: 1,
     margin: 18,
     nav: true,
     navText: ["<i class='fa-solid fa-angles-left'></i>", "<i class='fa-solid fa-angles-right'></i>"]
 });
+
 $("#owl-demo").owlCarousel({
+    autoplaySpeed: 1000,
+    autoplay: true,
     margin: 18,
     nav: true,
     navText: ["<i class='fa-solid fa-angles-left'></i>", "<i class='fa-solid fa-angles-right'></i>"],
@@ -162,16 +169,17 @@ $("#owl-demo").owlCarousel({
     responsive: {
         0: {
             items: 1,
-            nav: true
+            loop: true
         },
         576: {
             items: 2,
-            nav: false
+            loop: true,
+            margin: 150
+            
         },
         1200: {
             items: 4,
-            nav: true,
-            loop: false
+            loop: true
         }
     }
 });

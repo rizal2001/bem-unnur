@@ -47,8 +47,8 @@
                                     <td>{{$row->menu}}</td>
                                     <td class="text-center">
                                         <a href="{{route('background', ['halamanId'=>$row->id] )}}"
-                                            class="btn btn-info btn-sm btn-rounded btn-icon-prepend">Lihat
-                                            <i class="ti-reload btn-icon-append"></i></a>
+                                            class="btn btn-primary btn-sm btn-rounded btn-icon-prepend">Lihat
+                                            <i class="ti-eye btn-icon-append"></i></a>
                                     </td>
                                 </tr>
                                 @endforeach
