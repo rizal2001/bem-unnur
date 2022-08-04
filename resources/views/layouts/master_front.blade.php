@@ -43,7 +43,10 @@
                     <div class="text-header mt-4">
                         <p>BEM Republik Mahasiswa</p>
                         <p>Universitas Nurtanio Bandung</p>
+                        @if ($kabinet = "NULL")
+                        @else
                         <p>KABINET {{$kabinet->nama}}</p>
+                        @endif
                     </div>
                 </div>
                 <div class="col-2 icon-menu mt-4">
@@ -85,12 +88,18 @@
                     <a href="{{url('https://www.unnur.ac.id/')}}" target="_blank" style="color: transparent;">
                         <img src="{{asset('guest/assets/images/logo-unnur.png')}}" width="80px" height="80px" />
                     </a>
+                    @if($kabinet = "NULL")
+                    <h4>Badan Eksekutif Mahasiswa Republik Mahasiswa</h4>
+                    <h4>Univesitas Nurtanio Bandung</h4>
+                    @else
                     <a href="{{url('/beranda')}}">
-                        <img src="{{asset('database/images/kabinet/logo/'.$kabinet->gambar_logo)}}" width="100px" height="130px" />
+                        <img src="{{asset('database/images/kabinet/logo/'.$kabinet->gambar_logo)}}" width="100px"
+                            height="130px" />
                     </a>
                     <h4>KABINET {{$kabinet->nama}}</h4>
                     <h4>Badan Eksekutif Mahasiswa Republik Mahasiswa</h4>
                     <h4>Univesitas Nurtanio Bandung {{$kabinet->tahun_periode}}</h4>
+                    @endif
                     <h4 class="mt-4">MEDIA SOSIAL</h4>
                     <a href="{{url('https://www.instagram.com/bemnurtanio/')}}" target="_blank"
                         style="color: transparent;">
@@ -146,7 +155,10 @@
                             <div class="text-header mt-4">
                                 <p>BEM Republik Mahasiswa</p>
                                 <p>Universitas Nurtanio Bandung</p>
+                                @if ($kabinet = "NULL")
+                                @else
                                 <p>KABINET {{$kabinet->nama}}</p>
+                                @endif
                             </div>
                         </div>
                         <div class="col-2">

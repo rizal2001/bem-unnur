@@ -41,7 +41,11 @@
         </div>
         <div class="col-12">
             <div class="text-center text-visi mt-4">
+                @if ($kabinet = "NULL")
+                <h4>" Belum Memiliki Visi "</h4>
+                @else
                 <h4>" {{$kabinet->visi}} "</h4>
+                @endif
             </div>
         </div>
 
@@ -49,6 +53,11 @@
             <span>Misi</span>
         </div>
         <div class="row justify-content-center">
+            @if ($misi = "NULL")
+            <div class="text-center text-visi mt-4">
+                <h4>" Belum Memiliki Misi "</h4>
+            </div>
+            @else
             @foreach ($kabinet->misi as $row)
             <div class="col-12 col-xl-4">
                 <div class="box-misi shadow mt-4">
@@ -60,6 +69,7 @@
                 </div>
             </div>
             @endforeach
+            @endif
         </div>
     </div>
 </div>
@@ -72,10 +82,16 @@
             </div>
         </div>
         <div class="col-12">
+            @if ($kabinet = "NULL")
+            <div class="text-center text-visi mt-4">
+                <h4>" Belum Memiliki Struktur Kabinet "</h4>
+            </div>
+            @else
             <div class="img-struktur text-center shadow mt-4">
                 <img src="{{asset('database/images/kabinet/struktur/'.$kabinet->gambar_struktur)}}" width="100%"
                     height="1000px" style="border-radius: 20px" />
             </div>
+            @endif
         </div>
     </div>
 </div>
