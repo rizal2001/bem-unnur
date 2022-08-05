@@ -44,7 +44,7 @@
                                     <th>Nama</th>
                                     <th>Created At</th>
                                     <th>Updated At</th>
-                                    <th class="text-center">Aksi</th>
+                                    <!-- <th class="text-center">Aksi</th> -->
                                 </tr>
                             </thead>
                             <tbody>
@@ -55,15 +55,15 @@
                                     <td>{{$row->nama}}</td>
                                     <td>{{$row->created_at}}</td>
                                     <td>{{$row->updated_at}}</td>
-                                    <td class="text-center">
+                                    <!-- <td class="text-center">
                                         <a href="{{route('kategori.kementerian.edit', ['id'=>$row->id] )}}"
                                             class="btn btn-dark btn-sm btn-rounded btn-icon-prepend">Edit
                                             <i class="ti-reload btn-icon-append"></i></a>
-                                        <!-- <a href="{{route('kategori.kementerian.delete', ['id'=>$row->id] )}}"
+                                        <a href="{{route('kategori.kementerian.delete', ['id'=>$row->id] )}}"
                                             class="btn btn-danger btn-rounded btn-icon-text"
                                             onclick="return confirm('Apakah anda yakin ?')">Delete
-                                            <i class="ti-trash btn-icon-append"></i></a> -->
-                                    </td>
+                                            <i class="ti-trash btn-icon-append"></i></a>
+                                    </td> -->
                                 </tr>
                                 @endforeach
                             </tbody>

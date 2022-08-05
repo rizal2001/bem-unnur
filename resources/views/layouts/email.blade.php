@@ -9,7 +9,6 @@
 </head>
 
 <style>
-
 .img-email-bem {
     text-align: center;
     margin-left: auto;
@@ -47,22 +46,39 @@
 }
 
 .box-aspirasi h3 {
-    text-align: justify;
+    text-align: center;
     color: white;
     font-weight: 600;
 }
+
 .copyright span {
     color: white;
     font-size: 14px;
     font-weight: 600;
 }
+
 .line-bottom-2 {
     margin-top: 20px;
     border-bottom: 3px solid white;
 }
+
 .copyright {
     text-align: center;
     padding: 20px;
+}
+
+.button-check {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.button-check button {
+    background: #B22727;
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px
 }
 </style>
 
@@ -70,23 +86,26 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12">
-                <div class="text-email mt-5">
+                <div class="text-email">
+                    <br/>
                     <h1>Aspirasi Masuk!</h1>
                 </div>
             </div>
         </div>
         <div class="row justify-content-center">
             <div class="col-10">
-                <div class="box-aspirasi shadow mt-5">
+                <div class="box-aspirasi">
                     <h3>From: {{ $data['nama'] }} - {{ $data['email'] }}</h3>
                     <h2>ASPIRASI</h2>
-                    <h3 class="mt-3">" {{ $data['aspirasi'] }} "</h3>
-                    <a href="{{route('aspirasi')}}"><button>Check this out!!!</button></a>
+                    <h3>" {{ $data['aspirasi'] }} "</h3>
+                    <div class="button-check">
+                        <a href="{{route('aspirasi')}}"><button>Check this out!!!</button></a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="line-bottom-2 mt-5"></div>
+        <div class="line-bottom-2"></div>
 
         <div class="row justify-content-center">
             <div class="col-12 copyright">

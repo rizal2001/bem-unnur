@@ -155,7 +155,7 @@
                             <div class="text-header mt-4">
                                 <p>BEM Republik Mahasiswa</p>
                                 <p>Universitas Nurtanio Bandung</p>
-                                @if ($kabinet = "NULL")
+                                @if (is_null($kabinet))
                                 @else
                                 <p>KABINET {{$kabinet->nama}}</p>
                                 @endif
