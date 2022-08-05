@@ -69,8 +69,29 @@ class FrontController extends Controller
     }
     public function ormawa()
     {
+        $background = Background::where('halaman_id', '=', '3')->first();
         $kabinet = Kabinet::with('misi')->orderBy('id','desc')->first();
-        return view('guest.ormawa', compact('kabinet'));
+        $bemuniv = DB::table('m_kategori_ormawa')
+        ->join('t_ormawa','m_kategori_ormawa.id','=','t_ormawa.kategori_ormawa_id')
+        ->select('t_ormawa.nama AS nama', 't_ormawa.gambar_logo AS gambar')
+        ->where('m_kategori_ormawa.id','=','1')
+        ->get();
+        $bemfa = DB::table('m_kategori_ormawa')
+        ->join('t_ormawa','m_kategori_ormawa.id','=','t_ormawa.kategori_ormawa_id')
+        ->select('t_ormawa.nama AS nama', 't_ormawa.gambar_logo AS gambar')
+        ->where('m_kategori_ormawa.id','=','2')
+        ->get();
+        $hima = DB::table('m_kategori_ormawa')
+        ->join('t_ormawa','m_kategori_ormawa.id','=','t_ormawa.kategori_ormawa_id')
+        ->select('t_ormawa.nama AS nama', 't_ormawa.gambar_logo AS gambar')
+        ->where('m_kategori_ormawa.id','=','3')
+        ->get();
+        $ukm = DB::table('m_kategori_ormawa')
+        ->join('t_ormawa','m_kategori_ormawa.id','=','t_ormawa.kategori_ormawa_id')
+        ->select('t_ormawa.nama AS nama', 't_ormawa.gambar_logo AS gambar')
+        ->where('m_kategori_ormawa.id','=','4')
+        ->get();
+        return view('guest.ormawa', compact('kabinet','bemuniv','bemfa','hima','ukm'));
     }
     public function aspirasi()
     {

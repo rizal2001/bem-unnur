@@ -27,10 +27,12 @@
         </div>
     </div>
     <div class="row justify-content-center">
+        @foreach ($bemuniv as $row)
         <div class="col-6 col-xl-3 img-ormawa img-circle">
-            <img src="{{asset('guest/assets/images/logo.png')}}" width="150px" height="150px" />
-            <h5>Badan Eksekutif Mahasiswa Republik Mahasiswa Universitas Nurtanio Bandung</h5>
+            <img src="{{asset('database/images/ormawa/'.$row->gambar)}}" width="150px" height="150px" />
+            <h5>{{$row->nama}}</h5>
         </div>
+        @endforeach
     </div>
 
     <div class="row justify-content-center">
@@ -39,22 +41,12 @@
         </div>
     </div>
     <div class="row justify-content-center">
+        @foreach ($bemfa as $row)
         <div class="col-6 col-xl-3 img-ormawa">
-            <img src="{{asset('guest/assets/images/bem-fiki.png')}}" width="150px" height="150px" />
-            <h5>Badan Eksekutif Mahasiswa Fakultas Ilmu Komputer & Informatika Universitas Nurtanio Bandung</h5>
+            <img src="{{asset('database/images/ormawa/'.$row->gambar)}}" width="150px" height="150px" />
+            <h5>{{$row->nama}}</h5>
         </div>
-        <div class="col-6 col-xl-3 img-ormawa">
-            <img src="{{asset('guest/assets/images/LOGO BEM FT.png')}}" width="150px" height="150px" />
-            <h5>Badan Eksekutif Mahasiswa Fakultas Teknik Universitas Nurtanio Bandung</h5>
-        </div>
-        <div class="col-6 col-xl-3 img-ormawa">
-            <img src="{{asset('guest/assets/images/BEM-FAKULTAS-EKONOMI.png')}}" width="150px" height="150px" />
-            <h5>Badan Eksekutif Mahasiswa Fakultas Ekonomi Universitas Nurtanio Bandung</h5>
-        </div>
-        <div class="col-6 col-xl-3 img-ormawa">
-            <img src="{{asset('guest/assets/images/LOGO BEM FISIP.png')}}" width="150px" height="150px" />
-            <h5>Badan Eksekutif Mahasiswa Fakultas Ilmu Sosial & Ilmu Politik Universitas Nurtanio Bandung</h5>
-        </div>
+        @endforeach
     </div>
 
     <div class="row justify-content-center">
@@ -63,22 +55,13 @@
         </div>
     </div>
     <div class="row justify-content-center">
+        @foreach ($hima as $row)
         <div class="col-6 col-xl-3 img-ormawa">
-            <img src="{{asset('guest/assets/images/LOGO HIMA FIKI.png')}}" width="150px" height="150px" />
-            <h5>Himpunan Mahasiswa Fakultas Ilmu Komputer & Informatika Universitas Nurtanio Bandung</h5>
+            <img src="{{asset('database/images/ormawa/'.$row->gambar)}}" width="150px" height="150px" />
+            <h5>{{$row->nama}}</h5>
         </div>
-        <div class="col-6 col-xl-3 img-ormawa">
-            <img src="{{asset('guest/assets/images/LOGO HIMA TEKNIK PENERBANGAN.png')}}" width="150px" height="150px" />
-            <h5>Himpunan Mahasiswa Fakultas Teknik Penerbangan Universitas Nurtanio Bandung</h5>
-        </div>
-        <div class="col-6 col-xl-3 img-ormawa">
-            <img src="{{asset('guest/assets/images/LOGO HIMA TEKNIK ELEKTRO.png')}}" width="150px" height="150px" />
-            <h5>Himpunan Mahasiswa Fakultas Teknik Elekto Universitas Nurtanio Bandung</h5>
-        </div>
-        <div class="col-6 col-xl-3 img-ormawa">
-            <img src="{{asset('guest/assets/images/LOGO HIMA MANAJEMEN.png')}}" width="150px" height="150px" />
-            <h5>Himpunan Mahasiswa Fakultas Manajemen Universitas Nurtanio Bandung</h5>
-        </div>
+        @endforeach
+
     </div>
 
     <div class="row justify-content-center">
@@ -87,22 +70,12 @@
         </div>
     </div>
     <div class="row justify-content-center">
+        @foreach ($ukm as $row)
         <div class="col-6 col-xl-3 img-ormawa">
-            <img src="{{asset('guest/assets/images/LOGO UAC.png')}}" width="150px" height="150px" />
-            <h5>Unnur Aeromodelling Club Universitas Nurtanio Bandung</h5>
+            <img src="{{asset('database/images/ormawa/'.$row->gambar)}}" width="150px" height="150px" />
+            <h5>{{$row->nama}}</h5>
         </div>
-        <div class="col-6 col-xl-3 img-ormawa">
-            <img src="{{asset('guest/assets/images/LOGO GAD.png')}}" width="150px" height="150px" />
-            <h5>Gema Aero Dirgantara Universitas Nurtanio Bandung</h5>
-        </div>
-        <div class="col-6 col-xl-3 img-ormawa">
-            <img src="{{asset('guest/assets/images/LOGO LDK DAMAI.png')}}" width="150px" height="150px" />
-            <h5>Dewan Mahasiswa Islam Universitas Nurtanio Bandung</h5>
-        </div>
-        <div class="col-6 col-xl-3 img-ormawa">
-            <img src="{{asset('guest/assets/images/LOGO PMK.png')}}" width="150px" height="150px" />
-            <h5>Persekutuan Mahasiswa Kristen Universitas Nurtanio Bandung</h5>
-        </div>
+        @endforeach
     </div>
 </div>
 @endsection
