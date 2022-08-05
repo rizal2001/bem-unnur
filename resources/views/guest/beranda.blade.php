@@ -63,7 +63,7 @@
             <h1>KEMENTERIAN</h1>
         </div>
         <div class="col-10">
-            <div class="box-kementerian rounded shadow text-center mt-3">
+            <div class="box-kementerian shadow text-center mt-3">
                 <h4>Badan Eksekutif Mahasiswa Universitas Nurtanio Bandung Memiliki {{$jumlahKementerian}} Kementrian
                 </h4>
             </div>
@@ -74,8 +74,6 @@
 <div class="container">
     <div class="row justify-content-center">
         <div id="owl-demo" class="owl-carousel owl-theme mt-5">
-            @if($kabinet = "null")
-            @else
             @foreach ($menteri as $row)
             <div class="item col-12 col-md-6 col-xl-4">
                 <div class="box-mentri shadow text-center">
@@ -88,7 +86,6 @@
                 </div>
             </div>
             @endforeach
-            @endif
         </div>
     </div>
 </div>

@@ -31,7 +31,7 @@ class FrontController extends Controller
         $ukmTwo = Ormawa::where('kategori_ormawa_id', '=', '4')->orderBy('id', 'desc')->first();
         $berita = Berita::all();
          
-        // dd([$bemfaOne, $bemfaTwo]);
+        // dd([$kabinet]);
         return view('guest.beranda', compact(['kabinet', 'jumlahKementerian', 'menteri', 'background', 'bemfa', 'bemfaOne', 'bemfaTwo', 'hima', 'himaOne', 'himaTwo', 'ukm', 'ukmOne', 'ukmTwo', 'berita']));
     }
     public function profil()
@@ -69,7 +69,7 @@ class FrontController extends Controller
     }
     public function ormawa()
     {
-        $background = Background::where('halaman_id', '=', '3')->first();
+        $background = Background::where('halaman_id', '=', '4')->first();
         $kabinet = Kabinet::with('misi')->orderBy('id','desc')->first();
         $bemuniv = DB::table('m_kategori_ormawa')
         ->join('t_ormawa','m_kategori_ormawa.id','=','t_ormawa.kategori_ormawa_id')
@@ -91,7 +91,7 @@ class FrontController extends Controller
         ->select('t_ormawa.nama AS nama', 't_ormawa.gambar_logo AS gambar')
         ->where('m_kategori_ormawa.id','=','4')
         ->get();
-        return view('guest.ormawa', compact('kabinet','bemuniv','bemfa','hima','ukm'));
+        return view('guest.ormawa', compact('background', 'kabinet','bemuniv','bemfa','hima','ukm'));
     }
     public function aspirasi()
     {
