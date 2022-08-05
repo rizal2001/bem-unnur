@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'BEM UNNUR - Create Data Kategori Ormawa')
+@section('title', 'BEM REMA UNNUR - CREATE DATA KATEGORI ORMAWA')
 @section('content')
 
 <style>

@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'BEM UNNUR - Create Data Background')
+@section('title', 'BEM REMA UNNUR - CREATE DATA BACKGROUND')
 @section('content')
 
 <style>

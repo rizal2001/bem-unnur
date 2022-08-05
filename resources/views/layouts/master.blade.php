@@ -30,9 +30,28 @@
     <link rel="stylesheet" href="{{asset('admin/css/vertical-layout-light/style.css')}}">
     <!-- endinject -->
     <link rel="shortcut icon" href="{{asset('admin/images/losgo.png')}}" />
+    
     <style>
     .mdi-file-import {
         font-size: 20px;
+    }
+
+    .text-footer {
+        margin-top: -50px;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        font-weight: 600;
+    }
+
+    .text-footer p {
+        font-size: 12px;
+    }
+
+    @media (min-width: 992px) {
+        .sidebar-icon-only .text-footer {
+            display: none;
+        }
     }
     </style>
 
@@ -406,6 +425,11 @@
                         </a>
                     </li>
                 </ul>
+                <div class="text-footer">
+                    <p>Kementerian Informasi dan Komunikasi by <a
+                            href="{{url('https://www.instagram.com/hmif_unnur/')}}" target="_blank"
+                            style="text-decoration:none; color:#FBD444;"> HMIF Nurtanio</a></p>
+                </div>
             </nav>
             <!-- partial -->
             <div class="main-panel">
