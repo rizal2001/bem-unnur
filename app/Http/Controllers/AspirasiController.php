@@ -21,7 +21,7 @@ class AspirasiController extends Controller
     
         $validatedData = $request->validate([
             'nama' => 'required',
-            'email' => 'required',
+            'email' => 'required|email',
             'aspirasi' => 'required'
         ]);
         
@@ -31,15 +31,8 @@ class AspirasiController extends Controller
             'email' => $request->email,
             'aspirasi' => $request->aspirasi
         ]);
-        
-        $email = [
-            'nama' => $request->nama,
-            'email' => $request->email,
-            'aspirasi' => $request->aspirasi
-            ];
-           
-            \Mail::to('bemfiki@gmail.com')->send(new \App\Mail\Sendmail($email));
 
+        Mail::to('farhan.rachmat09@gmail.com')->send(new SendMail($data));
 
         return redirect('/aspirasi')->with('message', 'Data Berhasil Disimpan');
     }
@@ -49,6 +42,12 @@ class AspirasiController extends Controller
         $data = Aspirasi::find($id);
         $data->delete();
         return redirect('/admin/aspirasi')->with('message', 'Data Berhasil Dihapus');
+    
+    }
+    public function detail($id)
+    {
+        $data = Aspirasi::where('id', '=', $id)->first();
+        return view('admin.aspirasi.detail', compact('data'));
     
     }
 }

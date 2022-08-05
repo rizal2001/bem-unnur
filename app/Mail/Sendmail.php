@@ -10,16 +10,16 @@ use Illuminate\Queue\SerializesModels;
 class Sendmail extends Mailable
 {
     use Queueable, SerializesModels;
-    public $email;
+    public $data;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($email)
+    public function __construct($data)
     {
-        $this->email = $email;
+        $this->data = $data;
     }
 
     /**
@@ -30,6 +30,6 @@ class Sendmail extends Mailable
     public function build()
     {
         return $this->subject('ASPRASI MAHASISWA NURTANIO')
-        ->view('guest.aspirasi');
+        ->markdown('layouts.email')->with('data',$this->data);
     }
 }

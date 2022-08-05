@@ -5,17 +5,20 @@
     .menu {
         display: none;
     }
+    .logo-header {
+        margin-left: -10px;
+    }
+    .text-header p {
+        margin-left: -25px;
+        font-size: 11px;
+    }
     .slider-1 .caption {
-        bottom: 380px;
+        bottom: 370px;
         width: 350px;
-        font-size: 30px;
+        font-size: 20px;
     }
     .margin-card {
         margin-bottom: 30px;
-    }
-    .slider-2 .owl-prev,
-    .slider-2 .owl-next {
-        top: 46%;
     }
     .bg-ormawa img {
         width: 60px;
@@ -52,7 +55,7 @@
     .news h5 {
         margin-left: auto;
         margin-right: auto;
-        width: 400px;
+        width: 370px;
     }
     .img-struktur img {
         height: 300px;
@@ -62,37 +65,126 @@
         height: 350px;
     }
     .kementerian .caption {
-        bottom: 400px;
+        bottom: 450px;
         width: 350px;
-        font-size: 30px;
+        font-size: 20px;
     }
     .ormawa .caption {
-        bottom: 400px;
+        bottom: 390px;
         width: 350px;
-        font-size: 30px;
+        font-size: 20px;
+    }
+    .text-footer h4 {
+        font-size: 18px;
+    }
+    .text-maps h3 {
+        font-size: 18px;
+    }
+    .title-unit h1 {
+        font-size: 20px;
+    }
+    .title-kementerian h1 {
+        font-size: 20px;
+    }
+    .text-beranda h1 {
+        font-size: 25px;
+    }
+    .box-profil {
+        width: 180px;
+        font-size: 16px;
+    }
+    .text-kementerian h1 {
+        margin-top: 0px;
+        font-size: 25px;
+    }
+    .box-kementerian h4 {
+        font-size: 16px;
+    }
+    .text-ormawa h1 {
+        font-size: 25px;
+    }
+    .bg-ormawa h4 {
+        font-size: 16px;
+    }
+    .text-news h1 {
+        font-size: 25px;
+    }
+    .news h1 {
+        font-size: 25px;
+    }
+    .box-profil-page {
+        width: 180px;
+        font-size: 16px;
+    }
+    .box-visi {
+        width: 180px;
+        font-size: 16px;
+    }
+    .box-misi {
+        width: 300px;
+        font-size: 16px;
+    }
+    .box-struktur {
+        font-size: 16px;
+    }
+    .title-ormawa h1 {
+        font-size: 20px;
+    }
+    .img-ormawa h5 {
+        font-size: 18px;
+    }
+    .img-menteri h5 {
+        font-size: 18px;
+    }
+    .img-menteri h4 {
+        font-size: 18px;
+    }
+    .title-aspirasi h1 {
+        font-size: 20px;
+    }
+    .text-aspirasi h3 {
+        font-size: 18px;
+    }
+    #owl-demo .owl-prev {
+        left: 30px;
+    }
+    #owl-demo .owl-next {
+        right: 30px;
+    }
+    #owl-demo .owl-prev,
+    #owl-demo .owl-next {
+        top: 35%;
     }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 991px) {
+    .icon-menu {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
     .text-header p {
         margin-left: -30px;
-        width: 200px;
+        font-size: 11px;
     }
-    .menu ul li {
-        margin: 22px 20px;
+    .menu-2 ul li {
+        margin-top: 35px;
     }
-    .menu ul {
-        margin-right: 15px;
+    .slider-1 .caption {
+        bottom: 370px;
+        width: 580px;
+        font-size: 25px;
     }
     .margin-card {
         margin-bottom: 30px;
     }
-    .slider-2 .owl-prev,
-    .slider-2 .owl-next {
-        top: 22%;
+    .bg-ormawa img {
+        width: 60px;
+        height: 60px;
     }
-    .slider-2 .carousel-inner-2 {
-        height: 570px;
+    .slider-2 {
+        height: 600px;
     }
     .text-footer {
         text-align: center;
@@ -107,7 +199,98 @@
         margin-top: 30px;
         margin-bottom: 30px;
     }
-    .img-struktur img {
+    .bg-form {
+        width: 90%;
+    }
+    .news img {
+        width: 300px;
         height: 400px;
+    }
+    .img-struktur img {
+        height: 700px;
+    }
+    .img-menteri img {
+        width: 350px;
+        height: 350px;
+    }
+    .kementerian .caption {
+        bottom: 420px;
+        width: 800px;
+        font-size: 25px;
+    }
+    .ormawa .caption {
+        bottom: 390px;
+        width: 600px;
+        font-size: 25px;
+    }
+    .text-footer h4 {
+        font-size: 18px;
+    }
+    .text-maps h3 {
+        font-size: 18px;
+    }
+    .title-unit h1 {
+        font-size: 20px;
+    }
+    .title-kementerian h1 {
+        font-size: 20px;
+    }
+    .text-beranda h1 {
+        font-size: 25px;
+    }
+    .box-profil {
+        font-size: 16px;
+    }
+    .text-kementerian h1 {
+        margin-top: 0px;
+        font-size: 25px;
+    }
+    .box-kementerian h4 {
+        font-size: 16px;
+    }
+    .text-ormawa h1 {
+        font-size: 25px;
+    }
+    .bg-ormawa h4 {
+        font-size: 16px;
+    }
+    .text-news h1 {
+        font-size: 25px;
+    }
+    .box-profil-page {
+        font-size: 16px;
+    }
+    .box-visi {
+        font-size: 16px;
+    }
+    .box-misi {
+        font-size: 16px;
+    }
+    .box-struktur {
+        font-size: 16px;
+    }
+    .title-ormawa h1 {
+        font-size: 20px;
+    }
+    .img-ormawa h5 {
+        font-size: 18px;
+    }
+    .img-menteri h5 {
+        font-size: 18px;
+    }
+    .img-menteri h4 {
+        font-size: 18px;
+    }
+    .title-aspirasi h1 {
+        font-size: 20px;
+    }
+    .text-aspirasi h3 {
+        font-size: 18px;
+    }
+    #owl-demo .owl-prev {
+        left: -60px;
+    }
+    #owl-demo .owl-next {
+        right: -50px;
     }
 }

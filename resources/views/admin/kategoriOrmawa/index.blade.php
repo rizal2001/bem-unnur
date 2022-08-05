@@ -34,16 +34,16 @@
                         <table id="dataTable" class="table">
                             <thead>
                                 <tr>
-                                    <a href="{{route('kategori.ormawa.create')}}"
+                                    <!-- <a href="{{route('kategori.ormawa.create')}}"
                                         class="btn btn-primary btn-sm btn-rounded btn-icon-text marginCard">
                                         <i class="ti-upload btn-icon-prepend"></i>
                                         Create
-                                    </a>
+                                    </a> -->
                                 </tr>
                                 <tr>
                                     <th>No</th>
                                     <th>Nama</th>
-                                    <th class="text-center">Aksi</th>
+                                    <!-- <th class="text-center">Aksi</th> -->
                                     <!-- <th>Delete</th> -->
                                 </tr>
                             </thead>
@@ -54,13 +54,13 @@
                                     <td><?php echo $i++; ?></td>
                                     <td>{{$row->nama}}</td>
                                     <td class="text-center">
-                                        <a href="{{route('kategori.ormawa.edit', ['id'=>$row->id] )}}"
+                                        <!-- <a href="{{route('kategori.ormawa.edit', ['id'=>$row->id] )}}"
                                             class="btn btn-dark btn-sm btn-rounded btn-icon-prepend">Edit
-                                            <i class="ti-reload btn-icon-append"></i></a>
-                                        <a href="{{route('kategori.ormawa.delete', ['id'=>$row->id] )}}"
+                                            <i class="ti-reload btn-icon-append"></i></a> -->
+                                        <!-- <a href="{{route('kategori.ormawa.delete', ['id'=>$row->id] )}}"
                                             class="btn btn-danger btn-rounded btn-icon-text"
                                             onclick="return confirm('Apakah anda yakin ?')">Delete
-                                            <i class="ti-trash btn-icon-append"></i></a>
+                                            <i class="ti-trash btn-icon-append"></i></a> -->
                                     </td>
                                 </tr>
                                 @endforeach

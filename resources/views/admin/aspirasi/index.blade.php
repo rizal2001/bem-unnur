@@ -45,12 +45,15 @@
                             <tbody>
                                 <?php $i=1; ?>
                                 @foreach($data as $row)
-                                <tr>
+                                <tr class="aspirasi">
                                     <td><?php echo $i++; ?></td>
                                     <td>{{$row->nama}}</td>
                                     <td>{{$row->email}}</td>
-                                    <td>{{$row->aspirasi}}</td>
+                                    <td>{{substr($row->aspirasi, 0, 50);}} ....</td>
                                     <td class="text-center">
+                                        <a href="{{route('aspirasi.detail', ['id'=>$row->id] )}}"
+                                            class="btn btn-primary btn-rounded btn-icon-text">Detail
+                                            <i class="ti-eye btn-icon-append"></i></a>
                                         <a href="{{route('aspirasi.delete', ['id'=>$row->id] )}}"
                                             class="btn btn-danger btn-rounded btn-icon-text"
                                             onclick="return confirm('Apakah anda yakin ?')">Delete

@@ -53,7 +53,7 @@
                                 <tr>
                                     <td><?php echo $i++; ?></td>
                                     <td>{{$row->nama}}</td>
-                                    <td>{{$row->kategori_ormawa_id}}</td>
+                                    <td>{{$row->kategoriOrmawa->nama}}</td>
                                     <td class="text-center">
                                         <a href="{{route('ormawa.edit', ['id'=>$row->id] )}}"
                                             class="btn btn-dark btn-sm btn-rounded btn-icon-prepend">Edit

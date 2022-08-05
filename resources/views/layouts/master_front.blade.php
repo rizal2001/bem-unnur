@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="{{asset('logo.png')}}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Glory&display=swap" rel="stylesheet" />
+    <link href="http://fonts.cdnfonts.com/css/akira-expanded" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('guest/assets/bootstrap/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('guest/global.css')}}">
     <link rel="stylesheet" href="{{asset('guest/responsive.css')}}"> @yield('custom-css')
@@ -38,11 +39,14 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-7 col-md-2 col-xl-3">
+                <div class="col-7 col-md-8 col-xl-3">
                     <div class="text-header mt-4">
                         <p>BEM Republik Mahasiswa</p>
                         <p>Universitas Nurtanio Bandung</p>
-                        <p>KABINET HUGO ELECTRA</p>
+                        @if ($kabinet = "NULL")
+                        @else
+                        <p>KABINET {{$kabinet->nama}}</p>
+                        @endif
                     </div>
                 </div>
                 <div class="col-2 icon-menu mt-4">
@@ -84,14 +88,21 @@
                     <a href="{{url('https://www.unnur.ac.id/')}}" target="_blank" style="color: transparent;">
                         <img src="{{asset('guest/assets/images/logo-unnur.png')}}" width="80px" height="80px" />
                     </a>
-                    <a href="{{url('/beranda')}}">
-                        <img src="{{asset('guest/assets/images/kabinet.png')}}" width="100px" height="80px" />
-                    </a>
-                    <h4 class="mt-4">KABINET HUGO ELECTRA</h4>
+                    @if($kabinet = "NULL")
                     <h4>Badan Eksekutif Mahasiswa Republik Mahasiswa</h4>
-                    <h4>Univesitas Nurtanio Bandung 2022</h4>
+                    <h4>Univesitas Nurtanio Bandung</h4>
+                    @else
+                    <a href="{{url('/beranda')}}">
+                        <img src="{{asset('database/images/kabinet/logo/'.$kabinet->gambar_logo)}}" width="100px"
+                            height="130px" />
+                    </a>
+                    <h4>KABINET {{$kabinet->nama}}</h4>
+                    <h4>Badan Eksekutif Mahasiswa Republik Mahasiswa</h4>
+                    <h4>Univesitas Nurtanio Bandung {{$kabinet->tahun_periode}}</h4>
+                    @endif
                     <h4 class="mt-4">MEDIA SOSIAL</h4>
-                    <a href="{{url('https://www.instagram.com/bemnurtanio/')}}" target="_blank" style="color: transparent;">
+                    <a href="{{url('https://www.instagram.com/bemnurtanio/')}}" target="_blank"
+                        style="color: transparent;">
                         <img src="{{asset('guest/assets/images/ig.png')}}" width="40px" height="40px" />
                     </a>
                     <a href="{{url('https://www.youtube.com/channel/UCq1bg7t4hYfwEfqhoc8RHaQ')}}" target="_blank">
@@ -102,13 +113,13 @@
                     <p>E-mail : <a href="mailto:bemnurtaniobandung@gmail.com"
                             style="text-decoration:none; color:white;">bemnurtaniobandung@gmail.com</a>
                     </p>
-                    <p style="margin-top:-10px;">WhatsApp : <a href="{{url('https://wa.me/+6285642394106')}}" target="_blank"
-                            style="text-decoration:none; color:white;">085642394106</a></p>
+                    <p style="margin-top:-10px;">WhatsApp : <a href="{{url('https://wa.me/+6285642394106')}}"
+                            target="_blank" style="text-decoration:none; color:white;">085642394106</a></p>
                 </div>
                 </hr>
                 <div class="line-bottom-1"></div>
-                <div class="col-12 col-xl-6 text-center text-maps">
-                    <h3>SEKRETARIAT BEM REMA UNNUR</h3>
+                <div class="col-12 col-xl-6 text-center text-maps mt-5">
+                    <h3 class="mt-2">SEKRETARIAT BEM REMA UNNUR</h3>
                     <iframe class="maps-footer shadow mt-3"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8678865234015!2d107.57701022695312!3d-6.906397399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x375989f7f7b103de!2zNsKwNTQnMjIuMiJTIDEwN8KwMzQnNTIuMiJF!5e0!3m2!1sid!2sid!4v1658831173446!5m2!1sid!2sid"
                         width="550px" height="300px" style="border:0;" allowfullscreen="" loading="lazy"
@@ -121,7 +132,7 @@
                 <div class="col-12 copyright text-center text-light">
                     <span>Copyright © 2022 BEM REMA UNNUR - Kementerian Informasi dan Komunikasi by <a
                             href="{{url('https://www.instagram.com/hmif_unnur/')}}" target="_blank"
-                            style="text-decoration:none; color:#FBD444;"> HIMF Nurtanio</a></span>
+                            style="text-decoration:none; color:#FBD444;"> HMIF Nurtanio</a></span>
                 </div>
             </div>
         </div>
@@ -133,18 +144,21 @@
             <div class="menu-2">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-3 mt-2">
+                        <div class="col-3 col-md-2 col-xl-1 mt-2">
                             <div class="logo-header">
                                 <a href="{{url('/beranda')}}">
                                     <img src="{{asset('guest/assets/images/logo.png')}}" width="80px" height="80px" />
                                 </a>
                             </div>
                         </div>
-                        <div class="col-7">
+                        <div class="col-7 col-md-8 col-xl-3">
                             <div class="text-header mt-4">
                                 <p>BEM Republik Mahasiswa</p>
                                 <p>Universitas Nurtanio Bandung</p>
-                                <p>KABINET HUGO ELECTRA</p>
+                                @if ($kabinet = "NULL")
+                                @else
+                                <p>KABINET {{$kabinet->nama}}</p>
+                                @endif
                             </div>
                         </div>
                         <div class="col-2">

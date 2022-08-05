@@ -8,7 +8,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-12 text-beranda">
-            <div class="box-profil-page rounded shadow">
+            <div class="box-profil-page shadow">
                 <span>Profil Kami</span>
             </div>
         </div>
@@ -35,72 +35,41 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-12">
-            <div class="box-visi rounded shadow">
+            <div class="box-visi shadow">
                 <span>Visi</span>
             </div>
         </div>
         <div class="col-12">
             <div class="text-center text-visi mt-4">
-                <h4>" Mewujudkan Badan Ekseskutif Mahasiswa Universitas Nurtanio Bandung yang Aktif dalam
-                    membangun
-                    sinergitas untuk Universitas Nurtanio Bandung dengan dedikasi tinggi berdasarkan Tri Dharma
-                    Perguruan Tinggi "</h4>
+                @if ($kabinet = "NULL")
+                <h4>" Belum Memiliki Visi "</h4>
+                @else
+                <h4>" {{$kabinet->visi}} "</h4>
+                @endif
             </div>
         </div>
 
-        <div class="box-profil-page rounded shadow mt-5">
+        <div class="box-profil-page shadow mt-5">
             <span>Misi</span>
         </div>
         <div class="row justify-content-center">
-            <div class="col-12 col-xl-4">
-                <div class="box-misi rounded shadow mt-4">
-                    <span>Pembentukan Karakter</span>
-                </div>
-                <div class="text-misi text-center mt-3">
-                    <h5>Merangkul Mahasiswa/i Universitas Nurtanio untuk meningkatkan Iman & Takwa kepada Tuhan
-                        YME
-                    </h5>
-                </div>
+            @if ($misi = "NULL")
+            <div class="text-center text-visi mt-4">
+                <h4>" Belum Memiliki Misi "</h4>
             </div>
+            @else
+            @foreach ($kabinet->misi as $row)
             <div class="col-12 col-xl-4">
-                <div class="box-misi rounded shadow mt-4">
-                    <span>Koordinasi</span>
+                <div class="box-misi shadow mt-4">
+                    <span>{{$row->judul}}</span>
                 </div>
                 <div class="text-misi text-center mt-3">
-                    <h5>Menjalin komunikasi intensif dengan pimpinan Universitas untuk Nurtanio yg lebih
-                        berkembang
-                        lagi kedepannya</h5>
-                </div>
-            </div>
-            <div class="col-12 col-xl-4">
-                <div class="box-misi rounded shadow mt-4">
-                    <span>Pendidikan dan Pengajaran</span>
-                </div>
-                <div class="text-misi text-center mt-3">
-                    <h5>Mewujudkan keorganisasian yang berintergritas dan profesional dengan etos kerja tinggii
+                    <h5>" {{$row->deskripsi}} "
                         <h5>
                 </div>
             </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-12 col-xl-4">
-                <div class="box-misi rounded shadow mt-4">
-                    <span>Pengabdian Kepada Masyarakat</span>
-                </div>
-                <div class="text-misi text-center mt-3">
-                    <h5>Membangun kontribusi dan peran aktif mahasiswa Universitas Nurtanio baik didalam maupun
-                        diluar kampus</h5>
-                </div>
-            </div>
-            <div class="col-12 col-xl-4">
-                <div class="box-misi rounded shadow mt-4">
-                    <span>Penelitian dan Pengembangan</span>
-                </div>
-                <div class="text-misi text-center mt-3">
-                    <h5>Mengedepankan sigergitas dalam pengembangan potensi minat dan bakat Universitas Nurtanio
-                    </h5>
-                </div>
-            </div>
+            @endforeach
+            @endif
         </div>
     </div>
 </div>
@@ -108,15 +77,21 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-12 text-beranda">
-            <div class="box-struktur rounded shadow">
+            <div class="box-struktur shadow">
                 <span>Struktur Kabinet</span>
             </div>
         </div>
         <div class="col-12">
-            <div class="img-struktur text-center shadow mt-4">
-                <img src="{{asset('guest/assets/images/STRUKTUR-ORGA-UNNUR-2019-scaled.jpg')}}" width="100%" height="1000px"
-                    style="border-radius: 20px" />
+            @if ($kabinet = "NULL")
+            <div class="text-center text-visi mt-4">
+                <h4>" Belum Memiliki Struktur Kabinet "</h4>
             </div>
+            @else
+            <div class="img-struktur text-center shadow mt-4">
+                <img src="{{asset('database/images/kabinet/struktur/'.$kabinet->gambar_struktur)}}" width="100%"
+                    height="1000px" style="border-radius: 20px" />
+            </div>
+            @endif
         </div>
     </div>
 </div>

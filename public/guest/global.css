@@ -23,7 +23,7 @@
 /* body */
 
 body {
-    font-family: "glory";
+    font-family: "Glory";
 }
 
 
@@ -74,6 +74,10 @@ body {
 
 
 /* menu */
+
+#menu {
+    font-family: "Akira Expanded";
+}
 
 .icon-menu {
     display: none;
@@ -154,7 +158,7 @@ header {
     width: 100%;
     height: 95px;
     background-color: #B22727;
-    font-family: 'glory';
+    font-family: "Akira Expanded";
     border-bottom: 1px solid #fbd34473;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -165,9 +169,10 @@ header {
 
 .text-header p {
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     line-height: 5px;
+    width: 400px;
 }
 
 .menu ul {
@@ -185,7 +190,7 @@ ul li a {
     text-decoration: none;
     color: white;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 ul li a:hover {
@@ -245,14 +250,15 @@ main {
 
 .slider-1 .caption {
     position: relative;
-    bottom: 440px;
-    width: 600px;
+    bottom: 400px;
+    width: 750px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     color: white;
-    font-size: 50px;
+    font-size: 35px;
     font-weight: bold;
+    font-family: "Akira Expanded";
 }
 
 
@@ -284,16 +290,21 @@ main {
 }
 
 .text-beranda h1 {
+    font-family: "Akira Expanded";
     font-weight: bold;
+    font-size: 35px;
 }
 
 .box-profil {
-    width: 180px;
+    width: 300px;
     text-align: center;
     background-color: #FF8D29;
-    font-size: 25px;
+    font-size: 18px;
     margin-left: auto;
     margin-right: auto;
+    padding: 5px;
+    font-family: "Akira Expanded";
+    border-radius: 20px;
 }
 
 .box-profil:hover {
@@ -304,14 +315,27 @@ main {
     font-weight: 600;
 }
 
+
+/* kementerian */
+
+.text-kementerian {
+    font-family: "Akira Expanded";
+    margin-top: 80px;
+    text-align: center;
+    color: white;
+}
+
 .box-kementerian {
     color: white;
     font-weight: 600;
     background-color: #FF8D29;
     padding: 10px;
+    font-family: "Akira Expanded";
+    border-radius: 20px;
 }
 
 .box-kementerian h4 {
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -336,97 +360,27 @@ main {
     font-weight: 600;
 }
 
-.slider-2 .owl-prev,
-.slider-2 .owl-next {
+#owl-demo .owl-prev,
+#owl-demo .owl-next {
     width: 15px;
     height: 15px;
     position: absolute;
-    top: 35%;
+    top: 40%;
     display: block !important;
 }
 
-.slider-2 .owl-prev i,
-.slider-2 .owl-next i {
-    color: #D4AE58;
+#owl-demo .owl-prev {
+    left: -60px;
+}
+
+#owl-demo .owl-next {
+    right: -50px;
+}
+
+#owl-demo .owl-prev i,
+#owl-demo .owl-next i {
+    color: #edc150;
     font-size: 20px;
-}
-
-.slider-2 .owl-dots {
-    margin-top: 0;
-}
-
-.slider-2 .owl-prev {
-    left: 0px;
-}
-
-.slider-2 .owl-next {
-    right: 0px;
-}
-
-
-/* Kementerian */
-
-.kementerian {
-    width: 100%;
-    height: 600px;
-}
-
-.kementerian .caption {
-    position: relative;
-    bottom: 440px;
-    width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    color: white;
-    font-size: 50px;
-    font-weight: bold;
-}
-
-.title-kementerian {
-    margin-top: 60px;
-    text-align: center;
-    color: white;
-    font-weight: 600;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-}
-
-.title-kementerian h1 {
-    font-weight: bold;
-}
-
-.title-unit {
-    margin-top: 60px;
-    text-align: center;
-    color: white;
-    font-weight: 600;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-}
-
-.title-unit h1 {
-    font-weight: bold;
-}
-
-.img-menteri {
-    color: white;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-}
-
-.img-menteri h4 {
-    position: relative;
-    bottom: 30px;
-    font-weight: 600;
-}
-
-.img-menteri h5 {
-    position: relative;
-    bottom: 10px;
-    font-weight: 600;
 }
 
 
@@ -454,6 +408,8 @@ main {
 }
 
 .text-ormawa h1 {
+    font-family: "Akira Expanded";
+    font-size: 35px;
     font-weight: bold;
 }
 
@@ -488,7 +444,9 @@ main {
 }
 
 .text-news h1 {
+    font-family: "Akira Expanded";
     font-weight: bold;
+    font-size: 35px;
 }
 
 .img-news img {
@@ -537,25 +495,43 @@ main {
     font-weight: 600;
 }
 
+
+/* page news */
+
 .news h1 {
+    color: white;
+    font-family: "Akira Expanded";
+    font-size: 25px;
     font-weight: bold;
 }
 
 .news h5 {
     font-weight: 600;
+    text-align: justify;
+    color: white;
+    margin-top: 20px;
+}
+
+.news img {
+    margin-top: 20px;
+    border-radius: 15px;
 }
 
 
 /* page profil */
 
 .box-profil-page {
-    width: 160px;
+    width: 250px;
     text-align: center;
     background-color: #FF8D29;
     font-size: 25px;
     margin-top: -30px;
     margin-left: auto;
     margin-right: auto;
+    font-family: "Akira Expanded";
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 20px;
 }
 
 .box-profil-page span {
@@ -576,6 +552,10 @@ main {
     margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
+    font-family: "Akira Expanded";
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 20px;
 }
 
 .box-visi span {
@@ -588,25 +568,32 @@ main {
     font-weight: 600;
 }
 
-.box-struktur {
-    width: 200px;
-    text-align: center;
-    background-color: #FF8D29;
-    font-size: 25px;
-    margin-top: -30px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .box-misi {
-    width: 280px;
+    width: 330px;
     text-align: center;
     background-color: #FF8D29;
     font-size: 20px;
     margin-top: -30px;
     margin-left: auto;
     margin-right: auto;
+    font-family: "Akira Expanded";
+    font-size: 18px;
     padding: 5px;
+    border-radius: 20px;
+}
+
+.box-struktur {
+    width: 300px;
+    text-align: center;
+    background-color: #FF8D29;
+    font-size: 25px;
+    margin-top: -30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Akira Expanded";
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 20px;
 }
 
 .box-misi span {
@@ -629,7 +616,78 @@ main {
 }
 
 
-/* ormawa */
+/* page kementerian */
+
+.kementerian {
+    width: 100%;
+    height: 600px;
+}
+
+.kementerian .caption {
+    position: relative;
+    bottom: 450px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-family: "Akira Expanded";
+    font-weight: bold;
+}
+
+.title-unit {
+    margin-top: 60px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-family: "Akira Expanded";
+}
+
+.title-unit h1 {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.title-kementerian {
+    margin-top: 60px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-family: "Akira Expanded";
+}
+
+.title-kementerian h1 {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.img-menteri {
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.img-menteri h4 {
+    position: relative;
+    bottom: 30px;
+    font-weight: 600;
+}
+
+.img-menteri h5 {
+    position: relative;
+    bottom: 10px;
+    font-weight: 600;
+}
+
+
+/* page ormawa */
 
 .ormawa {
     height: 580px;
@@ -637,13 +695,14 @@ main {
 
 .ormawa .caption {
     position: relative;
-    bottom: 440px;
-    width: 600px;
+    bottom: 400px;
+    width: 900px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     color: white;
-    font-size: 50px;
+    font-size: 35px;
+    font-family: "Akira Expanded";
     font-weight: bold;
 }
 
@@ -654,9 +713,11 @@ main {
     font-weight: 600;
     text-decoration: underline;
     text-underline-offset: 10px;
+    font-family: "Akira Expanded";
 }
 
 .title-ormawa h1 {
+    font-size: 35px;
     font-weight: bold;
 }
 
@@ -674,15 +735,58 @@ main {
 }
 
 
-/* aspirasi */
+/* email aspirasi*/
+
+.img-email-bem {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+.text-email h1 {
+    font-family: "Akira Expanded";
+    color: white;
+}
+
+.box-aspirasi {
+    text-align: left;
+    background-color: #FF8D29;
+    font-size: 25px;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    font-family: "Glory";
+}
+
+.box-aspirasi h2 {
+    font-family: "Akira Expanded";
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: white;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.box-aspirasi h3 {
+    text-align: justify;
+    color: white;
+    font-weight: 600;
+}
+
+
+/* page aspirasi */
 
 .title-aspirasi {
     margin-top: 80px;
     text-align: center;
     color: white;
+    font-family: "Akira Expanded";
 }
 
 .title-aspirasi h1 {
+    font-size: 35px;
     font-weight: bold;
 }
 
@@ -709,6 +813,8 @@ main {
 }
 
 .text-aspirasi h3 {
+    font-family: "Akira Expanded";
+    font-size: 20px;
     color: #B22727;
     font-weight: 600;
 }
@@ -721,24 +827,6 @@ main {
 
 .btn-aspirasi:hover {
     color: #FAD861;
-}
-
-
-/* news */
-
-.news h1 {
-    color: white;
-}
-
-.news h5 {
-    text-align: justify;
-    color: white;
-    margin-top: 20px;
-}
-
-.news img {
-    margin-top: 20px;
-    border-radius: 15px;
 }
 
 
@@ -773,6 +861,8 @@ footer {
 }
 
 .text-footer h4 {
+    font-family: "Akira Expanded";
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -781,10 +871,14 @@ footer {
 }
 
 .text-maps h3 {
+    font-family: "Akira Expanded";
+    font-size: 20px;
     color: white;
     font-weight: 600;
 }
 
 .copyright span {
+    font-family: "Akira Expanded";
+    font-size: 14px;
     font-weight: 600;
 }
