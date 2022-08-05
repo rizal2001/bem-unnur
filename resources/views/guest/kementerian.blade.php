@@ -6,7 +6,7 @@
 
 @section('content')
 <div class="kementerian">
-    @if($background = "NULL")
+    @if (is_null($background))
     <img src="{{asset('guest/assets/images/beranda-1.jpg')}}" width="100%" height="600px"
         style="filter:brightness(25%);" />
     <div class="caption"><span style="color:#FBD442;">KEMENTERIAN</span><br />Badan Eksekutif Mahasiswa Republik

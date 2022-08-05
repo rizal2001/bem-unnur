@@ -43,7 +43,7 @@
                     <div class="text-header mt-4">
                         <p>BEM Republik Mahasiswa</p>
                         <p>Universitas Nurtanio Bandung</p>
-                        @if ($kabinet = "NULL")
+                        @if (is_null($kabinet))
                         @else
                         <p>KABINET {{$kabinet->nama}}</p>
                         @endif
@@ -88,7 +88,7 @@
                     <a href="{{url('https://www.unnur.ac.id/')}}" target="_blank" style="color: transparent;">
                         <img src="{{asset('guest/assets/images/logo-unnur.png')}}" width="80px" height="80px" />
                     </a>
-                    @if($kabinet = "NULL")
+                    @if (is_null($kabinet))
                     <h4>Badan Eksekutif Mahasiswa Republik Mahasiswa</h4>
                     <h4>Univesitas Nurtanio Bandung</h4>
                     @else

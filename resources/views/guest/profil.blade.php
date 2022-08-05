@@ -41,7 +41,7 @@
         </div>
         <div class="col-12">
             <div class="text-center text-visi mt-4">
-                @if ($kabinet = "NULL")
+                @if (is_null($kabinet))
                 <h4>" Belum Memiliki Visi "</h4>
                 @else
                 <h4>" {{$kabinet->visi}} "</h4>
@@ -53,7 +53,7 @@
             <span>Misi</span>
         </div>
         <div class="row justify-content-center">
-            @if ($misi = "NULL")
+            @if (is_null($kabinet))
             <div class="text-center text-visi mt-4">
                 <h4>" Belum Memiliki Misi "</h4>
             </div>
@@ -82,14 +82,14 @@
             </div>
         </div>
         <div class="col-12">
-            @if ($kabinet = "NULL")
+            @if (is_null($kabinet))
             <div class="text-center text-visi mt-4">
                 <h4>" Belum Memiliki Struktur Kabinet "</h4>
             </div>
             @else
             <div class="img-struktur text-center shadow mt-4">
                 <img src="{{asset('database/images/kabinet/struktur/'.$kabinet->gambar_struktur)}}" width="100%"
-                    height="1000px" style="border-radius: 20px" />
+                    height="100%" style="border-radius: 20px" />
             </div>
             @endif
         </div>
