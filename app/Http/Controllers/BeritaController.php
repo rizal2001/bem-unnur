@@ -78,4 +78,11 @@ class BeritaController extends Controller
         return redirect('/admin/berita')->with('message', 'Data Berhasil Dihapus');
     
     }
+
+    public function search(Request $request)
+	{
+		$cari = $request->cari;
+		$data = Berita::where('judul','like',"%".$cari."%")->paginate();
+		return view('admin.berita.index', compact('data'));
+	}
 }

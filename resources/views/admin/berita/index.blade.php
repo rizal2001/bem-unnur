@@ -40,6 +40,13 @@
                                         Create
                                     </a>
                                 </tr>
+                                <form action="{{route('berita.search')}}" method="GET">
+                                    <div class="input-group  col-lg-12">
+                                        <input type="text" class="form-control" placeholder="Keyword :" name="cari">
+                                        <button class="btn btn-primary " type="submit"><i class="fa fa-search"></i>
+                                            Cari</button>
+                                    </div>
+                                </form>
                                 <tr>
                                     <th>No</th>
                                     <th>Judul</th>

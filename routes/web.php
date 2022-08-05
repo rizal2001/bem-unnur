@@ -152,6 +152,7 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('/berita/edit/{id}', [BeritaController::class, 'edit'])->name('berita.edit');
         Route::put('/berita/update/{id}', [BeritaController::class, 'update'])->name('berita.update');
         Route::get('/berita/delete/{id}', [BeritaController::class, 'delete'])->name('berita.delete');
+        Route::get('/berita/search', [BeritaController::class, 'search'])->name('berita.search'); 
 
         
          //Ormawa
