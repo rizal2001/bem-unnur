@@ -63,7 +63,7 @@
             <h1>KEMENTERIAN</h1>
         </div>
         <div class="col-10">
-            <div class="box-kementerian rounded shadow text-center mt-3">
+            <div class="box-kementerian shadow text-center mt-3">
                 <h4>Badan Eksekutif Mahasiswa Universitas Nurtanio Bandung Memiliki {{$jumlahKementerian}} Kementrian
                 </h4>
             </div>
