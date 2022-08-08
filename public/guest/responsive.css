@@ -6,7 +6,12 @@
         display: none;
     }
     .logo-header {
-        margin-left: -10px;
+        margin-top: 5px;
+        margin-left: -5px;
+    }
+    .logo-header img {
+        width: 70px;
+        height: 70px;
     }
     .text-header p {
         margin-left: -25px;

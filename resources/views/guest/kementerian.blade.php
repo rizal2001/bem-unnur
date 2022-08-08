@@ -1,5 +1,6 @@
 @extends('layouts.master_front')
 @section('title', 'KEMENTERIAN - BEM REMA UNNUR')
+@section('description', 'Kementerian')
 @section('custom-css')
 
 @endsection

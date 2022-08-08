@@ -1,5 +1,6 @@
 @extends('layouts.master_front')
 @section('title', 'BEM REMA UNNUR - KABINET HUGO ELECTRA')
+@section('description', 'Beranda')
 @section('custom-css')
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />

@@ -1,5 +1,6 @@
 @extends('layouts.master_front')
 @section('title', 'NEWS - BEM REMA UNNUR - '.$news->judul)
+@section('description', 'News - '.$news->judul)
 @section('custom-css')
 @endsection
 

@@ -1,5 +1,6 @@
 @extends('layouts.master_front')
 @section('title', 'ASPIRASI - BEM REMA UNNUR')
+@section('description', 'Aspirasi')
 @section('custom-css')
 @endsection
 

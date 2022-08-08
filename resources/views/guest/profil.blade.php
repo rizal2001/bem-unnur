@@ -1,5 +1,6 @@
 @extends('layouts.master_front')
 @section('title', 'PROFIL - BEM REMA UNNUR')
+@section('description', 'Profil')
 @section('custom-css')
 @endsection
 
@@ -89,7 +90,7 @@
             @else
             <div class="img-struktur text-center shadow mt-4">
                 <img src="{{asset('database/images/kabinet/struktur/'.$kabinet->gambar_struktur)}}" width="100%"
-                    height="100%" style="border-radius: 20px" />
+                    height="100%"/>
             </div>
             @endif
         </div>

@@ -1,5 +1,6 @@
 @extends('layouts.master_front')
 @section('title', 'ORMAWA - BEM REMA UNNUR')
+@section('description', 'Ormawa')
 @section('custom-css')
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
