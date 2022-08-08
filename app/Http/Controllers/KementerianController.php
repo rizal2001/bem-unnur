@@ -96,5 +96,10 @@ class KementerianController extends Controller
         return redirect('/admin/kementerian')->with('message', 'Data Berhasil Dihapus');
     
     }
+    public function show()
+    {
+        $data = Kementerian::all();
+        dd($data);
+    }
     
 }
