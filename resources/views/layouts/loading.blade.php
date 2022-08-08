@@ -20,13 +20,13 @@
 
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-2 loading-page">
+        <div class="col-3 col-xl-2 loading-page">
                 <img src="{{asset('guest/assets/images/logo-unnur.png')}}" width="150px" height="150px" />
             </div>
-            <div class="col-2 loading-page">
+            <div class="col-3 col-xl-2 loading-page">
                 <img src="{{asset('guest/assets/images/logo.png')}}" width="150px" height="150px" />
             </div>
-            <div class="col-2 loading-page">
+            <div class="col-3 col-xl-2 loading-page">
                 <img src="{{asset('guest/assets/images/kabinet.png')}}" width="180px" height="150px" />
             </div>
         </div>
