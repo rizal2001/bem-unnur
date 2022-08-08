@@ -37,7 +37,7 @@
                         <div class="mb-3">
                             <label for="inputDeskripsiBerita" class="form-label">Deskripsi</label>
                             <textarea class="ckeditor form-control" style="height:200px;"
-                                name="deskripsi" required>{{ $data->deskripsi }}</textarea>
+                                name="deskripsi" required>{{strip_tags($data->deskripsi)}}</textarea>
                         </div>
                         <div class="mb-3">
                             <label for="inputGambarBerita" class="form-label">Upload Berita</label>
@@ -57,7 +57,7 @@
         </div>
     </div>
 </div>
-<script src="//cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
+<script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
 <script>
 $(document).ready(function() {
     $('#dataTable').DataTable();

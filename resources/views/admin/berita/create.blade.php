@@ -49,7 +49,7 @@
         </div>
     </div>
 </div>
-<script src="//cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
+<script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
 <script>
 $(document).ready(function() {
     $('#dataTable').DataTable();
