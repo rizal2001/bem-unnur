@@ -96,7 +96,7 @@
                     @else
                     <a href="{{url('/beranda')}}">
                         <img src="{{asset('database/images/kabinet/logo/'.$kabinet->gambar_logo)}}" width="100px"
-                            height="130px" />
+                            height="100px" />
                     </a>
                     <h4>KABINET {{$kabinet->nama}}</h4>
                     <h4>Badan Eksekutif Mahasiswa Republik Mahasiswa</h4>

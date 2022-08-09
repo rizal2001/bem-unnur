@@ -14,6 +14,12 @@ use App\Models\KategoriKementerian;
 
 class FrontController extends Controller
 {
+    public function loading() 
+    {
+        $kabinet = Kabinet::orderBy('id','desc')->first();
+        
+        return view('layouts.loading', compact('kabinet'));
+    }
     public function beranda()
     {
         $kabinet = Kabinet::orderBy('id','desc')->first();

@@ -62,9 +62,6 @@
         margin-right: auto;
         width: 370px;
     }
-    .img-struktur img {
-        height: 300px;
-    }
     .img-menteri img {
         width: 350px;
         height: 350px;
@@ -214,9 +211,6 @@
     .news img {
         width: 300px;
         height: 400px;
-    }
-    .img-struktur img {
-        height: 700px;
     }
     .img-menteri img {
         width: 350px;

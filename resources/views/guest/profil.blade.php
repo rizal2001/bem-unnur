@@ -15,15 +15,12 @@
         </div>
         <div class="col-12">
             <div class="text-center text-profil-page mt-3">
-                <h4>Universitas Nurtanio Bandung didirikan pada tanggal 8 September 1999 yang merupakan hasil
-                    penggabungan/merger dari Sekolah Tinggi Ilmu Administrasi (STIA) Angkasa yang pada waktu itu
-                    bernama Akademi Administrasi Negara (AAN) Angkasa atau yang sekarang menjadi Fakultas
-                    Ilmu Sosial dan Ilmu Politik (FISIP) dan Akademi Aeronautika Dirgantara Bandung (AADB)
-                    yang sekarang menjadi Fakultas Teknik (FT). Lalu ditambah dengan Fakultas Ekonomi (FE),
-                    Fakultas Ilmu Komputer & Informatika (FIKI) dan Sekolah Pascasarjana.</h4>
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consectetur magnam delectus,
-                    quisquam reiciendis odio deserunt natus veniam quam, corrupti repudiandae fugiat voluptates
-                    minima recusandae id quis neque tempora aperiam.</h4>
+                <h4>Badan Eksekutif Mahasiswa Republik Mahasiswa Universitas Nurtanio Bandung merupakan organisasi
+                    mahasiswa intra kampus yang merupakan lembaga eksekutif pada tingkat universitas. BEM REMA UNNUR
+                    bertugas untuk mengkoordinasi seluruh organisasi mahasiswa dalam lingkungan mahasiswa di Universitas
+                    Nurtanio Bandung melalui berbagai program kerja. Disisi lain harus menjalankan tugas sebagai organ
+                    pendidik dan mengkader sebagai upaya menjaga stabilitas organisasi dan menciptakan ruang-ruang
+                    produktif bagi mahasiswa.</h4>
             </div>
         </div>
     </div>
@@ -90,7 +87,7 @@
             @else
             <div class="img-struktur text-center shadow mt-4">
                 <img src="{{asset('database/images/kabinet/struktur/'.$kabinet->gambar_struktur)}}" width="100%"
-                    height="100%"/>
+                    height="100%" />
             </div>
             @endif
         </div>
