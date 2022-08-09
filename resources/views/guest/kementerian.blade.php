@@ -1,15 +1,23 @@
 @extends('layouts.master_front')
 @section('title', 'KEMENTERIAN - BEM REMA UNNUR')
+@section('description', 'Kementerian')
 @section('custom-css')
 
 @endsection
 
 @section('content')
 <div class="kementerian">
+    @if (is_null($background))
+    <img src="{{asset('guest/assets/images/beranda-1.jpg')}}" width="100%" height="600px"
+        style="filter:brightness(25%);" />
+    <div class="caption"><span style="color:#FBD442;">KEMENTERIAN</span><br />Badan Eksekutif Mahasiswa Republik
+        Mahasiswa Universitas Nurtanio Bandung</div>
+    @else
     <img src="{{asset('database/images/background/'.$background->gambar)}}" width="100%" height="600px"
         style="filter:brightness(25%);" />
     <div class="caption"><span style="color:#FBD442;">KEMENTERIAN</span><br />Badan Eksekutif Mahasiswa Republik
         Mahasiswa Universitas Nurtanio Bandung</div>
+    @endif
 </div>
 
 <div class="bg-content">

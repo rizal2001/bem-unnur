@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'BEM UNNUR - Data Berita')
+@section('title', 'BEM REMA UNNUR - DATA BERITA')
 
 @section('custom-css')
 <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" />
@@ -40,6 +40,13 @@
                                         Create
                                     </a>
                                 </tr>
+                                <!-- <form action="{{route('berita.search')}}" method="GET">
+                                    <div class="input-group  col-lg-12">
+                                        <input type="text" class="form-control" placeholder="Keyword :" name="cari">
+                                        <button class="btn btn-primary " type="submit"><i class="fa fa-search"></i>
+                                            Cari</button>
+                                    </div>
+                                </form> -->
                                 <tr>
                                     <th>No</th>
                                     <th>Judul</th>

@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'BEM UNNUR - Edit Data User')
+@section('title', 'BEM REMA UNNUR - EDIT DATA USERS')
 @section('content')
 
 <style>

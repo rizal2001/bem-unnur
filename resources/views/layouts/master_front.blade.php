@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="@yield('description')">
+    <meta name="keywords" content="bem rema unnur, ormawa unnur, kabinet {{$kabinet->nama}}" />
     <title>@yield('title')</title>
     <link rel="shortcut icon" href="{{asset('logo.png')}}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
@@ -43,7 +45,10 @@
                     <div class="text-header mt-4">
                         <p>BEM Republik Mahasiswa</p>
                         <p>Universitas Nurtanio Bandung</p>
+                        @if (is_null($kabinet))
+                        @else
                         <p>KABINET {{$kabinet->nama}}</p>
+                        @endif
                     </div>
                 </div>
                 <div class="col-2 icon-menu mt-4">
@@ -85,12 +90,18 @@
                     <a href="{{url('https://www.unnur.ac.id/')}}" target="_blank" style="color: transparent;">
                         <img src="{{asset('guest/assets/images/logo-unnur.png')}}" width="80px" height="80px" />
                     </a>
+                    @if (is_null($kabinet))
+                    <h4>Badan Eksekutif Mahasiswa Republik Mahasiswa</h4>
+                    <h4>Univesitas Nurtanio Bandung</h4>
+                    @else
                     <a href="{{url('/beranda')}}">
-                        <img src="{{asset('database/images/kabinet/logo/'.$kabinet->gambar_logo)}}" width="100px" height="130px" />
+                        <img src="{{asset('database/images/kabinet/logo/'.$kabinet->gambar_logo)}}" width="100px"
+                            height="130px" />
                     </a>
                     <h4>KABINET {{$kabinet->nama}}</h4>
                     <h4>Badan Eksekutif Mahasiswa Republik Mahasiswa</h4>
                     <h4>Univesitas Nurtanio Bandung {{$kabinet->tahun_periode}}</h4>
+                    @endif
                     <h4 class="mt-4">MEDIA SOSIAL</h4>
                     <a href="{{url('https://www.instagram.com/bemnurtanio/')}}" target="_blank"
                         style="color: transparent;">
@@ -146,7 +157,10 @@
                             <div class="text-header mt-4">
                                 <p>BEM Republik Mahasiswa</p>
                                 <p>Universitas Nurtanio Bandung</p>
+                                @if (is_null($kabinet))
+                                @else
                                 <p>KABINET {{$kabinet->nama}}</p>
+                                @endif
                             </div>
                         </div>
                         <div class="col-2">

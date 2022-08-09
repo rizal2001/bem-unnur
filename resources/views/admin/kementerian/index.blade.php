@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'BEM UNNUR - Data Kementerian')
+@section('title', 'BEM REMA UNNUR - DATA KEMENTERIAN')
 
 @section('custom-css')
 <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" />

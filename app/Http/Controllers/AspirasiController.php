@@ -34,7 +34,7 @@ class AspirasiController extends Controller
 
         Mail::to('farhan.rachmat09@gmail.com')->send(new SendMail($data));
 
-        return redirect('/aspirasi')->with('message', 'Data Berhasil Disimpan');
+        return redirect('/aspirasi')->with('message', 'Yaayyyyy, Aspirasimu telah terkirim!!!');
     }
 
     public function delete($id)

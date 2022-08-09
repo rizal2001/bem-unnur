@@ -1,5 +1,6 @@
 @extends('layouts.master_front')
 @section('title', 'ASPIRASI - BEM REMA UNNUR')
+@section('description', 'Aspirasi')
 @section('custom-css')
 @endsection
 
@@ -10,6 +11,11 @@
 
 <div class="container">
     <div class="row justify-content-center">
+        @if(session()->has('message'))
+        <div class="alert alert-success text-center rounded shadow">
+            {{ session()->get('message') }}
+        </div>
+        @endif
         <div class="col-12 title-aspirasi">
             <h1>ASPIRASI MAHASISWA</h1>
         </div>
@@ -30,7 +36,7 @@
                         :value="old('email')" required autofocus />
                 </div>
                 <div class="form-group mt-3">
-                    <label for="exampleInputAspirasi1">Aspiarsi</label>
+                    <label for="exampleInputAspirasi1">Aspirasi</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"
                         placeholder="Masukan Aspirasimu" name="aspirasi"></textarea>
                 </div>
