@@ -36,9 +36,7 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 Route::name('front.')->middleware('visitor')->group(function() {
 
     // loading
-    Route::get('/', function () {
-        return view('layouts.loading');
-    });
+    Route::get('/', [FrontController::class, 'loading'])->name('loading');
     // beranda
     Route::get('/beranda', [FrontController::class, 'beranda'])->name('beranda');
     

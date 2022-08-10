@@ -79,9 +79,9 @@
             <div class="item col-12 col-md-6 col-xl-4">
                 <div class="box-mentri shadow text-center">
                     <img src="{{asset('database/images/kabinet/logo/'.$kabinet->gambar_logo)}}"
-                        style="width:60px; height:80px; margin:auto;" />
+                        style="width:50px; height:50px; margin:auto;" />
                     <h4>{{$row->nama}}</h4>
-                    <p>KABINET {{$kabinet->nama}}</p>
+                    <p class="text-uppercase">KABINET {{$kabinet->nama}}</p>
                     <p>BEM REMA UNNUR</p>
                     <p>{{$kabinet->tahun_periode}}</p>
                 </div>
