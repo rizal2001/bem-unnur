@@ -1,7 +1,3 @@
-/* font akira */
-
-@import url('http://fonts.cdnfonts.com/css/akira-expanded');
-
 /* scroll */
 
 ::-webkit-scrollbar {
@@ -162,7 +158,8 @@ header {
     width: 100%;
     height: 95px;
     background-color: #B22727;
-    font-family: "Akira Expanded";
+    font-family: 'Goldman';
+    text-transform: uppercase;
     border-bottom: 1px solid #fbd34473;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -173,7 +170,7 @@ header {
 
 .text-header p {
     color: white;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 600;
     line-height: 5px;
     width: 400px;
@@ -193,8 +190,8 @@ header {
 ul li a {
     text-decoration: none;
     color: white;
-    font-weight: 600;
-    font-size: 14px;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 ul li a:hover {
@@ -260,9 +257,10 @@ main {
     margin-right: auto;
     text-align: center;
     color: white;
-    font-size: 35px;
+    font-size: 43px;
     font-weight: bold;
-    font-family: "Akira Expanded";
+    font-family: 'Goldman';
+    text-transform: uppercase;
 }
 
 
