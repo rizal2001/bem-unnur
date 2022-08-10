@@ -32,7 +32,7 @@ class AspirasiController extends Controller
             'aspirasi' => $request->aspirasi
         ]);
 
-        Mail::to('farhan.rachmat09@gmail.com')->send(new SendMail($data));
+        Mail::to('bemremaunnur@gmail.com')->send(new SendMail($data));
 
         return redirect('/aspirasi')->with('message', 'Yaayyyyy, Aspirasimu telah terkirim!!!');
     }
