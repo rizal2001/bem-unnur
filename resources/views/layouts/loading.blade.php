@@ -21,14 +21,14 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-3 col-xl-2 loading-page">
-                <img src="{{asset('guest/assets/images/logo-unnur.png')}}" width="150px" height="150px" />
+                <object data="{{asset('guest/assets/images/logo-unnur.svg')}}" width="150px" height="150px"> </object>
             </div>
             <div class="col-3 col-xl-2 loading-page">
-                <img src="{{asset('guest/assets/images/logo.png')}}" width="150px" height="150px" />
+                <object data="{{asset('guest/assets/images/logo.svg')}}" width="150px" height="150px"> </object>
             </div>
             <div class="col-3 col-xl-2 loading-page">
-                <img src="{{asset('database/images/kabinet/logo/'.$kabinet->gambar_logo)}}" width="150px"
-                    height="150px" />
+                <object data="{{asset('database/images/kabinet/logo/'.$kabinet->gambar_logo)}}" width="150px"
+                    height="150px"> </object>
             </div>
         </div>
         <div class="row justify-content-center">

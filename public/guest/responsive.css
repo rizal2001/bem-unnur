@@ -1,4 +1,4 @@
-@media only screen and (min-width: 400px) and (max-width: 575px) {
+@media only screen and (min-width: 300px) and (max-width: 575px) {
     .icon-menu {
         display: block;
     }
@@ -62,7 +62,7 @@
         margin-right: auto;
         width: 370px;
     }
-    .img-menteri img {
+    .img-menteri object {
         width: 350px;
         height: 350px;
     }
@@ -157,7 +157,7 @@
     #owl-demo .owl-next {
         top: 35%;
     }
-    .loading-page img {
+    .loading-page object {
         width: 80px;
         height: 80px;
     }
@@ -212,7 +212,7 @@
         width: 300px;
         height: 400px;
     }
-    .img-menteri img {
+    .img-menteri object {
         width: 350px;
         height: 350px;
     }

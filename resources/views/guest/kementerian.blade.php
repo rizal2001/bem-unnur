@@ -28,7 +28,8 @@
         @foreach ($topMan as $row)
         <div class="col-12 col-md-6 col-xl-6 text-light text-center img-menteri">
             <a href="{{url($row->link_medsos)}}" target="_blank">
-                <img src="{{asset('database/images/kementerian/'.$row->gambar)}}" width="500px" height="500px">
+                <object data="{{asset('database/images/kementerian/'.$row->gambar)}}" width="500px" height="500px">
+                </object>
             </a>
             <h4>{{$row->nama}}</h4>
             <h4>{{$row->nama_fakultas}}</h4>
@@ -46,7 +47,8 @@
         @foreach ($unitKerja as $row)
         <div class="col-12 col-md-6 col-xl-3 text-light text-center img-menteri">
             <a href="{{url($row->link_medsos)}}" target="_blank">
-                <img src="{{asset('database/images/kementerian/'.$row->gambar)}}" width="280px" height="280px" />
+                <object data="{{asset('database/images/kementerian/'.$row->gambar)}}" width="280px" height="280px">
+                </object>
             </a>
             <h5>{{$row->nama}}</h5>
             <h5>{{$row->nama_fakultas}}</h5>
@@ -64,7 +66,8 @@
         @foreach ($kementerian as $row)
         <div class="col-12 col-md-6 col-xl-3 text-light text-center img-menteri">
             <a href="{{url($row->link_medsos)}}" target="_blank">
-                <img src="{{asset('database/images/kementerian/'.$row->gambar)}}" width="280px" height="280px" />
+                <object data="{{asset('database/images/kementerian/'.$row->gambar)}}" width="280px" height="280px">
+                </object>
             </a>
             <h5>{{$row->nama}}</h5>
             <h5>{{$row->nama_fakultas}}</h5>

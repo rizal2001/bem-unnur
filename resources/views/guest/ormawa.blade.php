@@ -38,7 +38,7 @@
     <div class="row justify-content-center">
         @foreach ($bemuniv as $row)
         <div class="col-6 col-xl-3 img-ormawa img-circle">
-            <img src="{{asset('database/images/ormawa/'.$row->gambar)}}" width="150px" height="150px" />
+            <object data="{{asset('database/images/ormawa/'.$row->gambar)}}" width="150px" height="150px"> </object>
             <h5>{{$row->nama}}</h5>
         </div>
         @endforeach
@@ -52,7 +52,7 @@
     <div class="row justify-content-center">
         @foreach ($bemfa as $row)
         <div class="col-6 col-xl-3 img-ormawa">
-            <img src="{{asset('database/images/ormawa/'.$row->gambar)}}" width="150px" height="150px" />
+            <object data="{{asset('database/images/ormawa/'.$row->gambar)}}" width="150px" height="150px"> </object>
             <h5>{{$row->nama}}</h5>
         </div>
         @endforeach
@@ -66,7 +66,7 @@
     <div class="row justify-content-center">
         @foreach ($hima as $row)
         <div class="col-6 col-xl-3 img-ormawa">
-            <img src="{{asset('database/images/ormawa/'.$row->gambar)}}" width="150px" height="150px" />
+            <object data="{{asset('database/images/ormawa/'.$row->gambar)}}" width="150px" height="150px"> </object>
             <h5>{{$row->nama}}</h5>
         </div>
         @endforeach
@@ -81,7 +81,7 @@
     <div class="row justify-content-center">
         @foreach ($ukm as $row)
         <div class="col-6 col-xl-3 img-ormawa">
-            <img src="{{asset('database/images/ormawa/'.$row->gambar)}}" width="150px" height="150px" />
+            <object data="{{asset('database/images/ormawa/'.$row->gambar)}}" width="150px" height="150px"> </object>
             <h5>{{$row->nama}}</h5>
         </div>
         @endforeach

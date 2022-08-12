@@ -60,8 +60,8 @@
                         <div class="mb-3">
                             <label for="inputGambar" class="form-label">Foto</label>
                             <div class="mb-2">
-                                <img src="{{asset('database/images/kementerian/'.$data->gambar)}}" width="250"
-                                    height="250" />
+                                <object data="{{asset('database/images/kementerian/'.$data->gambar)}}" width="250"
+                                    height="250"> </object>
                             </div>
                             <input type="hidden" name="gambar_old" value="{{$data->gambar}}" class="form-control">
                             <input type="file" name="gambar_new" class="form-control" id="inputGambar" accept="image/*">

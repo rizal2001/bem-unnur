@@ -47,8 +47,8 @@
                         <div class="mb-3">
                             <label for="inputGambar" class="form-label">Foto</label>
                             <div class="mb-2">
-                                <img src="{{asset('database/images/ormawa/'.$data->gambar_logo)}}" width="250"
-                                    height="250" />
+                                <object data="{{asset('database/images/ormawa/'.$data->gambar_logo)}}" width="250"
+                                    height="250"> </object>
                             </div>
                             <input type="hidden" name="gambar_old" value="{{$data->gambar_logo}}" class="form-control">
                             <input type="file" name="gambar_new" class="form-control" id="inputGambar" accept="image/*">

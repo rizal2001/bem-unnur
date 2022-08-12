@@ -76,7 +76,8 @@ body {
 /* menu */
 
 #menu {
-    font-family: "Akira Expanded";
+    font-family: 'Goldman';
+    text-transform: uppercase;
 }
 
 .icon-menu {
@@ -251,7 +252,7 @@ main {
 
 .slider-1 .caption {
     position: relative;
-    bottom: 400px;
+    bottom: 420px;
     width: 750px;
     margin-left: auto;
     margin-right: auto;
@@ -292,7 +293,8 @@ main {
 }
 
 .text-beranda h1 {
-    font-family: "Akira Expanded";
+    font-family: 'Goldman';
+    text-transform: uppercase;
     font-weight: bold;
     font-size: 35px;
 }
@@ -305,7 +307,8 @@ main {
     margin-left: auto;
     margin-right: auto;
     padding: 5px;
-    font-family: "Akira Expanded";
+    font-family: 'Goldman';
+    text-transform: uppercase;
     border-radius: 20px;
 }
 
@@ -321,10 +324,15 @@ main {
 /* kementerian */
 
 .text-kementerian {
-    font-family: "Akira Expanded";
+    font-family: 'Goldman';
+    text-transform: uppercase;
     margin-top: 80px;
     text-align: center;
     color: white;
+}
+
+.text-kementerian h1 {
+    font-weight: bold;
 }
 
 .box-kementerian {
@@ -332,7 +340,8 @@ main {
     font-weight: 600;
     background-color: #FF8D29;
     padding: 10px;
-    font-family: "Akira Expanded";
+    font-family: 'Goldman';
+    text-transform: uppercase;
     border-radius: 20px;
 }
 
@@ -401,7 +410,7 @@ main {
     margin-right: auto;
     text-align: center;
     color: white;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: bold;
 }
 
@@ -410,7 +419,8 @@ main {
 }
 
 .text-ormawa h1 {
-    font-family: "Akira Expanded";
+    font-family: 'Goldman';
+    text-transform: uppercase;
     font-size: 35px;
     font-weight: bold;
 }
@@ -446,7 +456,8 @@ main {
 }
 
 .text-news h1 {
-    font-family: "Akira Expanded";
+    font-family: 'Goldman';
+    text-transform: uppercase;
     font-weight: bold;
     font-size: 35px;
 }
@@ -502,7 +513,8 @@ main {
 
 .news h1 {
     color: white;
-    font-family: "Akira Expanded";
+    font-family: 'Goldman';
+    text-transform: uppercase;
     font-size: 25px;
     font-weight: bold;
 }
@@ -530,7 +542,8 @@ main {
     margin-top: -30px;
     margin-left: auto;
     margin-right: auto;
-    font-family: "Akira Expanded";
+    font-family: 'Goldman';
+    text-transform: uppercase;
     font-size: 18px;
     padding: 5px;
     border-radius: 20px;
@@ -554,7 +567,8 @@ main {
     margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
-    font-family: "Akira Expanded";
+    font-family: 'Goldman';
+    text-transform: uppercase;
     font-size: 18px;
     padding: 5px;
     border-radius: 20px;
@@ -571,16 +585,17 @@ main {
 }
 
 .box-misi {
-    width: 330px;
+    width: 340px;
     text-align: center;
     background-color: #FF8D29;
     font-size: 20px;
     margin-top: -30px;
     margin-left: auto;
     margin-right: auto;
-    font-family: "Akira Expanded";
+    font-family: 'Goldman';
+    text-transform: uppercase;
     font-size: 18px;
-    padding: 5px;
+    padding: 10px;
     border-radius: 20px;
 }
 
@@ -592,7 +607,8 @@ main {
     margin-top: -30px;
     margin-left: auto;
     margin-right: auto;
-    font-family: "Akira Expanded";
+    font-family: 'Goldman';
+    text-transform: uppercase;
     font-size: 18px;
     padding: 5px;
     border-radius: 20px;
@@ -633,8 +649,9 @@ main {
     margin-right: auto;
     text-align: center;
     color: white;
-    font-size: 35px;
-    font-family: "Akira Expanded";
+    font-size: 43px;
+    font-family: 'Goldman';
+    text-transform: uppercase;
     font-weight: bold;
 }
 
@@ -645,7 +662,8 @@ main {
     font-weight: 600;
     text-decoration: underline;
     text-underline-offset: 10px;
-    font-family: "Akira Expanded";
+    font-family: 'Goldman';
+    text-transform: uppercase;
 }
 
 .title-unit h1 {
@@ -660,7 +678,8 @@ main {
     font-weight: 600;
     text-decoration: underline;
     text-underline-offset: 10px;
-    font-family: "Akira Expanded";
+    font-family: 'Goldman';
+    text-transform: uppercase;
 }
 
 .title-kementerian h1 {
@@ -703,8 +722,9 @@ main {
     margin-right: auto;
     text-align: center;
     color: white;
-    font-size: 35px;
-    font-family: "Akira Expanded";
+    font-size: 43px;
+    font-family: 'Goldman';
+    text-transform: uppercase;
     font-weight: bold;
 }
 
@@ -715,7 +735,8 @@ main {
     font-weight: 600;
     text-decoration: underline;
     text-underline-offset: 10px;
-    font-family: "Akira Expanded";
+    font-family: 'Goldman';
+    text-transform: uppercase;
 }
 
 .title-ormawa h1 {
@@ -747,7 +768,8 @@ main {
 }
 
 .text-email h1 {
-    font-family: "Akira Expanded";
+    font-family: 'Goldman';
+    text-transform: uppercase;
     color: white;
 }
 
@@ -762,7 +784,8 @@ main {
 }
 
 .box-aspirasi h2 {
-    font-family: "Akira Expanded";
+    font-family: 'Goldman';
+    text-transform: uppercase;
     text-align: center;
     text-decoration: underline;
     text-underline-offset: 5px;
@@ -784,7 +807,8 @@ main {
     margin-top: 80px;
     text-align: center;
     color: white;
-    font-family: "Akira Expanded";
+    font-family: 'Goldman';
+    text-transform: uppercase;
 }
 
 .title-aspirasi h1 {
@@ -815,7 +839,8 @@ main {
 }
 
 .text-aspirasi h3 {
-    font-family: "Akira Expanded";
+    font-family: 'Goldman';
+    text-transform: uppercase;
     font-size: 20px;
     color: #B22727;
     font-weight: 600;
@@ -863,7 +888,8 @@ footer {
 }
 
 .text-footer h4 {
-    font-family: "Akira Expanded";
+    font-family: 'Goldman';
+    text-transform: uppercase;
     font-size: 20px;
     font-weight: 600;
 }
@@ -873,14 +899,16 @@ footer {
 }
 
 .text-maps h3 {
-    font-family: "Akira Expanded";
+    font-family: 'Goldman';
+    text-transform: uppercase;
     font-size: 20px;
     color: white;
     font-weight: 600;
 }
 
 .copyright span {
-    font-family: "Akira Expanded";
+    font-family: 'Goldman';
+    text-transform: uppercase;
     font-size: 14px;
     font-weight: 600;
 }

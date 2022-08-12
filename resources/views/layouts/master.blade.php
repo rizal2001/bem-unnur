@@ -4,7 +4,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1 ">
     <title>@yield('title') </title>
     <link rel="shortcut icon" href="{{asset('logo.png')}}" />
     <!-- plugins:css -->
@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="{{asset('admin/css/vertical-layout-light/style.css')}}">
     <!-- endinject -->
     <link rel="shortcut icon" href="{{asset('admin/images/losgo.png')}}" />
-    
+
     <style>
     .mdi-file-import {
         font-size: 20px;
